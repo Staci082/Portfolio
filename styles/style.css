@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+}
+
 body {
   background: rgb(5, 5, 5);
   color: #fff;
@@ -12,6 +17,10 @@ body {
 .container {
   height: 100%;
   width: 100%;
+}
+
+.container section {
+  scroll-snap-align: start;
 }
 
 .lead {
