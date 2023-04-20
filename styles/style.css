@@ -74,15 +74,15 @@ section h1 {
 
 /* Section Images */
 section#home {
-  background: url("./images/astroids.png") no-repeat center center/cover;
+  background: url("./images/astroidsTop.png") no-repeat center center/cover;
 }
 
 section#about {
-  background: url("./images/spaceroad.png") no-repeat center center/cover;
+  background: url("./images/astroidsMid.png") no-repeat center center/cover;
 }
 
 section#projects {
-  background: url("./images/comet.jpg") no-repeat center center/cover;
+  background: url("./images/astroidsBtm.png") no-repeat center center/cover;
 }
 
 section#contact {
