@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
 section#contact {
   background: url("./images/space.jpg") no-repeat center center/cover;
   display: flex;
@@ -12,10 +12,9 @@ section#contact {
   justify-content: center;
   height: 70vh;
   width: 50vw;
-  background-color: black;
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   color: white;
-  opacity: 70%;
 }
 
 .form-wrapper {
@@ -47,6 +46,8 @@ section#contact {
   height: 12vh;
   resize: none;
   overflow: auto;
+  font-family: "Ubuntu";
+  text-transform: none;
 }
 .form-wrapper input:focus, .form-wrapper textarea:focus {
   border: solid 3px #3AB5E1;
@@ -120,7 +121,7 @@ body {
   display: flex;
   width: 100%;
   height: 60px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .navbar ul {
@@ -196,6 +197,5 @@ section#projects {
   width: 20vw;
   -webkit-clip-path: polygon(25% 0%, 75% 0, 50% 100%, 0% 100%);
           clip-path: polygon(25% 0%, 75% 0, 50% 100%, 0% 100%);
-  background-color: rgb(242, 227, 227);
-  opacity: 70%;
+  background: rgba(242, 227, 227, 0.7);
 }/*# sourceMappingURL=style.css.map */

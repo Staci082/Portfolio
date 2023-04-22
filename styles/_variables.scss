@@ -1,8 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap');
 
 
 $font: "Gugi";
+$fontTextarea: "Ubuntu";
+$opacity: rgb(0,0,0,0.8);
 
 @mixin text {
     text-transform: uppercase;
