@@ -1,0 +1,63 @@
+@use '../styles/variables' as *;
+
+section#contact {
+    background: url("./images/space.jpg") no-repeat center center/cover;;
+    @include flex;
+  }
+  
+  .contact-container {
+    @include flex;
+    height: 70vh;
+    width: 50vw;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    opacity: 70%;
+  }
+  .form-wrapper {
+    margin: 0 5vw 0 5vw;
+
+  &label, input, textarea {
+  display: block; 
+  }
+
+  & input, textarea, button{
+    @include text;
+    @include form;	
+  }
+
+  & label{
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
+  & textarea{
+    height: 12vh;	
+    resize: none; 
+    overflow: auto;
+  }
+
+  & input:focus, textarea:focus{
+    border: solid 3px #3AB5E1;	
+  }
+
+  & button {
+    height: 6vh;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #160E26;
+    color: white;
+    z-index: 1;
+    & i {
+      margin-right: 1vw;
+    }
+    &:hover{
+        background-color: #3AB5E1; 
+        border-color: white;   
+    }
+  }
+  }
+  .form-group {
+    margin: 20px 20px;
+  }
