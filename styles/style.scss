@@ -102,7 +102,7 @@ section h1 {
   
   .contact-container {
     @include flex;
-    height: 60vh;
+    height: 70vh;
     width: 50vw;
     background-color: black;
     border-radius: 15px;
@@ -110,18 +110,35 @@ section h1 {
     opacity: 70%;
   }
   .form-wrapper {
-  opacity: 100%;
+    margin: 0 5vw 0 5vw;
 
   &label, input, textarea {
-  display: block;
+  display: block; 
   }
+
   & input, textarea, button{
     @include text;
     @include form;	
   }
 
+  & label{
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
+  & textarea{
+    height: 12vh;	
+    resize: none; 
+    overflow: auto;
+  }
+
+  & input:focus, textarea:focus{
+    border: solid 3px #3AB5E1;	
+  }
+
   & button {
-    height: 50px;
+    height: 6vh;
     cursor: pointer;
     margin-top: 30px;
     background-color: #160E26;
@@ -131,21 +148,11 @@ section h1 {
     }
   }
   }
+  .form-group {
+    margin: 20px 20px;
+  }
 
-  input:focus, textarea:focus{
-    border: solid 3px #3AB5E1;	
-  }
   
-  textarea{
-    height: 100px;	
-    resize: none; 
-    overflow: auto;
-  }
-  label{
-    font-size: 1.5em;
-    margin-top: 20px;
-    padding-left: 20px;
-  }
 
 
   @media (min-width: 768px){

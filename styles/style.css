@@ -113,7 +113,7 @@ section#contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 70vh;
   width: 50vw;
   background-color: black;
   border-radius: 15px;
@@ -122,7 +122,7 @@ section#contact {
 }
 
 .form-wrapper {
-  opacity: 100%;
+  margin: 0 5vw 0 5vw;
 }
 .form-wrapperlabel, .form-wrapper input, .form-wrapper textarea {
   display: block;
@@ -131,7 +131,7 @@ section#contact {
   text-transform: uppercase;
   font-family: "Gugi";
   color: #faf5f5;
-  width: 500px;
+  width: 31vw;
   border: none;
   border-radius: 20px;
   outline: none;
@@ -141,8 +141,21 @@ section#contact {
   transition: border 0.5s;
   border: solid 3px #7E53A2;
 }
+.form-wrapper label {
+  font-size: 1.5em;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.form-wrapper textarea {
+  height: 12vh;
+  resize: none;
+  overflow: auto;
+}
+.form-wrapper input:focus, .form-wrapper textarea:focus {
+  border: solid 3px #3AB5E1;
+}
 .form-wrapper button {
-  height: 50px;
+  height: 6vh;
   cursor: pointer;
   margin-top: 30px;
   background-color: #160E26;
@@ -152,20 +165,8 @@ section#contact {
   border-color: white;
 }
 
-input:focus, textarea:focus {
-  border: solid 3px #3AB5E1;
-}
-
-textarea {
-  height: 100px;
-  resize: none;
-  overflow: auto;
-}
-
-label {
-  font-size: 1.5em;
-  margin-top: 20px;
-  padding-left: 20px;
+.form-group {
+  margin: 20px 20px;
 }
 
 @media (min-width: 768px) {
