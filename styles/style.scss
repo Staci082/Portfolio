@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+$font: "Bungee Inline";
+
+
 * {
     margin: 0;
     padding: 0;
   }
-  html {
+  
+html {
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
   }
 body {
     background: rgb(5, 5, 5);
@@ -11,6 +18,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    font-family: $font;
 }
 .container {
     min-height: 100%;
@@ -30,12 +38,12 @@ body {
     height: 60px;
     background: rgba(0,0,0,0.7);
   }
-  
   .navbar ul {
     display: flex;
     list-style: none;
     width: 100%;
     justify-content: center;
+    align-items: center;
   }
   
   .navbar ul li {
@@ -50,6 +58,10 @@ body {
   
   .navbar ul li a:hover {
     color: skyblue;
+  }
+  #hamburger {
+    left: 3vw;
+    position: absolute;
   }
   
   section {
@@ -72,7 +84,13 @@ section h1 {
   section#home {
    background: url("./images/astroidsTop.png") no-repeat center center/cover;;
   } 
-  
+
+  #header {
+    text-shadow: 0px 15px 5px rgba(232, 221, 221, 0.1),
+                 10px 20px 5px rgba(219, 210, 210, 0.05),
+                 -10px 20px 5px rgba(240, 202, 202, 0.05);
+    
+  }
   section#about {
     background: url("./images/astroidsMid.png") no-repeat center center/cover;;
   }
@@ -88,4 +106,15 @@ section h1 {
   .contact-container {
     width: 50vw;
     height: 50vh;
+  }
+
+  @media (min-width: 768px){
+   #hamburger {
+      display: none;
+    } 
+  }
+  @media (max-width: 768px){ 
+    .navbar ul li a {
+      display: none;
+    }
   }
