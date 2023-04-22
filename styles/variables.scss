@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+
+$font: "Gugi";
+
+
+@mixin text {
+    text-transform: uppercase;
+    font-family: "Gugi";
+    color: #faf5f5;
+  }
+  @mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  

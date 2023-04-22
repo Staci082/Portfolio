@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-
-$font: "Bungee Inline";
-
+@use"./index" as *;
 
 * {
     margin: 0;
@@ -14,11 +11,10 @@ html {
   }
 body {
     background: rgb(5, 5, 5);
-    color: #fff;
+    @include text;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    font-family: $font;
 }
 .container {
     min-height: 100%;
@@ -30,6 +26,7 @@ body {
   }
   
   .navbar {
+    @include text;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -37,13 +34,12 @@ body {
     width: 100%;
     height: 60px;
     background: rgba(0,0,0,0.7);
+
   }
   .navbar ul {
-    display: flex;
+    @include flex;
     list-style: none;
     width: 100%;
-    justify-content: center;
-    align-items: center;
   }
   
   .navbar ul li {
@@ -53,23 +49,22 @@ body {
   
   .navbar ul li a {
     text-decoration: none;
-    color: #f4f4f4;
+    color: white;
+    &:hover {
+      color: skyblue;
+    }
   }
   
-  .navbar ul li a:hover {
-    color: skyblue;
-  }
+
   #hamburger {
     left: 3vw;
     position: absolute;
   }
   
   section {
+    @include flex;
     scroll-snap-align: start;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     width: 100vw;
     height: 100vh;
@@ -77,6 +72,7 @@ body {
 
   
 section h1 {
+  @include text;
     font-size: 4rem;
   }
   
@@ -101,11 +97,21 @@ section h1 {
   
   section#contact {
     background: url("./images/space.jpg") no-repeat center center/cover;;
+    @include flex;
   }
   
   .contact-container {
+    @include flex;
+    flex-direction: column;
+    height: 60vh;
     width: 50vw;
-    height: 50vh;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    opacity: 70%;
+  }
+  #contact-form {
+   opacity: 100%;
   }
 
   @media (min-width: 768px){

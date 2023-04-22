@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +11,12 @@ html {
 
 body {
   background: rgb(5, 5, 5);
-  color: #fff;
+  text-transform: uppercase;
+  font-family: "Gugi";
+  color: #faf5f5;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  font-family: "Bungee Inline";
 }
 
 .container {
@@ -28,6 +29,9 @@ body {
 }
 
 .navbar {
+  text-transform: uppercase;
+  font-family: "Gugi";
+  color: #faf5f5;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -39,10 +43,10 @@ body {
 
 .navbar ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
   width: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 .navbar ul li {
@@ -52,9 +56,8 @@ body {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #f4f4f4;
+  color: white;
 }
-
 .navbar ul li a:hover {
   color: skyblue;
 }
@@ -65,17 +68,20 @@ body {
 }
 
 section {
-  scroll-snap-align: start;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-snap-align: start;
+  flex-direction: column;
   text-align: center;
   width: 100vw;
   height: 100vh;
 }
 
 section h1 {
+  text-transform: uppercase;
+  font-family: "Gugi";
+  color: #faf5f5;
   font-size: 4rem;
 }
 
@@ -98,11 +104,26 @@ section#projects {
 
 section#contact {
   background: url("./images/space.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
   width: 50vw;
-  height: 50vh;
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  opacity: 70%;
+}
+
+#contact-form {
+  opacity: 100%;
 }
 
 @media (min-width: 768px) {
