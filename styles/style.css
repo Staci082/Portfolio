@@ -24,16 +24,14 @@ section#contact {
   display: block;
 }
 .form-wrapper input, .form-wrapper textarea, .form-wrapper button {
-  text-transform: uppercase;
-  font-family: "Gugi";
-  color: #faf5f5;
   width: 31vw;
   border: none;
   border-radius: 20px;
   outline: none;
   padding: 10px;
   font-size: 1em;
-  color: #160E26;
+  font-family: "Ubuntu";
+  text-transform: none;
   transition: border 0.5s;
   border: solid 3px #7E53A2;
 }
@@ -46,8 +44,6 @@ section#contact {
   height: 12vh;
   resize: none;
   overflow: auto;
-  font-family: "Ubuntu";
-  text-transform: none;
 }
 .form-wrapper input:focus, .form-wrapper textarea:focus {
   border: solid 3px #3AB5E1;
