@@ -4,7 +4,6 @@
 
 $font: "Gugi";
 
-
 @mixin text {
     text-transform: uppercase;
     font-family: "Gugi";
@@ -16,5 +15,15 @@ $font: "Gugi";
     justify-content: center;
   }
 
-  
+  @mixin form {
+    width: 500px;	
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    font-size: 1em;
+    color: #160E26;
+    transition: border 0.5s;
+    border: solid 3px #7E53A2;
+  }
   

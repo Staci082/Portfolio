@@ -102,7 +102,6 @@ section h1 {
   
   .contact-container {
     @include flex;
-    flex-direction: column;
     height: 60vh;
     width: 50vw;
     background-color: black;
@@ -110,9 +109,44 @@ section h1 {
     color: white;
     opacity: 70%;
   }
-  #contact-form {
-   opacity: 100%;
+  .form-wrapper {
+  opacity: 100%;
+
+  &label, input, textarea {
+  display: block;
   }
+  & input, textarea, button{
+    @include text;
+    @include form;	
+  }
+
+  & button {
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #160E26;
+      &:hover{
+        background-color: #3AB5E1; 
+        border-color: white;   
+    }
+  }
+  }
+
+  input:focus, textarea:focus{
+    border: solid 3px #3AB5E1;	
+  }
+  
+  textarea{
+    height: 100px;	
+    resize: none; 
+    overflow: auto;
+  }
+  label{
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
 
   @media (min-width: 768px){
    #hamburger {
