@@ -19,9 +19,10 @@ $opacity: rgb(0,0,0,0.8);
 
   @mixin form {
     width: 31vw;
-    height: 40px;
     border: none;
     border-radius: 20px;
+    outline: none;
+    padding: 10px;
     font-size: 1em;
     font-family: $fontTextarea;
     text-transform: none;
