@@ -13,6 +13,7 @@ section#contact {
   justify-content: center;
   height: 70vh;
   width: 50vw;
+  margin-top: 60px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   color: white;
@@ -92,36 +93,8 @@ section#contact {
     transform: rotate(90deg);
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-
-body {
-  background: rgb(5, 5, 5);
-  text-transform: uppercase;
-  font-family: "Gugi";
-  color: #faf5f5;
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-.container {
-  min-height: 100%;
-  min-width: 100%;
-}
-
-.lead {
-  font-size: 1.5rem;
-}
-
 .navbar {
+  align-items: center;
   text-transform: uppercase;
   font-family: "Gugi";
   color: #faf5f5;
@@ -166,9 +139,9 @@ body {
   background: url("./images/satelite1.png") no-repeat center center/cover;
   height: 30px;
   width: 40px;
-  margin-top: 1vh;
   position: relative;
-  animation: mymove 30s infinite;
+  animation: mymove 40s infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes mymove {
@@ -179,6 +152,55 @@ body {
     left: 100vw;
   }
 }
+section#projects {
+  background: url("./images/astroidsBtm.png") no-repeat center center/cover;
+}
+
+.project-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 5vw;
+}
+
+.project-card {
+  height: 50vh;
+  width: 20vw;
+  -webkit-clip-path: polygon(25% 0%, 75% 0, 50% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 75% 0, 50% 100%, 0% 100%);
+  background: rgba(242, 227, 227, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(5, 5, 5);
+  text-transform: uppercase;
+  font-family: "Gugi";
+  color: #faf5f5;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
 section {
   display: flex;
   align-items: center;
@@ -207,24 +229,4 @@ section#home {
 
 section#about {
   background: url("./images/astroidsMid.png") no-repeat center center/cover;
-}
-
-section#projects {
-  background: url("./images/astroidsBtm.png") no-repeat center center/cover;
-}
-
-.project-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  margin-left: 5vw;
-}
-
-.project-card {
-  height: 50vh;
-  width: 20vw;
-  -webkit-clip-path: polygon(25% 0%, 75% 0, 50% 100%, 0% 100%);
-          clip-path: polygon(25% 0%, 75% 0, 50% 100%, 0% 100%);
-  background: rgba(242, 227, 227, 0.7);
 }/*# sourceMappingURL=style.css.map */

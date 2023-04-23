@@ -1,0 +1,18 @@
+@use '../styles/variables' as *;
+
+section#projects {
+    background: url("./images/astroidsBtm.png") no-repeat center center/cover;;
+  }
+
+  .project-wrapper {
+    @include flex;
+    flex-direction: row;
+    margin-left: 5vw;
+  }
+  .project-card {
+    height: 50vh;
+    width: 20vw;
+    clip-path: polygon(25% 0%, 75% 0, 50% 100%, 0% 100%);
+    background: rgb(242, 227, 227, 0.7);
+  }
+  
