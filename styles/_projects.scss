@@ -15,6 +15,7 @@ section#projects {
   .project-card {
     height: 50vh;
     width: 15vw;
+    border: blue 4px solid;
     background: rgb(242, 227, 227, 0.7);
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     &:hover {
@@ -26,6 +27,6 @@ section#projects {
   .card-info {
     height: 45vh;
     width: 150px;
-    border: blue 4px solid;
+    border: red  4px solid;
   }
  
