@@ -180,12 +180,13 @@ section#projects {
 }
 
 .project-card {
+  flex-direction: column;
   height: 50vh;
   width: 15vw;
-  border: blue 4px solid;
   background: rgba(242, 227, 227, 0.7);
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
           clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  transition: all 0.3s ease-out;
 }
 .project-card:hover {
   transform: scaleX(3);
@@ -193,11 +194,27 @@ section#projects {
           clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 0% 100%, 8% 50%, 0% 0%);
   margin: 0 10vw 0 10vw;
 }
+.project-card:hover .card-info {
+  display: block;
+}
+.project-card:hover .project-card img {
+  transform: scaleX(0);
+  display: block;
+}
+
+.project-card img {
+  height: 50vh;
+  width: 15vw;
+  background: green;
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
 
 .card-info {
-  height: 45vh;
-  width: 150px;
-  border: red 4px solid;
+  display: none;
+  height: 50vh;
+  width: 10vw;
+  background: red;
 }
 
 * {
@@ -258,8 +275,7 @@ section#home {
 section#about {
   background: url("./images/astroidsMid.png") no-repeat center center/cover;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
 }
 
 .about-container {
@@ -269,8 +285,9 @@ section#about {
   justify-content: center;
   flex-direction: column;
   height: 50vh;
-  width: 50vw;
+  width: 30vw;
   margin-top: 60px;
+  margin-left: 8vw;
   background: rgba(0, 0, 0, 0.9);
   border-radius: 15px;
   color: white;
