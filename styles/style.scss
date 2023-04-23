@@ -38,6 +38,7 @@ body {
   }
   .navbar ul {
     @include flex;
+    justify-content: end;
     list-style: none;
     width: 100%;
   }

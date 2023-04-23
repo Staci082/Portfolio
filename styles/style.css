@@ -20,15 +20,20 @@ section#contact {
 .form-wrapper {
   margin: 0 5vw 0 5vw;
 }
+.form-wrapper .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .form-wrapperlabel, .form-wrapper input, .form-wrapper textarea {
   display: block;
 }
 .form-wrapper input, .form-wrapper textarea, .form-wrapper button {
   width: 31vw;
+  height: 40px;
   border: none;
   border-radius: 20px;
-  outline: none;
-  padding: 10px;
   font-size: 1em;
   font-family: "Ubuntu";
   text-transform: none;
@@ -54,6 +59,7 @@ section#contact {
   margin-top: 30px;
   background-color: #160E26;
   color: white;
+  text-transform: uppercase;
   z-index: 1;
 }
 .form-wrapper button i {
@@ -76,6 +82,9 @@ section#contact {
 @media (max-width: 768px) {
   .navbar ul li a {
     display: none;
+  }
+  .form-wrapper label {
+    font-size: 1rem;
   }
 }
 * {
@@ -124,6 +133,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: end;
   list-style: none;
   width: 100%;
 }
