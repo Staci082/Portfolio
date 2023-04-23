@@ -8,13 +8,13 @@ section#projects {
     position: relative;
     @include flex;
     flex-direction: row;
+    gap: 2vw;
   }
   
   
   .project-card {
     height: 50vh;
-    width: 200px;
-    margin: 0;
+    width: 15vw;
     background: rgb(242, 227, 227, 0.7);
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     &:hover {
