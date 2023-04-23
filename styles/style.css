@@ -7,6 +7,7 @@ section#contact {
 }
 
 .contact-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,6 +141,7 @@ body {
   justify-content: end;
   list-style: none;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar ul li {
@@ -160,6 +162,23 @@ body {
   position: absolute;
 }
 
+#satelite {
+  background: url("./images/satelite1.png") no-repeat center center/cover;
+  height: 30px;
+  width: 40px;
+  margin-top: 1vh;
+  position: relative;
+  animation: mymove 30s infinite;
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100vw;
+  }
+}
 section {
   display: flex;
   align-items: center;
