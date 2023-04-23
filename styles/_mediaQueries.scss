@@ -20,5 +20,13 @@
    .project-card {
     transform: rotate(90deg);
    }
-
+.contact-container {
+  height: 70vh;
+    width: 80vw;
+}
+.form-group {
+  &label, input, textarea, button {
+    width: 60vw;
+    }
+}
    }

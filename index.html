@@ -53,17 +53,18 @@
                         <div class="form-wrapper">
                             <div class="form-group" id="name-form">
                                 <label for="name">Your name</label>
-                                <input type="text" id="name" name="name" />
+                                <input type="text" id="name" name="name"  required/>
                             </div>
                             
                             <div class="form-group" id="email-form">
                                 <label for="email">Your e-mail</label>
-                                <input type="email" id="email" name="email" />
+                                <input type="email" id="email" name="email"
+                                required pattern=".+@email\.com"/>
                             </div>
                             
                             <div class="form-group" id="message-form">
                                 <label for="message">Your message</label>
-                                <textarea id="message" name="message"></textarea>
+                                <textarea id="message" name="message" required></textarea>
                             </div>
                             
                                 <button type="submit"><i class="fa-solid fa-rocket fa-lg"></i>submit</button>

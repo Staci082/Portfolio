@@ -58,6 +58,7 @@ section#contact {
 }
 .form-wrapper button {
   height: 6vh;
+  width: 20vw;
   cursor: pointer;
   margin-top: 30px;
   background-color: #160E26;
@@ -91,6 +92,13 @@ section#contact {
   }
   .project-card {
     transform: rotate(90deg);
+  }
+  .contact-container {
+    height: 70vh;
+    width: 80vw;
+  }
+  .form-grouplabel, .form-group input, .form-group textarea, .form-group button {
+    width: 60vw;
   }
 }
 .navbar {
@@ -157,18 +165,19 @@ section#projects {
 }
 
 .project-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-left: 5vw;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 .project-card {
   height: 50vh;
-  width: 20vw;
-  -webkit-clip-path: polygon(25% 0%, 75% 0, 50% 100%, 0% 100%);
-          clip-path: polygon(25% 0%, 75% 0, 50% 100%, 0% 100%);
+  width: 100px;
+  gap: 40px;
   background: rgba(242, 227, 227, 0.7);
 }
 
