@@ -1,41 +1,51 @@
-@use '../styles/variables' as *;
+@use "../styles/variables" as *;
 
+@media (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        align-items: end;
+        ul li a {
+          display: none;
+      }
+    }
+    section#about {
+        justify-content: center;
+        
+        .about-container {
+            margin-left: none;
+        }
+      }
 
-@media (min-width: 768px){
-    #hamburger {
-       display: none;
-     } 
-   }
-@media (max-width: 768px){ 
-  .navbar {
-    align-items: end;
-  }
-     .navbar ul li a {
-       display: none;
-     }
 
     .form-wrapper {
-    & label{
-      font-size: 1rem;	
+        & label {
+            font-size: 1rem;
+        }
     }
-   }
-   .project-wrapper {
-    transform: rotate(270deg);
-  }
-  .project-card {
-    margin: 10vw 10vw;
-    &:active {
-      transform: scaleX(0.5);
+    .project-wrapper {
+        transform: rotate(270deg);
     }
-  }
+    .project-card {
+        margin: 10vw 10vw;
+        &:active {
+            transform: scaleX(0.5);
+        }
+    }
 
-.contact-container {
-  height: 70vh;
-    width: 80vw;
-}
-.form-group {
-  &label, input, textarea, button {
-    width: 60vw;
+    .contact-container {
+        height: 70vh;
+        width: 80vw;
+    }
+    .form-group {
+        &label,
+        input,
+        textarea,
+        button {
+            width: 60vw;
+        }
     }
 }
-   }

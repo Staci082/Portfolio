@@ -79,7 +79,7 @@ section#contact {
 }
 
 @media (min-width: 768px) {
-  #hamburger {
+  .hamburger-menu {
     display: none;
   }
 }
@@ -89,6 +89,12 @@ section#contact {
   }
   .navbar ul li a {
     display: none;
+  }
+  section#about {
+    justify-content: center;
+  }
+  section#about .about-container {
+    margin-left: none;
   }
   .form-wrapper label {
     font-size: 1rem;
@@ -106,7 +112,10 @@ section#contact {
     height: 70vh;
     width: 80vw;
   }
-  .form-grouplabel, .form-group input, .form-group textarea, .form-group button {
+  .form-grouplabel,
+  .form-group input,
+  .form-group textarea,
+  .form-group button {
     width: 60vw;
   }
 }
@@ -123,7 +132,6 @@ section#contact {
   height: 60px;
   background: rgba(0, 0, 0, 0.5);
 }
-
 .navbar ul {
   display: flex;
   align-items: center;
@@ -133,12 +141,10 @@ section#contact {
   width: 100%;
   z-index: 1;
 }
-
 .navbar ul li {
   margin: 0 1rem;
   padding: 1rem;
 }
-
 .navbar ul li a {
   text-decoration: none;
   color: white;
@@ -147,8 +153,8 @@ section#contact {
   color: skyblue;
 }
 
-#satelite {
-  background: url("./images/satelite1.png") no-repeat center center/cover;
+#satellite {
+  background: url("./images/satellite1.png") no-repeat center center/cover;
   height: 30px;
   width: 40px;
   position: relative;
@@ -222,6 +228,19 @@ section#projects {
           clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
   transition: all 0.3s ease-out;
 }
+.project-card img {
+  height: 50vh;
+  width: 15vw;
+  background: green;
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+.project-card .card-info {
+  display: none;
+  height: 50vh;
+  width: 10vw;
+  background: red;
+}
 .project-card:hover {
   transform: scaleX(3);
   -webkit-clip-path: polygon(92% 0%, 100% 50%, 92% 100%, 0% 100%, 8% 50%, 0% 0%);
@@ -234,21 +253,6 @@ section#projects {
 .project-card:hover .project-card img {
   transform: scaleX(0);
   display: block;
-}
-
-.project-card img {
-  height: 50vh;
-  width: 15vw;
-  background: green;
-  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-}
-
-.card-info {
-  display: none;
-  height: 50vh;
-  width: 10vw;
-  background: red;
 }
 
 * {
@@ -319,7 +323,9 @@ section#about {
   justify-content: center;
   flex-direction: column;
   height: 50vh;
+  min-height: 500px;
   width: 30vw;
+  min-width: 280px;
   margin-top: 60px;
   margin-left: 8vw;
   background: rgba(0, 0, 0, 0.9);
