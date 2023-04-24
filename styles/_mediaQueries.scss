@@ -7,6 +7,9 @@
      } 
    }
 @media (max-width: 768px){ 
+  .navbar {
+    align-items: end;
+  }
      .navbar ul li a {
        display: none;
      }

@@ -84,6 +84,9 @@ section#contact {
   }
 }
 @media (max-width: 768px) {
+  .navbar {
+    align-items: end;
+  }
   .navbar ul li a {
     display: none;
   }
@@ -144,11 +147,6 @@ section#contact {
   color: skyblue;
 }
 
-#hamburger {
-  left: 3vw;
-  position: absolute;
-}
-
 #satelite {
   background: url("./images/satelite1.png") no-repeat center center/cover;
   height: 30px;
@@ -166,6 +164,42 @@ section#contact {
     left: 100vw;
   }
 }
+#hamburger {
+  display: none;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  top: 2vh;
+  margin-right: 30px;
+}
+
+.hamburger-menu .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+/* Cross animation for hamburger menu */
+#hamburger:checked + .hamburger-menu .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#hamburger:checked + .hamburger-menu .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger:checked + .hamburger-menu .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 section#projects {
   background: url("./images/astroidsBtm.png") no-repeat center center/cover;
 }
