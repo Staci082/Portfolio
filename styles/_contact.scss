@@ -32,14 +32,13 @@ section#contact {
   & label{
     font-size: 1.5em;
     margin-top: 20px;
-    padding-left: 20px;
+    padding-bottom: 5px;
   }
 
   & textarea{
     height: 12vh;	
     resize: none; 
     overflow: auto;
-
   }
 
   & input:focus, textarea:focus{

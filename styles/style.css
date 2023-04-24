@@ -46,7 +46,7 @@ section#contact {
 .form-wrapper label {
   font-size: 1.5em;
   margin-top: 20px;
-  padding-left: 20px;
+  padding-bottom: 5px;
 }
 .form-wrapper textarea {
   height: 12vh;
@@ -84,9 +84,6 @@ section#contact {
   }
 }
 @media (max-width: 768px) {
-  .navbar {
-    align-items: end;
-  }
   .navbar ul li a {
     display: none;
   }
@@ -106,17 +103,20 @@ section#contact {
     margin: 10vw 10vw;
   }
   .project-card:active {
-    transform: scaleX(0.5);
+    transform: scaleX(0.8);
   }
   .contact-container {
     height: 70vh;
     width: 80vw;
   }
-  .form-grouplabel,
+  .form-group label,
   .form-group input,
-  .form-group textarea,
-  .form-group button {
+  .form-group textarea {
     width: 60vw;
+  }
+  .form-group button {
+    width: 100px;
+    margin-top: 10px;
   }
 }
 .navbar {

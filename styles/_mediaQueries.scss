@@ -7,7 +7,6 @@
 }
 @media (max-width: 768px) {
     .navbar {
-        align-items: end;
         ul li a {
           display: none;
       }
@@ -32,7 +31,7 @@
     .project-card {
         margin: 10vw 10vw;
         &:active {
-            transform: scaleX(0.5);
+            transform: scaleX(0.8);
         }
     }
 
@@ -41,11 +40,13 @@
         width: 80vw;
     }
     .form-group {
-        &label,
+        label,
         input,
-        textarea,
-        button {
+        textarea {
             width: 60vw;
         }
-    }
-}
+        button {
+            width: 100px;
+            margin-top: 10px;
+        }
+    }}
