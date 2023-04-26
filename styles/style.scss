@@ -54,23 +54,5 @@ section h1 {
   }
   section#about {
     background: url("./images/astroidsMid.png") no-repeat center center/cover;;
-    display: flex;
-    align-items: start;
-  }
-  .about-container {
-    position: relative;
-    @include flex;
-    flex-direction: column;
-    height: 50vh;
-    min-height: 500px;
-    width: 30vw;
-    min-width: 280px;
-    margin-top: 60px;
-    margin-left: 8vw;
-    background: rgb(0, 0, 0, 0.9);
-    border-radius: 15px;
-    color: white;
-    gap: 5vh;
-    padding: 5vw;
-  }
 
+  }

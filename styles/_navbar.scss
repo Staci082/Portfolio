@@ -1,16 +1,17 @@
 @use "../styles/variables" as *;
 
 .navbar {
+    display: flex;
     align-items: center;
     @include text;
     position: fixed;
     top: 0;
     z-index: 1;
-    display: flex;
     width: 100%;
     height: 60px;
     background: rgb(0, 0, 0, 0.5);
-    ul {
+    
+    .navbar-menu {
         @include flex;
         justify-content: end;
         list-style: none;
@@ -54,7 +55,7 @@
     height: 50px;
     position: relative;
     z-index: 1;
-    left: 5vw;
+    left: 1vw;
     top: 1vh;
 }
 
@@ -82,21 +83,26 @@
 }
 
 @media (min-width: 768px) {
-    .hamburger-menu {
+    .hamburger {
         display: none;
     }
 }
 
 @media (max-width: 768px) {
+    .navbar.active {
+        background: rgb(0, 0, 0, 0);
+    }
     .navbar-menu {
         position: fixed;
-        left: -100%;
         flex-direction: column;
+        justify-content: flex-start;
+        left: -100%;
         background: $opacity;
-        height: 100vh;
+        height: 150vh;
         width: 100vw;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.4s;
+        font-size: 2rem;
         li a {
             margin: 16px 0;
         }
