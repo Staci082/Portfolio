@@ -1,16 +1,8 @@
 @use "../styles/variables" as *;
 
-@media (min-width: 768px) {
-    .hamburger-menu {
-        display: none;
-    }
-}
+
 @media (max-width: 768px) {
-    .navbar {
-        ul li a {
-          display: none;
-      }
-    }
+    
     section#about {
         justify-content: center;
         
