@@ -9,7 +9,7 @@ window.onload = function () {
     var direction = getRandomDirection();
     var distance = getRandomDistance();
 
-    var target = document.querySelector("#satellite");
+    var target = document.querySelector(".satellite");
     var target_pos = { top: 0, left: 0 };
 
     var i = 0;

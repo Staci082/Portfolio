@@ -25,22 +25,21 @@ body {
     font-size: 1.5rem;
 }
 
-#satellite {
+.satellite {
     background: url("./images/satellite1.png") no-repeat center center/cover;
     height: 30px;
     width: 40px;
     position: relative;
-    left: 0;
-    top: 0;
     transition: all 30s linear;
     z-index: 1;
     animation: rotation 30s infinite;
-  
-  @keyframes rotation {
-    100% {transform: rotate(360deg);}
-  }
-}
 
+    @keyframes rotation {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
 
 section {
     @include flex;
@@ -65,6 +64,23 @@ section#home {
         10px 20px 5px rgba(219, 210, 210, 0.05),
         -10px 20px 5px rgba(240, 202, 202, 0.05);
 }
+
 section#about {
+    position: relative;
     background: url("./images/astroidsMid.png") no-repeat center center/cover;
+    z-index: -1;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+    position: absolute;
+    height: 70vh;
+    width: 40vw;
+    background: rgba(96, 94, 94, 0.7);
+    border-radius: 15px;
+    color: black;
+    right: 0;
+    margin-right: 3vw;
 }
