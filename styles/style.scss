@@ -1,14 +1,14 @@
-@use"./index" as *;
+@use "./index" as *;
 
 * {
     margin: 0;
     padding: 0;
-  }
-  
+}
+
 html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-  }
+}
 body {
     background: rgb(5, 5, 5);
     @include text;
@@ -23,36 +23,42 @@ body {
 
 .lead {
     font-size: 1.5rem;
-  }
-  
- 
-  section {
+}
+
+#satellite {
+    background: url("./images/satellite1.png") no-repeat center center/cover;
+    height: 30px;
+    width: 40px;
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: all 30s linear;
+    z-index: 1;
+}
+
+section {
     @include flex;
     scroll-snap-align: start;
     flex-direction: column;
     text-align: center;
     width: 100vw;
     height: 100vh;
-  }
+}
 
-  
 section h1 {
-  @include text;
+    @include text;
     font-size: 4rem;
-  }
-  
+}
 
-  section#home {
-   background: url("./images/astroidsTop.png") no-repeat center center/cover;;
-  } 
+section#home {
+    background: url("./images/astroidsTop.png") no-repeat center center/cover;
+}
 
-  #header {
+#header {
     text-shadow: 0px 15px 5px rgba(232, 221, 221, 0.1),
-                 10px 20px 5px rgba(219, 210, 210, 0.05),
-                 -10px 20px 5px rgba(240, 202, 202, 0.05);
-    
-  }
-  section#about {
-    background: url("./images/astroidsMid.png") no-repeat center center/cover;;
-
-  }
+        10px 20px 5px rgba(219, 210, 210, 0.05),
+        -10px 20px 5px rgba(240, 202, 202, 0.05);
+}
+section#about {
+    background: url("./images/astroidsMid.png") no-repeat center center/cover;
+}
