@@ -34,7 +34,13 @@ body {
     top: 0;
     transition: all 30s linear;
     z-index: 1;
+    animation: rotation 30s infinite;
+  
+  @keyframes rotation {
+    100% {transform: rotate(360deg);}
+  }
 }
+
 
 section {
     @include flex;
