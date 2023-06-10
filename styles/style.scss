@@ -56,7 +56,7 @@ section h1 {
 }
 
 section#home {
-    background: url("./images/astroidsTop.png") no-repeat center center/cover;
+    background: url("./images/planet-top.jpg") no-repeat center center/cover;
 }
 
 #header {
@@ -65,22 +65,17 @@ section#home {
         -10px 20px 5px rgba(240, 202, 202, 0.05);
 }
 
-section#about {
-    position: relative;
-    background: url("./images/astroidsMid.png") no-repeat center center/cover;
-    z-index: -1;
-}
 
 .about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     position: absolute;
     height: 70vh;
     width: 40vw;
-    background: rgba(96, 94, 94, 0.7);
-    border-radius: 15px;
-    color: black;
-    right: 0;
-    margin-right: 3vw;
+    backdrop-filter: blur(18px) saturate(107%);
+    -webkit-backdrop-filter: blur(18px) saturate(207%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.18);
 }
