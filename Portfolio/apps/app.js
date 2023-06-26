@@ -74,19 +74,19 @@ window.onload = function () {
 // hamburger menu
 
 const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector(".navbar");
-const navMenu = document.querySelector(".navbar-menu");
+const nav = document.querySelector(".nav");
+const navMenu = document.querySelector(".nav-links");
 
 hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-    nav.classList.toggle("active");
+    hamburger.classList.toggle("open");
+    navMenu.classList.toggle("open");
+    nav.classList.toggle("open");
 });
 
-document.querySelectorAll(".nav-link").forEach((n) =>
+document.querySelectorAll(".section-link").forEach((n) =>
     n.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        nav.classList.remove("active");
+        hamburger.classList.remove("open");
+        navMenu.classList.remove("open");
+        nav.classList.remove("open");
     })
 );

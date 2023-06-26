@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap');
+
+
+$font: "Gugi";
+$fontTextarea: "Ubuntu";
+$opacity: rgb(0,0,0,0.8);
+
+
+@mixin text {
+    text-transform: uppercase;
+    font-family: "Gugi";
+    color: #faf5f5;
+    z-index: 2;
+  }
+  @mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @mixin form {
+    width: 31vw;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    font-size: 1em;
+    font-family: $fontTextarea;
+    text-transform: none;
+    transition: border 0.5s;
+    border: solid 3px #7E53A2;
+  }
+
+
+
+/*  MEDIA QUERIES */
+$breakpoints: (
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px
+);
+
+
+
+@mixin sm {
+  @media  (max-width: map-get($breakpoints, "sm")){
+    @content; /* use content so we can choose properties when using the mixin instead of hardcoding */
+}
+}
+
+@mixin md {
+  @media  (max-width: map-get($breakpoints, "md")){
+    @content; 
+  }
+  }
+
+@mixin lg {
+  @media  (max-width: map-get($breakpoints, "lg")){
+    @content; 
+}
+}
+
+@mixin xl {
+  @media  (max-width: map-get($breakpoints, "xl")){
+    @content; 
+  }
+  }
+
+
+/* mixin for specific breakpoint (flexible) */
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
