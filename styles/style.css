@@ -227,27 +227,30 @@ section#projects {
 }
 
 .project-card-border {
-  width: 400px;
-  height: 250px;
-  -webkit-clip-path: polygon(0% 20%, 15% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 100%);
-          clip-path: polygon(0% 20%, 15% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 100%);
-  border: lightblue 2px solid;
-  background: lightblue;
+  width: 550px;
+  height: 450px;
+  /* clip-path: polygon(0% 20%, 15% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 100%);*/
+  background-image: url("./images/border.png");
+  background-size: cover;
 }
 .project-card-border:hover {
-  flex-grow: 2;
+  transform: scale(1.2);
   transition: all 1s ease-in-out;
 }
 
-.project-card {
-  width: 395px;
-  height: 245px;
-  -webkit-clip-path: polygon(0% 20%, 15% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 100%);
-          clip-path: polygon(0% 20%, 15% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 100%);
-  border: lightblue 2px solid;
-  background: black;
+/* .project-card {
+    width: 395px;
+    height: 245px;
+    clip-path: polygon(0% 20%, 15% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 100%);
+    border: lightblue 2px solid;
+    background: black;
 }
-
+.link-button {
+    height: 20px;
+    width: 50px;
+    background: red;
+    margin-left: 300px;
+} */
 * {
   margin: 0;
   padding: 0;
