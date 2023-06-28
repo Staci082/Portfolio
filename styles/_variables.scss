@@ -20,7 +20,7 @@ $opacity: rgb(0,0,0,0.8);
   }
 
   @mixin form {
-    width: 31vw;
+    width: 300px;
     border: none;
     border-radius: 20px;
     outline: none;
@@ -32,6 +32,13 @@ $opacity: rgb(0,0,0,0.8);
     border: solid 3px #7E53A2;
   }
 
+  @mixin glass {
+background: rgba(255, 255, 255, 0.03);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(13.1px);
+-webkit-backdrop-filter: blur(13.1px);
+  }
 
 
 /*  MEDIA QUERIES */
