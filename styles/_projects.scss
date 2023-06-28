@@ -15,7 +15,7 @@ section#projects {
     height: 450px;
    /* clip-path: polygon(0% 20%, 15% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 100%);*/
    background-image: url("./images/border.png");
-   background-size: cover
+   background-size: cover;
 
     &:hover {
         transform: scale(1.2);
