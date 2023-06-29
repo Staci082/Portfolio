@@ -20,10 +20,10 @@
                 <div class="bar"></div>
             </div>
             <ul class="nav-links">
-                <li><a href="#home" class="section-link">home</a></li>
-                <li><a href="#about" class="section-link">about</a></li>
-                <li><a href="#projects" class="section-link">projects</a></li>
-                <li><a href="#contact" class="section-link">contact</a></li>
+                <li><a href="#home" class="section-link">_home</a></li>
+                <li><a href="#about" class="section-link">_about</a></li>
+                <li><a href="#projects" class="section-link">_projects</a></li>
+                <li><a href="#contact" class="section-link">_contact</a></li>
             </ul>
         </nav>
 
@@ -34,6 +34,7 @@
             <h1>johnson</h1>
         </div>
             <p class="lead">An aspiring Web Developer</p> 
+            
         </section>
 
         <section id="about">
@@ -66,27 +67,34 @@
         </section>
 
         <section id="contact">
-            <div>
+            
                 <div class="contact-container">
-                        
+                    <div class="contact-background">
+                        <hi class="contact-header">Commencing contact <br>sequence..</hi>
                         <div class="form-wrapper">
                             <div class="form-group" id="name-form">
-                                <label for="name">Your name</label>
+                                
                                 <input type="text" id="name" name="name"  required/>
+                                <span class="highlight"></span>
+                                <label for="name">Your name</label>
                             </div>
                             
                             <div class="form-group" id="email-form">
-                                <label for="email">Your e-mail</label>
+                                
                                 <input type="email" id="email" name="email"
                                 required pattern=".+@email\.com"/>
+                                <span class="highlight"></span>
+                                <label for="email">Your e-mail</label>
                             </div>
                             
                             <div class="form-group" id="message-form">
-                                <label for="message">Your message</label>
+                                
                                 <textarea id="message" name="message" required></textarea>
+                                <span class="highlight"></span>
+                                <label for="message">Your message</label>
                             </div>
                             
-                                <button type="submit"><i class="fa-solid fa-rocket fa-lg"></i>submit</button>
+                                <button type="submit"><i class="fa-solid fa-rocket fa-lg"></i>launch</button>
                             </form>
                             </div>
                         </div>

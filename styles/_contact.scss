@@ -1,70 +1,128 @@
 @use '../styles/variables' as *;
 
 section#contact {
-    background: url("./images/space.jpg") no-repeat center center/cover;;
+    background: url("./images/astroidsBtmBtm.png") no-repeat center center/cover;;
     @include flex;
   }
-  
+ 
   .contact-container {
     position: relative;
-    @include flex;
     height: 70vh;
-    width: 50vw;
+    width: 60vw;
     margin-top: 60px;
     background: $opacity;
     border-radius: 15px;
     color: white;
     @include glass;
   }
+  .contact-background {
+    position: relative;
+    @include flex;
+    height: inherit;
+    width: inherit;
+    background-image: url("./images/rocket2.png");
+    background-size: cover;
+    border-radius: 15px;
+    & .contact-header {
+      position: absolute;
+      top: 10%;
+      left: 8%;
+      font-size: 2.5rem;
+    }
+  }
   .form-wrapper {
+    position: absolute;
+    right: 0%;
     margin: 0 5vw 0 5vw;
 .form-group {
   @include flex;
   flex-direction: column;
+  position: relative; 
+  margin-bottom: 5vh; 
+  width: 300px;
 }
-  &label, input, textarea {
-  display: block; 
-  }
 
   & input, textarea, button{
     @include form;	
   }
-
+ 
   & label{
-    font-size: 1.5em;
-    margin-top: 20px;
-    padding-bottom: 5px;
+  color: white; 
+  font-size: 0.8rem;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 2px;
+  transition: 0.2s ease all; 
+  -moz-transition: 0.2s ease all; 
+  -webkit-transition: 0.2s ease all;
   }
 
   & textarea{
+    padding-top: 3vh;
     height: 12vh;	
     resize: none; 
     overflow: auto;
   }
 
   & input:focus, textarea:focus{
-    border: solid 3px #3AB5E1;	
+    outline: none;
+    opacity: 1;	
   }
-
+  input:focus ~ label, input:valid ~ label 		{
+    top: -25px;
+    color: #B1B1B1;
+    font-size: 0.8rem;
+    opacity: 1;
+  }
   & button {
-    height: 6vh;
-    width: 200px;
+    position: absolute;
     cursor: pointer;
     margin-top: 30px;
-    background-color: #160E26;
-    color: white;
     text-transform: uppercase;
     z-index: 1;
+    border: none;
+    right: -30%;
+    bottom: 0%;
     & i {
       margin-right: 1vw;
     }
-    &:hover{
-        background-color: #3AB5E1; 
-        border-color: white;   
+    &:hover {
+      color: white;
+      transform: scale(1.2);
     }
   }
   }
 
-  .form-group {
-    margin: 20px 20px;
+  .highlight {
+    position: absolute;
+    height: 60%; 
+    width: 100px; 
+    top: 25%; 
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
   }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+    from { background:#B1B1B1; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+    from { background:#B1B1B1; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+    from { background:#B1B1B1; }
+    to 	{ width:0; background:transparent; }
+  }
+  
