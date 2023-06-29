@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
 /*  MEDIA QUERIES */
 /* mixin for specific breakpoint (flexible) */
+section#about {
+  background: url("./images/astroidsMid.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  height: 70vh;
+  width: 70vw;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.8);
+}
+
 section#contact {
   background: url("./images/astroidsBtmBtm.png") no-repeat center center/cover;
   display: flex;
@@ -13,8 +31,6 @@ section#contact {
   height: 70vh;
   width: 60vw;
   margin-top: 60px;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 15px;
   color: white;
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.03);
@@ -33,12 +49,11 @@ section#contact {
   width: inherit;
   background-image: url("./images/rocket2.png");
   background-size: cover;
-  border-radius: 15px;
 }
 .contact-background .contact-header {
   position: absolute;
   top: 10%;
-  left: 8%;
+  left: 5%;
   font-size: 2.5rem;
 }
 
@@ -88,7 +103,7 @@ section#contact {
   resize: none;
   overflow: auto;
 }
-.form-wrapper input:focus ~ label, .form-wrapper input:valid ~ label {
+.form-wrapper input:focus ~ label, .form-wrapper input:valid ~ label, .form-wrapper textarea:focus, .form-wrapper textarea:valid ~ label {
   top: -25px;
   color: #B1B1B1;
   font-size: 0.8rem;
@@ -104,7 +119,7 @@ section#contact {
   bottom: 0%;
 }
 .form-wrapper button i {
-  margin-right: 1vw;
+  margin-left: 1vw;
 }
 .form-wrapper button:hover {
   color: white;
@@ -379,15 +394,6 @@ section h1 {
 
 section#home {
   background: url("./images/astroidsTop.png") no-repeat center center/cover;
-  box-shadow: inset 0px 35px 25px 25px rgba(0, 0, 0, 0.61);
-}
-
-section#about {
-  background: url("./images/astroidsMid.png") no-repeat center center/cover;
-}
-section#about .about-container {
-  height: 100vw;
-  width: 100vw;
 }
 
 #header {

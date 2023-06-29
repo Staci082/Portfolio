@@ -61,16 +61,8 @@ section h1 {
 
 section#home {
     background: url("./images/astroidsTop.png") no-repeat center center/cover;
-    box-shadow: inset 0px 35px 25px 25px rgba(0,0,0,0.61);
 }
-section#about {
-    background: url("./images/astroidsMid.png") no-repeat center center/cover;
-    .about-container {
-        height: 100vw;
-        width: 100vw;
-        
-    }
-}
+
 
 #header {
     text-shadow: 0px 15px 5px rgba(232, 221, 221, 0.1),
