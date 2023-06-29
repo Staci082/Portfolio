@@ -16,6 +16,7 @@ section#contact {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   color: white;
+  text-transform: uppercase;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
@@ -68,13 +69,11 @@ section#contact {
   border-bottom: 1px solid #B1B1B1;
   color: white;
   background: rgba(0, 0, 0, 0);
-  opacity: 0.5;
   transition: 0.2s ease;
 }
 .form-wrapper label {
   color: white;
   font-size: 0.8rem;
-  font-weight: normal;
   position: absolute;
   pointer-events: none;
   left: 5px;
@@ -89,10 +88,6 @@ section#contact {
   resize: none;
   overflow: auto;
 }
-.form-wrapper input:focus, .form-wrapper textarea:focus {
-  outline: none;
-  opacity: 1;
-}
 .form-wrapper input:focus ~ label, .form-wrapper input:valid ~ label {
   top: -25px;
   color: #B1B1B1;
@@ -103,7 +98,6 @@ section#contact {
   position: absolute;
   cursor: pointer;
   margin-top: 30px;
-  text-transform: uppercase;
   z-index: 1;
   border: none;
   right: -30%;
