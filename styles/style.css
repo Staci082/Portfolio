@@ -23,6 +23,7 @@ section#about {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   background: rgba(0, 0, 0, 0.8);
+  display: none;
 }
 
 .about-header {
@@ -327,12 +328,16 @@ section#projects {
   flex-wrap: wrap;
   height: 70vh;
   width: 85vw;
-  gap: 5vw;
+  gap: 8vw;
   border: yellow solid 2px;
+  padding: 50px 0 50px 0;
 }
 @media (max-width: 960px) {
   .project-wrapper {
-    height: 95vh;
+    height: 90vh;
+    width: 100vw;
+    gap: 8vw;
+    overflow: auto;
   }
 }
 
@@ -349,9 +354,8 @@ section#projects {
 }
 @media (max-width: 960px) {
   .project-card-border {
-    border: cyan solid 2px;
-    width: 30vw;
-    height: 30vh;
+    width: 300px;
+    height: 300px;
     border: cyan solid 2px;
     transform: skew(10deg);
   }
@@ -360,10 +364,14 @@ section#projects {
 #card2, #card4 {
   transform: skew(-20deg);
 }
+#card2:hover, #card4:hover {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
 @media (max-width: 960px) {
   #card2, #card4 {
-    width: 30vw;
-    height: 30vh;
+    width: 300px;
+    height: 300px;
     border: cyan solid 2px;
     transform: skew(-10deg);
   }

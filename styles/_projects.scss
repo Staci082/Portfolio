@@ -8,10 +8,14 @@ section#projects {
     flex-wrap: wrap;
     height: 70vh;
     width: 85vw;
-    gap: 5vw;
+    gap: 8vw;
     border: yellow solid 2px;
+    padding: 50px 0 50px 0;
     @include lg {
-        height: 95vh;
+        height: 90vh;
+        width: 100vw;
+        gap: 8vw;
+        overflow: auto;
     }
 }
 .project-card-border {
@@ -28,18 +32,21 @@ section#projects {
         transition: all 1s ease-in-out;
     }
     @include lg {
-        border: cyan solid 2px;
-        width: 30vw;
-        height: 30vh;
+        width: 300px;
+        height: 300px;
         border: cyan solid 2px;
         transform: skew(10deg);
     }
 }
 #card2, #card4 {
     transform: skew(-20deg);
+    &:hover {
+        transform: scale(1.2);
+        transition: all 1s ease-in-out;
+    }
     @include lg {
-        width: 30vw;
-        height: 30vh;
+        width: 300px;
+        height: 300px;
         border: cyan solid 2px;
         transform: skew(-10deg);
     }
