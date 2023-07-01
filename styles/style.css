@@ -254,7 +254,7 @@ nav .nav-links li a {
 nav .nav-links li a:hover {
   color: lightblue;
 }
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   nav .nav-links {
     position: fixed;
     height: 70vh;
@@ -272,7 +272,7 @@ nav.open {
   background: rgba(0, 0, 0, 0.9);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .nav-links.open {
     clip-path: circle(3000px at 90% -10%);
     -webkit-clip-path: circle(3000px at 90% -10%);
@@ -283,7 +283,7 @@ nav.open {
 .hamburger {
   display: none;
 }
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .hamburger {
     display: block;
     position: fixed;
@@ -324,37 +324,58 @@ section#projects {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
-  height: 50vh;
-  width: 80vw;
-  gap: 1vw;
+  flex-wrap: wrap;
+  height: 70vh;
+  width: 85vw;
+  gap: 5vw;
+  border: yellow solid 2px;
+}
+@media (max-width: 960px) {
+  .project-wrapper {
+    height: 95vh;
+  }
 }
 
 .project-card-border {
-  width: 550px;
-  height: 450px;
-  /* clip-path: polygon(0% 20%, 15% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 100%);*/
-  background-image: url("./images/border.png");
-  background-size: cover;
+  width: 30vw;
+  height: 20vh;
+  transform: skew(20deg);
+  border: red solid 1px;
+  border-radius: 10px 20px;
 }
 .project-card-border:hover {
   transform: scale(1.2);
   transition: all 1s ease-in-out;
 }
-
-/* .project-card {
-    width: 395px;
-    height: 245px;
-    clip-path: polygon(0% 20%, 15% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 100%);
-    border: lightblue 2px solid;
-    background: black;
+@media (max-width: 960px) {
+  .project-card-border {
+    border: cyan solid 2px;
+    width: 30vw;
+    height: 30vh;
+    border: cyan solid 2px;
+    transform: skew(10deg);
+  }
 }
+
+#card2, #card4 {
+  transform: skew(-20deg);
+}
+@media (max-width: 960px) {
+  #card2, #card4 {
+    width: 30vw;
+    height: 30vh;
+    border: cyan solid 2px;
+    transform: skew(-10deg);
+  }
+}
+
 .link-button {
-    height: 20px;
-    width: 50px;
-    background: red;
-    margin-left: 300px;
-} */
+  height: 20px;
+  width: 50px;
+  background: red;
+  margin-left: 300px;
+}
+
 .test {
   -webkit-clip-path: polygon(3% -1%, 49% -1%, 52% 3%, 76% 3%, 79% -1%, 96% -1%, 100% 3%, 99% 86%, 96% 99%, 33% 99%, 31% 94%, 11% 95%, 8% 99%, 3% 99%, 0% 95%, 0% 3%);
           clip-path: polygon(3% -1%, 49% -1%, 52% 3%, 76% 3%, 79% -1%, 96% -1%, 100% 3%, 99% 86%, 96% 99%, 33% 99%, 31% 94%, 11% 95%, 8% 99%, 3% 99%, 0% 95%, 0% 3%);
