@@ -37,7 +37,7 @@ section#contact {
     background-size: cover;
 
     & h2 {
-      font-size: 3vh;
+      font-size: 4vh;
       position: absolute;
       top: -15%;
       left: 10%;
@@ -93,7 +93,7 @@ section#contact {
 
   & input:focus ~ label, input:valid ~ label, textarea:focus, textarea:valid ~ label 		{
     top: -25px;
-    color: #B1B1B1;
+    color: $grey;
     font-size: 1rem;
     opacity: 1;
   }
@@ -136,15 +136,15 @@ section#contact {
   
   /* ANIMATIONS ================ */
   @-webkit-keyframes inputHighlighter {
-    from { background:#B1B1B1; }
+    from { background:$grey; }
     to 	{ width:0; background:transparent; }
   }
   @-moz-keyframes inputHighlighter {
-    from { background:#B1B1B1; }
+    from { background:$grey; }
     to 	{ width:0; background:transparent; }
   }
   @keyframes inputHighlighter {
-    from { background:#B1B1B1; }
+    from { background:$grey; }
     to 	{ width:0; background:transparent; }
   }
   
