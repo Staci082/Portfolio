@@ -5,8 +5,8 @@ section#projects {
 }
 .project-wrapper {
     @include flex;
-    flex-wrap: wrap;
-    height: 70vh;
+
+    height: auto;
     width: 85vw;
     gap: 8vw;
     border: yellow solid 2px;

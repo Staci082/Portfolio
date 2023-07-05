@@ -69,10 +69,10 @@ section#contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: relative;
   height: 70vh;
-  width: 60vw;
+  width: 70vw;
   margin-top: 60px;
   color: white;
   text-transform: uppercase;
@@ -82,7 +82,7 @@ section#contact {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
 }
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .contact-container {
     display: flex;
     align-items: center;
@@ -97,18 +97,24 @@ section#contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: inherit;
-  width: inherit;
+  height: 80%;
+  width: 60%;
+  margin-top: 10%;
+  bottom: 0;
+  left: 0;
   background-image: url("./images/rocket2.png");
   background-size: cover;
 }
-@media (max-width: 720px) {
+.contact-background h2 {
+  font-size: 3vh;
+  position: absolute;
+  top: -15%;
+  left: 10%;
+}
+@media (max-width: 960px) {
   .contact-background {
     display: none;
   }
-}
-.contact-background .contact-header {
-  font-size: 2.5rem;
 }
 
 .form-wrapper {
@@ -124,10 +130,10 @@ section#contact {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  margin-right: 2vw;
+  margin-right: 10vw;
   width: 300px;
 }
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .form-wrapper .form-group {
     margin-bottom: 5vh;
     margin-right: 0;
@@ -187,8 +193,15 @@ section#contact {
 }
 .form-wrapper button:hover {
   color: white;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
+@media (max-width: 960px) {
+  .form-wrapper button {
+    font-size: 1.2rem;
+    margin-top: -20px;
+  }
+}
+
 .highlight {
   position: absolute;
   height: 60%;
@@ -349,8 +362,7 @@ section#projects {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  height: 70vh;
+  height: auto;
   width: 85vw;
   gap: 8vw;
   border: yellow solid 2px;
