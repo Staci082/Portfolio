@@ -1,7 +1,7 @@
 @use '../styles/variables' as *;
 
 section#contact {
-    background: $background;
+    
     @include flex;
     
   }
@@ -19,7 +19,8 @@ section#contact {
     text-transform: uppercase;
 
     @include glass;
-
+    background: rgb(0,255,255);
+    background: radial-gradient(circle, rgba(0,255,255,0.2) 0%, rgba(14,11,14,0.8687850140056023) 80%);
     @include lg {
       @include flex;
       flex-direction: column;

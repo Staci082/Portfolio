@@ -52,7 +52,7 @@ window.onload = function () {
         return Math.floor(Math.random() * 4 + 1);
     }
 
-    function move(el, direction, step) {
+    function move(direction, step) {
         switch (direction) {
             case directions.left: {
                 if (target_pos.left < max_width) {

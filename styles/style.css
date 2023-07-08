@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Unica+One&display=swap");
 /*  MEDIA QUERIES */
 /* mixin for specific breakpoint (flexible) */
 section#skills {
@@ -345,7 +346,6 @@ section#skills {
 }
 
 section#contact {
-  background: rgb(14, 11, 14);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,6 +368,8 @@ section#contact {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
+  background: rgb(0, 255, 255);
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, rgba(14, 11, 14, 0.868785014) 80%);
 }
 @media (max-width: 960px) {
   .contact-container {
@@ -430,7 +432,7 @@ section#contact {
   margin-bottom: 5vh;
 }
 .form-wrapper input, .form-wrapper textarea, .form-wrapper button {
-  font-family: "Gugi";
+  font-family: "Unica One";
   text-transform: uppercase;
   font-size: 0.8rem;
   height: 25px;
@@ -517,7 +519,7 @@ input:focus ~ .highlight {
 nav {
   position: fixed;
   top: 0;
-  height: 10vh;
+  height: 7vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -538,7 +540,7 @@ nav .nav-links {
 nav .nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 720px) {
   nav .nav-links li a {
@@ -635,20 +637,32 @@ section#projects {
 }
 
 .card {
+  position: relative;
   justify-self: center;
   cursor: pointer;
-  background-color: #1c1b29;
+  background: rgb(0, 255, 255);
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, rgba(14, 11, 14, 0.868785014) 85%);
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
   height: 300px;
   width: 400px;
-  border: yellow solid 1px;
   z-index: 2;
 }
 @media (max-width: 960px) {
   .card {
     width: 300px;
   }
+}
+
+.card-text {
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 80%;
+  width: 100%;
+  bottom: 0;
+  border-bottom: 20px;
+  background: rgb(36, 29, 36);
 }
 
 * {
@@ -665,8 +679,8 @@ html {
 body {
   background: rgb(14, 11, 14);
   text-transform: uppercase;
-  font-family: "Gugi";
-  color: #faf5f5;
+  font-family: "Unica One";
+  color: #0ff;
   z-index: 2;
   height: 100vh;
   width: 100vw;
@@ -678,18 +692,14 @@ body {
   min-width: 100%;
 }
 
-.lead {
-  font-size: 1.5rem;
-}
-
 .satellite {
   background: url("./images/satellite1.png") no-repeat center center/cover;
   height: 30px;
   width: 40px;
   position: relative;
-  transition: all 30s linear;
+  transition: all 3s linear;
   z-index: 999;
-  animation: rotation 30s infinite;
+  animation: rotation 2s infinite;
 }
 @keyframes rotation {
   100% {
@@ -701,20 +711,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  scroll-snap-align: start;
   text-align: center;
   width: 100vw;
   height: 100vh;
   /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7); */
 }
-
-section h1 {
-  text-transform: uppercase;
-  font-family: "Gugi";
-  color: #faf5f5;
-  z-index: 2;
-  font-size: 4rem;
-  z-index: 2;
+@media (max-width: 480px) {
+  section {
+    scroll-snap-align: none;
+    /* use content so we can choose properties when using the mixin instead of hardcoding */
+  }
 }
 
 section#home {
@@ -731,6 +737,22 @@ section#home:after {
   right: 0;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(14, 11, 14) 100%);
   height: 80%;
+  height: 30%;
+}
+section#home h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background: linear-gradient(270deg, #ff0, #0ff);
+  font-size: 10rem;
+  z-index: 2;
+  font-family: "Monoton";
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 1s ease-out;
+}
+section#home .lead {
+  margin-top: 5vh;
 }
 
 .header {
@@ -756,6 +778,15 @@ section#home:after {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.hex-detail {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  height: 40vh;
+  width: auto;
+  z-index: 1;
 }
 
 #title {
