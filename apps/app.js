@@ -1,5 +1,22 @@
-// make satellite move randomly around
 
+
+window.onscroll = function() {myFunction()};
+
+const header = document.querySelector(".header");
+const sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.scrollY > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+
+
+// make satellite move randomly around
 
 window.onload = function () {
     var max_width = window.innerWidth;

@@ -2,10 +2,22 @@
 /*  MEDIA QUERIES */
 /* mixin for specific breakpoint (flexible) */
 section#about {
-  background: url("./images/astroidsMid.png") no-repeat center center/cover;
+  height: 120vh;
+  position: relative;
+  background: rgb(14, 11, 14);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+section#about:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("./images/nebula-fixed.jpg") no-repeat center center/cover;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(14, 11, 14) 100%);
+  height: 30%;
 }
 
 .about-container {
@@ -59,7 +71,7 @@ section#about {
 }
 
 section#contact {
-  background: url("./images/astroidsBtmBtm.png") no-repeat center center/cover;
+  background: rgb(14, 11, 14);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,6 +83,8 @@ section#contact {
   justify-content: center;
   justify-content: flex-end;
   position: relative;
+  background: url("./images/nebulabig.jpg") no-repeat center center/cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
   height: 70vh;
   width: 70vw;
   margin-top: 60px;
@@ -355,7 +369,7 @@ nav.open {
 }
 
 section#projects {
-  background: url("./images/astroidsBtm.png") no-repeat center center/cover;
+  background: rgb(14, 11, 14);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -451,7 +465,7 @@ html {
 }
 
 body {
-  background: rgb(5, 5, 5);
+  background: rgb(14, 11, 14);
   text-transform: uppercase;
   font-family: "Gugi";
   color: #faf5f5;
@@ -476,7 +490,7 @@ body {
   width: 40px;
   position: relative;
   transition: all 30s linear;
-  z-index: 1;
+  z-index: 999;
   animation: rotation 30s infinite;
 }
 @keyframes rotation {
@@ -507,9 +521,36 @@ section h1 {
 }
 
 section#home {
-  background: url("./images/astroidsTop.png") no-repeat center center/cover;
+  position: relative;
+  background: url("./images/nebula.jpg") no-repeat center center/cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
 }
 
-#header {
+.header {
+  position: absolute;
+  height: 20vh;
+  width: 100vw;
+  bottom: 0;
+  background: url("./images/nebula.jpg") no-repeat bottom center/cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
+  z-index: 900;
+}
+.header:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(14, 11, 14) 100%);
+  height: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#title {
   text-shadow: 0px 15px 5px rgba(232, 221, 221, 0.1), 10px 20px 5px rgba(219, 210, 210, 0.05), -10px 20px 5px rgba(240, 202, 202, 0.05);
 }/*# sourceMappingURL=style.css.map */
