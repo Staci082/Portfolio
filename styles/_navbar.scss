@@ -20,14 +20,14 @@ nav {
         margin-right: 2vw;
         z-index: 3;
             li a {
-                color: white;    
+                color: $cyan;
                 text-decoration: none;
                 font-size: 1.5rem;
                 @include md {
                     font-size: 3rem;
                 }
                 &:hover {
-                    color: lightblue;
+                    color: $pink;
                 }
             }
         @include lg {

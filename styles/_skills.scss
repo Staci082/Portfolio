@@ -4,6 +4,12 @@ section#skills {
     position: relative;
     background: $background;
     @include flex;
+    flex-direction: column;
+    & h2 {
+      position: absolute;
+      top: -40%;
+
+    }
 }
 
 .skills-container {
@@ -11,9 +17,6 @@ section#skills {
     justify-content: space-between;
     height: 80vh;
     width: 80vw;
-    --s: 100px;  /* size  */
-    --m: 4px;    /* margin */
-    --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
 @include lg {
     justify-content: center;
 }
@@ -109,11 +112,12 @@ $speed: 8s;
 
 
 .fun-container {
+  z-index: 3;
   position: relative;
   transform-style: preserve-3d;
   animation: rotate $speed * 2.7 infinite linear;
-    margin-bottom: -40vh;
-    margin-right: 20vw;
+    top: -5%;
+    right: -35%;
   @keyframes rotate {
     from { transform: rotatex(0deg) rotateY(0deg) rotateZ(0deg); }
     to { transform: rotatex(360deg) rotateY(720deg) rotateZ(360deg); }

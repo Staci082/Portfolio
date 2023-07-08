@@ -8,6 +8,11 @@ section#skills {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+section#skills h2 {
+  position: absolute;
+  top: -40%;
 }
 
 .skills-container {
@@ -17,9 +22,6 @@ section#skills {
   justify-content: space-between;
   height: 80vh;
   width: 80vw;
-  --s: 100px; /* size  */
-  --m: 4px; /* margin */
-  --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
 }
 @media (max-width: 960px) {
   .skills-container {
@@ -123,11 +125,12 @@ section#skills {
 }
 
 .fun-container {
+  z-index: 3;
   position: relative;
   transform-style: preserve-3d;
   animation: rotate 21.6s infinite linear;
-  margin-bottom: -40vh;
-  margin-right: 20vw;
+  top: -5%;
+  right: -35%;
 }
 @keyframes rotate {
   from {
@@ -538,7 +541,7 @@ nav .nav-links {
   z-index: 3;
 }
 nav .nav-links li a {
-  color: white;
+  color: #0ff;
   text-decoration: none;
   font-size: 1.5rem;
 }
@@ -548,7 +551,7 @@ nav .nav-links li a {
   }
 }
 nav .nav-links li a:hover {
-  color: lightblue;
+  color: #f0f;
 }
 @media (max-width: 960px) {
   nav .nav-links {
@@ -687,6 +690,11 @@ body {
   overflow-x: hidden;
 }
 
+h2 {
+  font-size: 3rem;
+  transition: all 1.5s ease-out;
+}
+
 .container {
   min-height: 100%;
   min-width: 100%;
@@ -740,10 +748,8 @@ section#home:after {
   height: 30%;
 }
 section#home h1 {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  background: linear-gradient(270deg, #ff0, #0ff);
+  background: linear-gradient(200deg, #ff0 10%, #0ff 90%);
+  -webkit-text-fill-color: transparent;
   font-size: 10rem;
   z-index: 2;
   font-family: "Monoton";
@@ -751,7 +757,7 @@ section#home h1 {
   -webkit-background-clip: text;
   transition: all 1s ease-out;
 }
-section#home .lead {
+section#home h2 {
   margin-top: 5vh;
 }
 
@@ -780,15 +786,14 @@ section#home .lead {
   width: 100%;
 }
 
-.hex-detail {
-  position: absolute;
-  top: 5%;
-  right: 3%;
-  height: 40vh;
-  width: auto;
-  z-index: 1;
-}
-
+/*.hex-detail {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    height: 40vh;
+    width: auto;
+    z-index: 1;
+}*/
 #title {
-  text-shadow: 0px 15px 5px rgba(232, 221, 221, 0.1), 10px 20px 5px rgba(219, 210, 210, 0.05), -10px 20px 5px rgba(240, 202, 202, 0.05);
+  text-shadow: 0px 5px 5px rgba(33, 33, 33, 0.1), 10px 20px 5px rgba(52, 49, 49, 0.05), -10px 20px 5px rgba(27, 26, 26, 0.05);
 }/*# sourceMappingURL=style.css.map */
