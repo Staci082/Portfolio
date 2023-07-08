@@ -14,7 +14,9 @@ section#skills {
     --s: 100px;  /* size  */
     --m: 4px;    /* margin */
     --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
-
+@include lg {
+    justify-content: center;
+}
 }
 
 .grid {
@@ -22,12 +24,15 @@ section#skills {
     position: relative;
     @include flex;
     flex-wrap: wrap;
+    @include xl {
+        width: 70%;
+    }
 }
 .grid .hex {
     @include flex;
     position: relative;
-    width: 150px;
-    height: 180px;
+    width: 100px;
+        height: 110px;
     margin: 10px 20px 10px;
     &:before {
         content: "";
@@ -43,6 +48,7 @@ section#skills {
         opacity: 0.8;
         transform: scale(0.8);
     }
+
 }
 .grid .hex .shape {
     position: absolute;
@@ -106,13 +112,13 @@ $speed: 8s;
   position: relative;
   transform-style: preserve-3d;
   animation: rotate $speed * 2.7 infinite linear;
-    margin-top: 30vh;
-    margin-right: 10vw;
+    margin-bottom: -40vh;
+    margin-right: 20vw;
   @keyframes rotate {
     from { transform: rotatex(0deg) rotateY(0deg) rotateZ(0deg); }
     to { transform: rotatex(360deg) rotateY(720deg) rotateZ(360deg); }
   }
-@include md {
+@include lg {
     display: none;
 }
 }

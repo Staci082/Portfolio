@@ -20,6 +20,11 @@ section#skills {
   --m: 4px; /* margin */
   --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
 }
+@media (max-width: 960px) {
+  .skills-container {
+    justify-content: center;
+  }
+}
 
 .grid {
   width: 50%;
@@ -29,14 +34,19 @@ section#skills {
   justify-content: center;
   flex-wrap: wrap;
 }
+@media (max-width: 1190px) {
+  .grid {
+    width: 70%;
+  }
+}
 
 .grid .hex {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 150px;
-  height: 180px;
+  width: 100px;
+  height: 110px;
   margin: 10px 20px 10px;
 }
 .grid .hex:before {
@@ -115,8 +125,8 @@ section#skills {
   position: relative;
   transform-style: preserve-3d;
   animation: rotate 21.6s infinite linear;
-  margin-top: 30vh;
-  margin-right: 10vw;
+  margin-bottom: -40vh;
+  margin-right: 20vw;
 }
 @keyframes rotate {
   from {
@@ -126,7 +136,7 @@ section#skills {
     transform: rotatex(360deg) rotateY(720deg) rotateZ(360deg);
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .fun-container {
     display: none;
   }
@@ -347,8 +357,6 @@ section#contact {
   justify-content: center;
   justify-content: flex-end;
   position: relative;
-  background: url("./images/nebulabig.jpg") no-repeat center center/cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
   height: 70vh;
   width: 70vw;
   margin-top: 10vh;
