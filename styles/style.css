@@ -15,14 +15,14 @@ section#skills {
   justify-content: center;
   justify-content: space-between;
   height: 80vh;
-  width: 60vw;
+  width: 80vw;
   --s: 100px; /* size  */
   --m: 4px; /* margin */
   --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
 }
 
 .grid {
-  width: 60%;
+  width: 50%;
   position: relative;
   display: flex;
   align-items: center;
@@ -38,9 +38,6 @@ section#skills {
   width: 150px;
   height: 180px;
   margin: 10px 20px 10px;
-}
-.grid .hex img {
-  width: 120%;
 }
 .grid .hex:before {
   content: "";
@@ -71,6 +68,37 @@ section#skills {
 
 .grid .hex:hover .shape {
   transform: translateY(-30px);
+}
+
+.grid .hex .shape img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid .hex .shape .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(45deg, #0ff, rgba(248, 53, 232, 0.8));
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.grid .hex:hover .shape .content {
+  opacity: 1;
 }
 
 *::before, *::after {
