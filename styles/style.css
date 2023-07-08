@@ -13,217 +13,66 @@ section#skills {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 80vh;
-  width: 80vw;
+  width: 60vw;
+  --s: 100px; /* size  */
+  --m: 4px; /* margin */
+  --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
 }
 
 .grid {
-  height: 90%;
-  width: 30%;
-  border: red solid 1px;
-  padding-top: 100px;
-}
-
-#hexGrid {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  list-style-type: none;
-}
-
-.hex {
+  width: 60%;
   position: relative;
-  visibility: hidden;
-  outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  transition: all 0.5s;
-  backface-visibility: hidden;
-  will-change: transform;
-  transition: all 0.5s;
-  font-size: 0.8rem;
-}
-
-.hex::after {
-  content: "";
-  display: block;
-  padding-bottom: 86.602%; /* =  100 / tan(60) * 1.5 */
-}
-
-.hexIn {
-  position: absolute;
-  width: 96%;
-  padding-bottom: 110.851%; /* =  width / sin(60) */
-  margin: 2%;
-  overflow: hidden;
-  visibility: hidden;
-  outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
-  transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
-  transition: all 0.5s;
-}
-
-.hexIn * {
-  position: absolute;
-  visibility: visible;
-  outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
-}
-
-.hexShape {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-  transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+  flex-wrap: wrap;
 }
 
-/*** HEX CONTENT **********************************************************************/
-.hex img {
-  left: -100%;
-  right: -100%;
-  width: auto;
-  height: 100%;
-  margin: 0 auto;
+.grid .hex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+  height: 180px;
+  margin: 10px 20px 10px;
 }
-
-.hex h1, .hex p {
-  width: 100%;
-  padding: 5%;
-  box-sizing: border-box;
-  font-weight: 300;
-  opacity: 0;
+.grid .hex img {
+  width: 120%;
 }
-
-#demo1 {
-  color: #F5CE95;
-  text-transform: capitalize;
-  text-align: center;
-  bottom: 50%;
-  padding-top: 50%;
-  font-size: 1.5em;
-  z-index: 1;
-}
-
-.hex h1:before, .hex h1:after {
-  display: inline-block;
-  margin: 0 0.5em;
-  width: 0.25em;
-  height: 0.03em;
-  background: #ffffff;
+.grid .hex:before {
   content: "";
-  vertical-align: middle;
-  transition: all 0.3s;
-  text-align: center;
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  height: 60px;
+  background: radial-gradient(rgba(0, 0, 0, 0.15), transparent, transparent);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.grid .hex:hover::before {
+  opacity: 0.8;
+  transform: scale(0.8);
 }
 
-#demo2 {
-  top: 50%;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.img {
+.grid .hex .shape {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  background-position: center center;
-  background-size: cover;
-  overflow: hidden;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 100%;
+  height: 100%;
+  background: deeppink;
+  -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+          clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  transition: 0.5s;
 }
 
-.img:before, .img:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  opacity: 0;
-  transition: opacity 0.5s;
+.grid .hex:hover .shape {
+  transform: translateY(-30px);
 }
 
-.img:before {
-  background: rgba(22, 103, 137, 0.3);
-}
-
-.img:after {
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);
-}
-
-/*** HOVER EFFECT  **********************************************************************/
-.hexShape:hover h1, .hexShape:focus h1,
-.hexShape:hover p, .hexShape:focus p {
-  opacity: 1;
-  transition: 0.8s;
-}
-
-.hexIn:hover .img:before,
-.hexIn:hover .img:after,
-.hexIn:hover .hexShape {
-  opacity: 1;
-}
-
-/*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
-@media (min-width: 1201px) { /* <- 5-4  hexagons per row */
-  #hexGrid {
-    padding-bottom: 4.4%;
-  }
-  .hex {
-    width: 20%; /* = 100 / 5 */
-  }
-  .hex:nth-child(9n+6) { /* first hexagon of even rows */
-    margin-left: 10%; /* = width of .hex / 2  to indent even rows */
-  }
-}
-@media (max-width: 1200px) and (min-width: 901px) { /* <- 4-3  hexagons per row */
-  #hexGrid {
-    padding-bottom: 5.5%;
-    font-size: 13px;
-  }
-  .hex {
-    width: 25%; /* = 100 / 4 */
-  }
-  .hex:nth-child(7n+5) { /* first hexagon of even rows */
-    margin-left: 12.5%; /* = width of .hex / 2  to indent even rows */
-  }
-}
-@media (max-width: 900px) and (min-width: 601px) { /* <- 3-2  hexagons per row */
-  #hexGrid {
-    padding-bottom: 7.4%;
-    font-size: 14px;
-  }
-  .hex {
-    width: 33.333%; /* = 100 / 3 */
-  }
-  .hex:nth-child(5n+4) { /* first hexagon of even rows */
-    margin-left: 16.666%; /* = width of .hex / 2  to indent even rows */
-  }
-}
-@media (max-width: 600px) { /* <- 2-1  hexagons per row */
-  #hexGrid {
-    padding-bottom: 11.2%;
-    font-size: 12px;
-  }
-  .hex {
-    width: 50%; /* = 100 / 3 */
-  }
-  .hex:nth-child(3n+3) { /* first hexagon of even rows */
-    margin-left: 25%; /* = width of .hex / 2  to indent even rows */
-  }
-}
-@media (max-width: 400px) {
-  #hexGrid {
-    font-size: 8px;
-  }
-}
 *::before, *::after {
   padding: 0;
   margin: 0 auto;
@@ -233,7 +82,9 @@ section#skills {
 .fun-container {
   position: relative;
   transform-style: preserve-3d;
-  animation: rotate 13.5s infinite linear;
+  animation: rotate 21.6s infinite linear;
+  margin-top: 30vh;
+  margin-right: 10vw;
 }
 @keyframes rotate {
   from {
@@ -241,6 +92,11 @@ section#skills {
   }
   to {
     transform: rotatex(360deg) rotateY(720deg) rotateZ(360deg);
+  }
+}
+@media (max-width: 720px) {
+  .fun-container {
+    display: none;
   }
 }
 
@@ -252,37 +108,37 @@ section#skills {
   transform: rotate(0deg) translateX(150px);
 }
 .pole:nth-child(1) > div::before {
-  animation-delay: -0.4166666667s;
+  animation-delay: -0.6666666667s;
 }
 .pole:nth-child(2) {
   transform: rotate(60deg) translateX(150px);
 }
 .pole:nth-child(2) > div::before {
-  animation-delay: -1.25s;
+  animation-delay: -2s;
 }
 .pole:nth-child(3) {
   transform: rotate(120deg) translateX(150px);
 }
 .pole:nth-child(3) > div::before {
-  animation-delay: -2.0833333333s;
+  animation-delay: -3.3333333333s;
 }
 .pole:nth-child(4) {
   transform: rotate(180deg) translateX(150px);
 }
 .pole:nth-child(4) > div::before {
-  animation-delay: -2.9166666667s;
+  animation-delay: -4.6666666667s;
 }
 .pole:nth-child(5) {
   transform: rotate(240deg) translateX(150px);
 }
 .pole:nth-child(5) > div::before {
-  animation-delay: -3.75s;
+  animation-delay: -6s;
 }
 .pole:nth-child(6) {
   transform: rotate(300deg) translateX(150px);
 }
 .pole:nth-child(6) > div::before {
-  animation-delay: -4.5833333333s;
+  animation-delay: -7.3333333333s;
 }
 .pole > div {
   position: absolute;
@@ -298,7 +154,7 @@ section#skills {
   width: 100%;
   height: 100px;
   opacity: 0.25;
-  animation: poleBack 1.6666666667s infinite linear, poleColor 5s infinite step-end reverse;
+  animation: poleBack 2.6666666667s infinite linear, poleColor 8s infinite step-end reverse;
 }
 @keyframes poleBack {
   0% {
@@ -361,7 +217,7 @@ section#skills {
   border: 2px solid var(--clr);
   transform: translate(-50%, -50%) rotateY(90deg) rotateX(120deg);
   transform-style: preserve-3d;
-  animation: neonRotate 5s infinite linear;
+  animation: neonRotate 8s infinite linear;
   box-shadow: 0 0 10px var(--clr) inset, 0 0 10px var(--clr);
 }
 .neon_a {
@@ -369,11 +225,11 @@ section#skills {
 }
 .neon_b {
   --clr: #f0f;
-  animation-delay: -1.6666666667s;
+  animation-delay: -2.6666666667s;
 }
 .neon_c {
   --clr: #ff0;
-  animation-delay: -3.3333333333s;
+  animation-delay: -5.3333333333s;
 }
 .neon > div {
   position: absolute;
