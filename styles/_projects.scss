@@ -30,6 +30,7 @@ section#projects {
     height: 300px;
     width: 400px;
     border: yellow solid 1px;
+    z-index: 2;
     @include lg {
         width: 300px;
     }

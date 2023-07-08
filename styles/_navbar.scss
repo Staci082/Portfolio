@@ -12,12 +12,14 @@ nav {
     .nav-links {
         display: flex;
         list-style: none;
-        width: 30%;
+        width: 100%;
         height: 100%;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+        gap: 50px;
         margin-left: auto;
         margin-right: 2vw;
+        z-index: 3;
             li a {
                 color: white;    
                 text-decoration: none;
