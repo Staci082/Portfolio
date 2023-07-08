@@ -3,76 +3,34 @@
 section#projects {
     background: $background;
     @include flex;
+    height: 100vh;
+    display: grid;
+    justify-self: center;
+    overflow-y: scroll;
+    overflow-x: hidden; 
 }
 
 .project-wrapper {
-    @include flex;
-    flex-wrap: wrap;
-    column-gap: 10vh;
     height: 80vh;
-    width: 90vw;
-    @include md {
-        border: yellow solid 1px;
-    }
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    justify-content: center;
+    padding: 50px;
+    margin: 10vh 5vw 0 5vw;
+    grid-gap: 40px;
 }
-.project-card {
-    position: relative;
-    height: 30vh;
-    width: 30vw;
-    border-radius: 5px;
+.card {
+    justify-self: center;
     cursor: pointer;
-    background-size: cover;
-    & .front {
-                transform: rotateY(0deg);
-                height: inherit;
-                width: inherit;
-                background-size: cover;
-                box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5),
-        rgba(9, 9, 9, 0.4) 0px 0px 0px 2px,
-        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px;
-        & .card-title {
-            width: inherit;
-            position: absolute;
-            bottom: 2%;
-            font-size: 2rem;
-            text-align: center;
-            text-shadow: 3px 4px 7px rgba(98, 98, 98, 0.8);
-        }
-        }
-    & .back {
-            @include flex;
-            background: $opacity;
-            opacity: 0;
-            width: 100%;
-            height: 100%;
-            transform: rotateY(-180deg);
-        }
-    &:hover {
-        box-shadow: none;
-
-        .front, .card-title {
-            display: none;
-            transition: 1.5s;
-        }
-        .back {
-            opacity: 1;
-            transform: rotateY(0deg);
-            transition: 1.5s;
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    height: 300px;
+    width: 400px;
+    border: yellow solid 1px;
+    @include lg {
+        width: 300px;
     }
-}
-
-}
-
-#card1 > .front {
-    background-image: url("./images/music-app.png");
-
-}
-#card2 > .front {
-    background-image: url("./images/vending.png");
-}
-#card3 > .front {
-    background-image: url("./images/gundam.png");
-}
-#card4 > .front {
-    background-image: url("./images/plant.png");
 }

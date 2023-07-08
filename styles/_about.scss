@@ -1,7 +1,6 @@
 @use '../styles/variables' as *;
 
 section#about {
-    height: 120vh;
     position: relative;
     background: $background;
     @include flex;
