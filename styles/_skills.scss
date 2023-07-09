@@ -5,11 +5,6 @@ section#skills {
     background: $background;
     @include flex;
     flex-direction: column;
-    & h2 {
-      position: absolute;
-      left: 5%;
-      top: 10%;
-    }
     & h3 {
       font-size: 1.5rem;
     }
@@ -18,9 +13,11 @@ section#skills {
 
 .skills-container {
     @include flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     height: 80vh;
     width: 80vw;
+    margin-top: 10vh;
 @include lg {
     justify-content: center;
 }
@@ -111,7 +108,7 @@ transform: translateY(-30px)
     box-sizing: border-box;
   }
   
-$size: 50px;
+$size: 60px;
 $speed: 8s;
 
 
@@ -122,7 +119,7 @@ $speed: 8s;
   position: relative;
   transform-style: preserve-3d;
   animation: rotate $speed * 2.7 infinite linear;
-    top: -10%;
+    top: -5%;
     right: -35%;
   @keyframes rotate {
     from { transform: rotatex(0deg) rotateY(0deg) rotateZ(0deg); }
