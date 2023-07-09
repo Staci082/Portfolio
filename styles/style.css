@@ -859,6 +859,7 @@ section#home h1 {
   -webkit-text-fill-color: transparent;
   font-size: 10rem;
   z-index: 2;
+  margin-top: -20vh;
   font-family: "Monoton";
   background-clip: text;
   -webkit-background-clip: text;
