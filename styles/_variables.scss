@@ -7,7 +7,7 @@ $font: "Unica One";
 $bigFont: "Monoton";
 $fontTextarea: "Ubuntu";
 $opacity: rgb(0,0,0,0.8);
-$background: rgb(14, 11, 14);
+$background: #0e0b0e;
 
 $grey: #B1B1B1;
 $cyan: #0ff;
@@ -27,7 +27,7 @@ $yellow: #ff0;
     align-items: center;
     justify-content: center;
   }
-  
+
 @mixin fade {
   content:""; 
         position: absolute; 
@@ -40,11 +40,11 @@ $yellow: #ff0;
 @mixin form {
     font-family: $font;
     text-transform: uppercase;
-    font-size: 0.8rem;
-    height: 25px;
+    font-size: 1.5rem;
+    height: 30px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 300px;
+    width: 400px;
     border: none;
     outline: none;
     border-bottom: 1px solid $grey;
