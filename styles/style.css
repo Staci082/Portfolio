@@ -130,7 +130,7 @@ section#skills h3 {
   position: relative;
   transform-style: preserve-3d;
   animation: rotate 21.6s infinite linear;
-  top: -5%;
+  top: -25%;
   right: -35%;
 }
 @keyframes rotate {
@@ -654,8 +654,8 @@ nav.open {
 }
 
 .hamburger .bar {
-  width: 30px;
-  height: 3px;
+  width: 40px;
+  height: 5px;
   margin: 5px;
   transition: all 0.3s ease-in-out;
   background-color: #fff;
@@ -825,8 +825,9 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
+  margin: 6vh 5vw;
   /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7); */
 }
 @media (max-width: 480px) {
@@ -837,10 +838,11 @@ section {
 }
 
 section#home {
+  border-radius: 20px;
   flex-direction: column;
   position: relative;
   background: url("./images/nebula.jpg") no-repeat center center/cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
 section#home:after {
   content: "";
@@ -850,7 +852,7 @@ section#home:after {
   right: 0;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #0e0b0e 100%);
   height: 80%;
-  height: 30%;
+  height: 80%;
 }
 section#home h1 {
   background: linear-gradient(200deg, #ff0 10%, #0ff 90%);
@@ -870,7 +872,7 @@ section#home h2 {
 .header {
   position: absolute;
   height: 8vh;
-  width: 100vw;
+  width: 90vw;
   bottom: 0;
   background: url("./images/nebula.jpg") no-repeat bottom center/cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
