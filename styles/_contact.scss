@@ -1,11 +1,12 @@
 @use '../styles/variables' as *;
 
 section#contact {
-    
     @include flex;
-    
+    @include lg {
+      margin-top: 50vh;   
+    }
   }
- 
+
   .contact-container {
     @include flex;
     justify-content: space-around;
@@ -142,7 +143,7 @@ $gravitation-constant: 6.673;
 $t: 1.92; // Changing this will alter the orbital speed
 $animation: orbit;
 
-$planet-color: #C25447;
+$planet-color: $yellow;
 $moon-color: #9E9E9E;
 
 // Orbit Function
@@ -172,13 +173,13 @@ $moon-color: #9E9E9E;
 // Planet Styles
 .planet {
   background: $planet-color;
-  box-shadow: inset -30px -30px 0px darken($planet-color, 2%);
+  box-shadow: inset -30px -30px 0px darken($planet-color, 8%);
   width: 200px;
   height: 200px;
   border-radius: 100%;
   &:before {
     content: '';
-    background: darken($planet-color, 5%);
+    background: darken($planet-color, 15%);
     border-radius: 100%;
     width: 20px;
     height: 20px;
@@ -187,7 +188,7 @@ $moon-color: #9E9E9E;
   }
   &:after {
     content: '';
-    background: darken($planet-color, 4%);
+    background: darken($planet-color, 12%);
     border-radius: 100%;
     width: 50px;
     height: 50px;

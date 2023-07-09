@@ -1,18 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap');
 
 $font2: "Gugi";
 $font: "Unica One";
-$bigFont: "Monoton";
+$bigFont: "Audiowide";
 $fontTextarea: "Ubuntu";
 $opacity: rgb(0,0,0,0.8);
 $background: #0e0b0e;
 
-$grey: #B1B1B1;
-$cyan: #0ff;
-$pink: #f0f;
-$yellow: #ff0;
+$grey: hsl(0, 0%, 69%);
+$cyan: hsl(180, 100%, 50%);
+$pink: hsl(300, 100%, 50%);
+$yellow: hsl(60, 100%, 50%);
 
 
 @mixin text {

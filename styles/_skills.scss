@@ -27,17 +27,14 @@ section#skills {
 }
 
 .grid {
-
-    width: 50%;
+    width:70vw;
     height: 60%;
     position: relative;
     @include flex;
     flex-wrap: wrap;
     @include xl {
-        width: 70%;
+        width: 90vw;
     }
-
-    
 }
 .grid .hex {
     @include flex;
@@ -59,7 +56,10 @@ section#skills {
         opacity: 0.8;
         transform: scale(0.8);
     }
-
+    @include lg {
+      width: 120px;
+    height: 130px;
+    }
 }
 .grid .hex .shape {
     position: absolute;
@@ -73,7 +73,7 @@ section#skills {
 
 }
 .grid .hex:hover .shape {
-transform: translateY(-30px)
+transform: translateY(-10px)
 }
 .grid .hex .shape img {
     position: absolute;
@@ -122,8 +122,8 @@ $speed: 8s;
   position: relative;
   transform-style: preserve-3d;
   animation: rotate $speed * 2.7 infinite linear;
-    top: -25%;
-    right: -35%;
+    top: -15%;
+    right: -30%;
   @keyframes rotate {
     from { transform: rotatex(0deg) rotateY(0deg) rotateZ(0deg); }
     to { transform: rotatex(360deg) rotateY(720deg) rotateZ(360deg); }

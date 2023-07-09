@@ -46,9 +46,8 @@ h2 {
 section {
     @include flex;
     text-align: center;
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
-    margin: 6vh 5vw;
     /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7); */
     @include sm {
         scroll-snap-align: none;
@@ -64,12 +63,12 @@ section#home {
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
     &:after {
         @include fade; 
-        height: 80%;
+        height: 60%;
         }
     &   h1 {
         background: linear-gradient(200deg, $yellow 10%, $cyan 90%);
         -webkit-text-fill-color: transparent;
-        font-size: 10rem;
+        font-size: 10vw;
         z-index: 2;
         margin-top: -20vh;
         font-family: $bigFont;

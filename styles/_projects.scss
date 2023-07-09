@@ -8,9 +8,6 @@ section#projects {
     display: grid;
     justify-self: center; 
     align-self: center ;
-    @include lg {
-     height: 250vh;   
-    }
 }
 
 .project-wrapper {
@@ -32,7 +29,6 @@ section#projects {
     box-shadow: 0 0 30px rgba(0,0,0,.8);
     height: 400px;
     width: 400px;
-    z-index: 2;
     & .card-img {
         height: 60%;
         position: relative;
