@@ -661,6 +661,18 @@ nav.open {
   background-color: #fff;
 }
 
+.hamburger .bar:nth-child(1) {
+  background: #f0f;
+}
+
+.hamburger .bar:nth-child(2) {
+  background: #0ff;
+}
+
+.hamburger .bar:nth-child(3) {
+  background: #ff0;
+}
+
 /* Cross animation for hamburger menu */
 .hamburger.open .bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
