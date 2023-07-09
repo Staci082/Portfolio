@@ -116,7 +116,7 @@ $speed: 8s;
   position: relative;
   transform-style: preserve-3d;
   animation: rotate $speed * 2.7 infinite linear;
-    top: -5%;
+    top: -10%;
     right: -35%;
   @keyframes rotate {
     from { transform: rotatex(0deg) rotateY(0deg) rotateZ(0deg); }

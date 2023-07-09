@@ -129,7 +129,7 @@ section#skills h2 {
   position: relative;
   transform-style: preserve-3d;
   animation: rotate 21.6s infinite linear;
-  top: -5%;
+  top: -10%;
   right: -35%;
 }
 @keyframes rotate {
@@ -609,7 +609,7 @@ nav .nav-links li a {
   }
 }
 nav .nav-links li a:hover {
-  color: #f0f;
+  color: #ff0;
 }
 @media (max-width: 960px) {
   nav .nav-links {
@@ -783,7 +783,7 @@ section#home {
   flex-direction: column;
   position: relative;
   background: url("./images/nebula.jpg") no-repeat center center/cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 }
 section#home:after {
   content: "";
@@ -811,7 +811,7 @@ section#home h2 {
 
 .header {
   position: absolute;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   bottom: 0;
   background: url("./images/nebula.jpg") no-repeat bottom center/cover;
