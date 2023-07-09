@@ -18,11 +18,14 @@ section#skills h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   height: 80vh;
   width: 80vw;
   margin-top: 10vh;
+}
+.skills-container h2 {
+  margin-bottom: 6vh;
 }
 @media (max-width: 960px) {
   .skills-container {

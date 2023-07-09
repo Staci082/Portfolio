@@ -13,11 +13,14 @@ section#skills {
 
 .skills-container {
     @include flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     height: 80vh;
     width: 80vw;
     margin-top: 10vh;
+    & h2 {
+      margin-bottom: 6vh;
+    }
 @include lg {
     justify-content: center;
 }
