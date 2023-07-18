@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
+/*  MEDIA QUERIES */
+/* mixin for specific breakpoint (flexible) */
+nav {
+  position: fixed;
+  top: 0;
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+nav .nav-links {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: 2vw;
+  z-index: 3;
+}
+nav .nav-links li a {
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+@media (max-width: 720px) {
+  nav .nav-links li a {
+    font-size: 3rem;
+  }
+}
+nav .nav-links li a:hover {
+  color: hsl(60, 100%, 50%);
+}
+@media (max-width: 960px) {
+  nav .nav-links {
+    position: fixed;
+    height: 70vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    pointer-events: none;
+  }
+}
+
+nav.open {
+  height: 100vh;
+  transition: all 1s ease-in-out;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 960px) {
+  .nav-links.open {
+    clip-path: circle(3000px at 90% -10%);
+    -webkit-clip-path: circle(3000px at 90% -10%);
+    pointer-events: all;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+@media (max-width: 960px) {
+  .hamburger {
+    display: block;
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+}
+
+.hamburger .bar {
+  width: 40px;
+  height: 5px;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.hamburger .bar:nth-child(1) {
+  background: hsl(300, 100%, 50%);
+}
+
+.hamburger .bar:nth-child(2) {
+  background: #00ffff;
+}
+
+.hamburger .bar:nth-child(3) {
+  background: hsl(60, 100%, 50%);
+}
+
+/* Cross animation for hamburger menu */
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(260, 90%, 4%);
+  text-transform: uppercase;
+  font-family: "Unica One";
+  color: #00ffff;
+  z-index: 2;
+}
+
+#home {
+  width: 100%;
+  padding: 20em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: red solid 2px;
+}
+
+#title {
+  text-align: center;
+}
+#title h1 {
+  font-size: clamp(3rem, 10vw, 8rem);
+}
+#title h2 {
+  font-size: clamp(1rem, 4vw, 3rem);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+@use "./index" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $background;
+    @include text;
+}
+
+#home {
+    width: 100%;
+    padding: 20em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: red solid 2px;
+}
+
+#title {
+    text-align: center;
+    h1 {
+        font-size: clamp(3rem, 10vw, 8rem);
+    }
+    h2 {
+        font-size: clamp(1rem, 4vw, 3rem);
+    }
+}
