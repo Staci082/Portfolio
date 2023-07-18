@@ -20,8 +20,7 @@ section#skills h3 {
   justify-content: center;
   flex-direction: column;
   justify-content: center;
-  height: 80vh;
-  width: 80vw;
+  border: red solid 2px;
   margin-top: 10vh;
 }
 .skills-container h2 {
@@ -34,8 +33,6 @@ section#skills h3 {
 }
 
 .grid {
-  width: 70vw;
-  height: 60%;
   position: relative;
   display: flex;
   align-items: center;
@@ -123,236 +120,6 @@ section#skills h3 {
   color: white;
   text-shadow: 2px 2px 2px black;
   transition: 0.5s;
-}
-
-*::before, *::after {
-  padding: 0;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.fun-container {
-  z-index: 3;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: rotate 21.6s infinite linear;
-  top: -15%;
-  right: -30%;
-}
-@keyframes rotate {
-  from {
-    transform: rotatex(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  to {
-    transform: rotatex(360deg) rotateY(720deg) rotateZ(360deg);
-  }
-}
-@media (max-width: 960px) {
-  .fun-container {
-    display: none;
-  }
-}
-
-.pole {
-  position: absolute;
-  transform-style: preserve-3d;
-}
-.pole:nth-child(1) {
-  transform: rotate(0deg) translateX(180px);
-}
-.pole:nth-child(1) > div::before {
-  animation-delay: -0.6666666667s;
-}
-.pole:nth-child(2) {
-  transform: rotate(60deg) translateX(180px);
-}
-.pole:nth-child(2) > div::before {
-  animation-delay: -2s;
-}
-.pole:nth-child(3) {
-  transform: rotate(120deg) translateX(180px);
-}
-.pole:nth-child(3) > div::before {
-  animation-delay: -3.3333333333s;
-}
-.pole:nth-child(4) {
-  transform: rotate(180deg) translateX(180px);
-}
-.pole:nth-child(4) > div::before {
-  animation-delay: -4.6666666667s;
-}
-.pole:nth-child(5) {
-  transform: rotate(240deg) translateX(180px);
-}
-.pole:nth-child(5) > div::before {
-  animation-delay: -6s;
-}
-.pole:nth-child(6) {
-  transform: rotate(300deg) translateX(180px);
-}
-.pole:nth-child(6) > div::before {
-  animation-delay: -7.3333333333s;
-}
-.pole > div {
-  position: absolute;
-  background-color: #111;
-  box-shadow: 0 0 30px #000 inset;
-  overflow: hidden;
-}
-.pole > div::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 120px;
-  opacity: 0.25;
-  animation: poleBack 2.6666666667s infinite linear, poleColor 8s infinite step-end reverse;
-}
-@keyframes poleBack {
-  0% {
-    transform: translate(-50%, calc(-50% + (var(--pb1) * 60px))) skewY(calc(var(--pb2) * 1));
-  }
-  100% {
-    transform: translate(-50%, calc(-50% - (var(--pb1) * 60px))) skewY(calc(var(--pb2) * -1));
-  }
-}
-@keyframes poleColor {
-  0% {
-    background-image: linear-gradient(#00ffff0, #00ffff, #00ffff0);
-  }
-  33.333% {
-    background-image: linear-gradient(hsl(300, 100%, 50%)0, hsl(300, 100%, 50%), hsl(300, 100%, 50%)0);
-  }
-  66.666% {
-    background-image: linear-gradient(hsl(60, 100%, 50%)0, hsl(60, 100%, 50%), hsl(60, 100%, 50%)0);
-  }
-}
-.pole > div:nth-child(1) {
-  width: 60px;
-  height: 243px;
-  transform: translate(-50%, -50%) translateZ(30px);
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 208.2px, 0 34.8px);
-          clip-path: polygon(100% 0, 100% 100%, 0 208.2px, 0 34.8px);
-  --pb1: 3.47;
-  --pb2: 55deg;
-}
-.pole > div:nth-child(2) {
-  width: 60px;
-  height: 243px;
-  transform: translate(-50%, -50%) rotateY(90deg) translateZ(30px);
-  --pb1: 4.05;
-  --pb2: 0deg;
-}
-.pole > div:nth-child(3) {
-  width: 60px;
-  height: 243px;
-  transform: translate(-50%, -50%) rotateY(180deg) translateZ(30px);
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 208.2px, 100% 34.8px);
-          clip-path: polygon(0 0, 0 100%, 100% 208.2px, 100% 34.8px);
-  --pb1: 3.47;
-  --pb2: -55deg;
-}
-.pole > div:nth-child(4) {
-  width: 60px;
-  height: 173.4px;
-  transform: translate(-50%, -50%) rotateY(270deg) translateZ(30px);
-  --pb1:2.89;
-  --pb2: 0deg;
-}
-
-.neon {
-  position: absolute;
-  top: 102px;
-  left: -180px;
-  width: 120px;
-  height: 120px;
-  border: 2px solid var(--clr);
-  transform: translate(-50%, -50%) rotateY(90deg) rotateX(120deg);
-  transform-style: preserve-3d;
-  animation: neonRotate 8s infinite linear;
-  box-shadow: 0 0 12px var(--clr) inset, 0 0 12px var(--clr);
-}
-.neon_a {
-  --clr: #00ffff;
-}
-.neon_b {
-  --clr: hsl(300, 100%, 50%);
-  animation-delay: -2.6666666667s;
-}
-.neon_c {
-  --clr: hsl(60, 100%, 50%);
-  animation-delay: -5.3333333333s;
-}
-.neon > div {
-  position: absolute;
-  background-color: var(--clr);
-  box-shadow: 0 0 12px var(--clr);
-}
-.neon > div:nth-child(1) {
-  top: -1px;
-  left: -1px;
-  width: calc(100% + 2px);
-  height: 2px;
-  transform: translateY(-50%) rotateX(90deg);
-}
-.neon > div:nth-child(2) {
-  top: -1px;
-  left: -2px;
-  width: 2px;
-  height: calc(100% + 2px);
-  transform: rotateY(90deg);
-}
-.neon > div:nth-child(3) {
-  bottom: -1px;
-  left: -1px;
-  width: calc(100% + 2px);
-  height: 2px;
-  transform: translateY(50%) rotateX(90deg);
-}
-.neon > div:nth-child(4) {
-  top: -1px;
-  right: -2px;
-  width: 2px;
-  height: calc(100% + 2px);
-  transform: rotateY(90deg);
-}
-@keyframes neonRotate {
-  0% {
-    top: -204px;
-    left: 0;
-    transform: translate(-50%, -50%) rotateY(90deg) rotateX(0);
-  }
-  16.666% {
-    top: -102px;
-    left: -180px;
-    transform: translate(-50%, -50%) rotateY(90deg) rotateX(60deg);
-  }
-  33.333% {
-    top: 102px;
-    left: -180px;
-    transform: translate(-50%, -50%) rotateY(90deg) rotateX(120deg);
-  }
-  50% {
-    top: 204px;
-    left: 0;
-    transform: translate(-50%, -50%) rotateY(90deg) rotateX(180deg);
-  }
-  66.666% {
-    top: 102px;
-    left: 180px;
-    transform: translate(-50%, -50%) rotateY(90deg) rotateX(240deg);
-  }
-  83.333% {
-    top: -102px;
-    left: 180px;
-    transform: translate(-50%, -50%) rotateY(90deg) rotateX(300deg);
-  }
-  100% {
-    top: -204px;
-    left: 0;
-    transform: translate(-50%, -50%) rotateY(90deg) rotateX(360deg);
-  }
 }
 
 section#contact {
@@ -737,7 +504,7 @@ section#projects {
 }
 .card .card-img img {
   width: 125%;
-  border-radius: 20px 20px 0 0;
+  border-radius: inherit;
 }
 .card .card-img:after {
   content: "";
@@ -778,6 +545,7 @@ section#projects {
   font-size: 1rem;
 }
 
+/* @forward "../styles/hexagon"; */
 * {
   margin: 0;
   padding: 0;
@@ -795,9 +563,6 @@ body {
   font-family: "Unica One";
   color: #00ffff;
   z-index: 2;
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 h2 {
