@@ -38,9 +38,9 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    & #title {
+        text-align: center;
+    }
 }
 
-#title {
-    text-align: center;
-}
 

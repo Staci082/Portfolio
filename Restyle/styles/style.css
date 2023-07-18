@@ -270,6 +270,127 @@ nav.open {
   font-size: 1rem;
 }
 
+#contact-container {
+  padding: 10em 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact-container .contact {
+  width: clamp(300px, 100%, 900px);
+  border: green solid 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 5em 0;
+  margin-top: 5em;
+}
+
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-wrapper .form-group {
+  text-transform: uppercase;
+  font-family: "Unica One";
+  color: #00ffff;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-direction: column;
+  position: relative;
+  width: clamp(300px, 100%, 900px);
+  margin-bottom: 2em;
+}
+.form-wrapper input {
+  margin-bottom: 1em;
+}
+.form-wrapper input, .form-wrapper textarea, .form-wrapper button {
+  font-family: "Unica One";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: clamp(300px, 100%, 500px);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid hsl(0, 0%, 69%);
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.2s ease;
+}
+.form-wrapper label {
+  width: inherit;
+  color: white;
+  position: absolute;
+  pointer-events: none;
+  text-align: left;
+  top: 0;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.form-wrapper textarea {
+  padding-top: 3em;
+  height: 8em;
+  resize: none;
+  overflow: auto;
+}
+.form-wrapper input:focus ~ label, .form-wrapper input:valid ~ label, .form-wrapper textarea:valid ~ label {
+  top: -25px;
+  color: hsl(0, 0%, 69%);
+  font-size: 1rem;
+  opacity: 1;
+}
+.form-wrapper textarea:valid {
+  color: white;
+  font-size: 1.5rem;
+}
+.form-wrapper button {
+  cursor: pointer;
+  margin-top: 30px;
+  z-index: 1;
+  border: none;
+}
+.form-wrapper button i {
+  margin-left: 1rem;
+}
+.form-wrapper button:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@keyframes inputHighlighter {
+  from {
+    background: hsl(0, 0%, 69%);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -312,7 +433,6 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-
-#title {
+#home-container #title {
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
