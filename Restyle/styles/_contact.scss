@@ -9,7 +9,6 @@
 
     .contact {
         width: clamp(300px, 100%, 900px);
-        border: green solid 2px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -29,63 +28,63 @@
         font-size: 1.5rem;
         flex-direction: column;
         position: relative; 
-        width: clamp(300px, 100%, 900px);
+        width: 300px;
         margin-bottom: 2em;
+    }
+    & input {
+        margin-bottom: 1em;
+    }
+
+    & input, textarea, button{
+        @include form;	
+    }
+
+    & label{
+        width: inherit;
+        color: white; 
+        position: absolute;
+        pointer-events: none;
+        text-align: left;
+        top: 0;
+        transition: 0.2s ease all; 
+        -moz-transition: 0.2s ease all; 
+        -webkit-transition: 0.2s ease all;
+    }
+
+    & textarea{
+        padding-top: 3em;
+        height: 8em;
+        resize: none; 
+        overflow: auto;
+    }
+
+    & input:focus ~ label, input:valid ~ label,  textarea:valid ~ label 		{
+        top: -25px;
+        color: $grey;
+        font-size: 1rem;
+        opacity: 1;
+    }
+
+    & textarea:valid {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    & button {
+        cursor: pointer;
+        margin-top: 30px;
+        border: none;
+        & i {
+            margin-left: 1rem;
+        }
+        &:hover {
+            color: white;
+            transform: scale(1.1);
+        }
+    }
 }
-  & input {
-    margin-bottom: 1em;
-  }
 
-  & input, textarea, button{
-    @include form;	
-  }
- 
-  & label{
-    width: inherit;
-  color: white; 
-  position: absolute;
-  pointer-events: none;
-  text-align: left;
-  top: 0;
-  transition: 0.2s ease all; 
-  -moz-transition: 0.2s ease all; 
-  -webkit-transition: 0.2s ease all;
-  }
-
-  & textarea{
-    padding-top: 3em;
-    height: 8em;
-    resize: none; 
-    overflow: auto;
-  }
-
-  & input:focus ~ label, input:valid ~ label,  textarea:valid ~ label 		{
-    top: -25px;
-    color: $grey;
-    font-size: 1rem;
-    opacity: 1;
-  }
-  & textarea:valid {
-    color: white;
-    font-size: 1.5rem;
-  }
-  & button {
-
-    cursor: pointer;
-    margin-top: 30px;
-    z-index: 1;
-    border: none;
-    & i {
-      margin-left: 1rem;
-    }
-    &:hover {
-      color: white;
-      transform: scale(1.1);
-    }
-  }
-  }
-
-  .highlight {
+.highlight {
     position: absolute;
     height: 60%; 
     width: 100px; 
@@ -93,26 +92,25 @@
     left: 0;
     pointer-events: none;
     opacity: 0.5;
-  }
-  
+}
+
   /* active state */
-  input:focus ~ .highlight {
+input:focus ~ .highlight {
     -webkit-animation:inputHighlighter 0.3s ease;
     -moz-animation:inputHighlighter 0.3s ease;
     animation:inputHighlighter 0.3s ease;
-  }
-  
+}
+
   /* ANIMATIONS ================ */
-  @-webkit-keyframes inputHighlighter {
+@-webkit-keyframes inputHighlighter {
     from { background:$grey; }
     to 	{ width:0; background:transparent; }
-  }
-  @-moz-keyframes inputHighlighter {
+}
+@-moz-keyframes inputHighlighter {
     from { background:$grey; }
     to 	{ width:0; background:transparent; }
-  }
-  @keyframes inputHighlighter {
+}
+@keyframes inputHighlighter {
     from { background:$grey; }
     to 	{ width:0; background:transparent; }
-  }
-  
+}
