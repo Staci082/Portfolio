@@ -206,6 +206,14 @@ nav.open {
   justify-content: center;
   gap: 3rem;
   padding: 5em 0;
+  margin-bottom: 2em;
+}
+#projects-container a i {
+  color: hsl(180, 100%, 50%);
+  transform: scale(2);
+}
+#projects-container a i:hover {
+  color: hsl(60, 100%, 50%);
 }
 
 .card {
@@ -402,7 +410,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(4rem, 10vw, 8rem);
+  font-size: clamp(6rem, 10vw, 10rem);
 }
 
 h2 {
@@ -425,8 +433,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("./images/nebula.jpg") no-repeat center center/cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  background: url("./images/planet-rings.png") no-repeat center center/cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
 }
 #home-container:after {
   content: "";
@@ -436,7 +444,7 @@ h4 {
   right: 0;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, hsl(260, 90%, 4%) 100%);
   height: 80%;
-  height: 60%;
+  height: 70%;
 }
 #home-container #title {
   text-align: center;

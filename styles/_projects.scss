@@ -14,6 +14,14 @@
         justify-content: center;
         gap: 3rem;
         padding: 5em 0;
+        margin-bottom: 2em;
+    }
+    & a i {
+        color: $cyan;
+        transform: scale(2);
+        &:hover {
+            color: $yellow;
+        }
     }
 }
 
@@ -83,3 +91,4 @@
     color: #a0a0a0;
     font-size: 1rem;
 }
+
