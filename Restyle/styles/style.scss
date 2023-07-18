@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
 body {
     background: $background;
     @include text;
@@ -23,9 +28,13 @@ h3 {
     font-size: clamp(3rem, 5vw, 4rem);
 }
 
+h4 {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
 #home-container {
     width: 100%;
-    padding: 20em 2rem;
+    padding: 25em 2rem;
     display: flex;
     justify-content: center;
     align-items: center;

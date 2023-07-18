@@ -2,14 +2,12 @@
 
 #skills-container {
     padding: 10em 2rem;
-    border: red solid 2px;
     text-align: center;
     display:flex;
     flex-direction: column;
     align-items: center;
 
     .skills {
-        border: green solid 2px;
         width: clamp(300px, 100%, 900px);
         display: flex;
         flex-wrap: wrap;
@@ -38,10 +36,6 @@
     &:hover::before {
         opacity: 0.8;
         transform: scale(0.8);
-    }
-    @include lg {
-      width: 120px;
-    height: 130px;
     }
 }
 
