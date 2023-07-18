@@ -186,7 +186,7 @@ nav.open {
   justify-content: center;
   padding: 10px;
   text-align: center;
-  background: linear-gradient(45deg, hsl(180, 100%, 50%), rgba(248, 53, 232, 0.7));
+  background: linear-gradient(45deg, hsl(180, 100%, 50%), rgba(248, 53, 232, 0.8));
   color: white;
   text-shadow: 2px 2px 2px black;
   transition: 0.5s;

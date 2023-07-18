@@ -70,7 +70,7 @@ transform: translateY(-10px)
     @include flex;
     padding: 10px;
     text-align: center;
-    background: linear-gradient(45deg, $cyan,rgba(248, 53, 232, 0.7));
+    background: linear-gradient(45deg, $cyan,rgba(248, 53, 232, 0.8));
     color: white;
     text-shadow: 2px 2px 2px black;
     transition: 0.5s;
