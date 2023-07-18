@@ -1,15 +1,13 @@
 @use "../styles/variables" as *;
 
 #projects-container {
-    border: red solid 2px;
     padding: 10em 2rem;
     text-align: center;
     display:flex;
     flex-direction: column;
     align-items: center;
 
-    .project-wrapper {
-        border: green solid 2px;
+    & .project-wrapper {
         width: clamp(300px, 100%, 1200px);
         display: flex;
         flex-wrap: wrap;
