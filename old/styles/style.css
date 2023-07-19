@@ -222,10 +222,30 @@ section#contact {
 
 /* active state */
 input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
   animation: inputHighlighter 0.3s ease;
 }
 
 /* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: hsl(0, 0%, 69%);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: hsl(0, 0%, 69%);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
 @keyframes inputHighlighter {
   from {
     background: hsl(0, 0%, 69%);
@@ -451,8 +471,7 @@ section#projects {
 .card .card-img {
   height: 60%;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   transform: rotateY(180deg);
 }
 .card .card-img img {
