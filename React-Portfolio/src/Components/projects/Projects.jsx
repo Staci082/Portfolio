@@ -1,41 +1,49 @@
-
+import { FaGithub } from "react-icons/fa6";
 
 function Projects() {
-  return (
-    
-    <section id="projects-container">
-            
-    <h3>projects</h3>
+    const projectList = [
+        {
+            id: "card1",
+            title: "Project title",
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
+            tech: ["sass, node.js, express.js, mongoDB"]
+        },
+        {
+            id: "card2",
+            title: "Project title",
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
+        },
+        {
+            id: "card3",
+            title: "Project title",
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
+        },
+    ];
 
-    <div className="projects-wrapper">
-        <card className="card" id="card1">
-            <div className="card-img"></div>
-            <div className="details">
-                <h4>project title</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.</p>
-            </div>
-        </card>
-        <card className="card" id="card2">
-            <div className="card-img"></div>
-            <div className="details">
-                <h4>project title</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.</p>
-            </div>
-        </card>
-        <card className="card" id="card3">
-            <div className="card-img"></div>
-            <div className="details">
-                <h4>project title</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.</p>
-            </div>
-    </card>
-    </div>
+    return (
+        <section id="projects-container">
+            <h3>projects</h3>
 
-    
-    <a target="_blank" rel="noreferrer" href="https://github.com/Staci082"><i className="fa-brands fa-github fa-2xl"></i></a> 
-    
-</section>
-  )
+            <div className="projects-wrapper">
+                {projectList.map((item) => (
+                    <card className="card" id={item.id}>
+                        <div className="card-img"></div>
+                        <div className="details">
+                            <h4>{item.title}</h4>
+                            <p>{item.desc}</p>
+
+                            <h4>Tech used:</h4>
+                                <p>{item.tech}</p>
+                        </div>
+                    </card>
+                ))}
+            </div>
+
+            <a className="github" target="_blank" rel="noreferrer" href="https://github.com/Staci082">
+                <FaGithub />
+            </a>
+        </section>
+    );
 }
 
-export default Projects
+export default Projects;

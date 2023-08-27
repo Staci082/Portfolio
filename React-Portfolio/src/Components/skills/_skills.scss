@@ -3,7 +3,7 @@
 
 
 #skills-container {
-  padding: 10rem 3rem;
+  padding: 5rem 3rem;
   text-align: center;
   display:flex;
   flex-direction: column;
@@ -17,11 +17,11 @@
       gap: 2rem;
       padding: 5em 0;
 
-      & h4 {
+      & .item-name {
           position: absolute;
-          bottom: -25px;
+          bottom: -3em;
           color: white;
-          text-shadow: 2px 2px 2px black;
+          font-weight: lighter;
       }
   }
 }

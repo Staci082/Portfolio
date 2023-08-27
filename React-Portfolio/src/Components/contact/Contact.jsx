@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
 
 const Contact = () => {
@@ -30,7 +31,10 @@ const Contact = () => {
     return (
         <>
             <section id="contact-container">
-                <form className="form-wrapper" ref={form} onSubmit={sendEmail}>
+
+        <h3 className="title">Contact me</h3>
+
+                <form className="form-wrapper" ref={form} onSubmit={sendEmail} autocomplete="off">
                     <div className="form-group" id="name-form">
                         <input
                             type="text"
@@ -64,7 +68,7 @@ const Contact = () => {
                     </div>
 
                     <button type="submit">
-                        launch<i className="fa-solid fa-rocket fa-lg"></i>
+                        launch<HiOutlineRocketLaunch className="rocket"/>
                     </button>
                 </form>
             </section>

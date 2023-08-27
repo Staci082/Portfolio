@@ -2,11 +2,15 @@
 @import '../../SassStyles/variables';
 
 #contact-container {
-    padding: 10em 3rem;
+    padding: 5em 3rem;
     text-align: center;
     display:flex;
     flex-direction: column;
     align-items: center;
+
+    .title {
+        margin-bottom: 1.5em;
+    }
 
     .contact {
         width: clamp(300px, 100%, 900px);
@@ -75,9 +79,8 @@
 
     & button {
         cursor: pointer;
-        margin-top: 30px;
         border: none;
-        & i {
+        & .rocket {
             margin-left: 1rem;
         }
         &:hover {

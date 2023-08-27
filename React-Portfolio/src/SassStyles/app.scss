@@ -15,6 +15,7 @@
   // scroll-snap-type: y mandatory;
   // scroll-behavior: smooth;
   background: $background;
+  @include text;
   margin: -10px;
   padding: 0;
 }

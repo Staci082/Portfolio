@@ -1,4 +1,5 @@
 function Skills() {
+    
     const skillsList = [
         {
             name: "HTML",
@@ -54,7 +55,7 @@ function Skills() {
                     <div className="shape" >
                         <img src={item.image} alt="" />
                     </div>
-                    <h4>{item.name}</h4>
+                    <h4 className="item-name">{item.name}</h4>
                 </div>
             ))}
 
