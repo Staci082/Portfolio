@@ -7,7 +7,7 @@ function Projects() {
             title: "Project title",
             image: "/images/music-app.png",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            tech: ["sass, node.js, express.js, mongoDB"],
+            tech: ["sass", "node.js", "express.js", "mongoDB"],
             website: ""
         },
         {
@@ -23,7 +23,7 @@ function Projects() {
             title: "Project title",
             image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            tech: ["sass, ejs, node.js, express.js, mongoDB"],
+            tech: ["sass", "ejs", "node.js", "express.js", "mongoDB", "something.js"],
             website: ""
         },
     ];
@@ -46,8 +46,8 @@ function Projects() {
 
                             <h4>Tech used:</h4>
                             <ul>
-                                {item.tech.map((tech) => {
-                                    <li>{tech}</li>
+                                {item.tech.map((tech, index) => {
+                                    return <li className="li" key={index}>{tech}</li>
                                 })}
                             </ul>
                             
