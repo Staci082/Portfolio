@@ -15,7 +15,7 @@ function Projects() {
             title: "Project title",
             image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            tech: ["sass, node.js, express.js, mongoDB"],
+            tech: ["tailwind", "react", "node.js", "express.js", "api"],
             website: ""
         },
         {
@@ -23,7 +23,7 @@ function Projects() {
             title: "Project title",
             image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            tech: ["sass, node.js, express.js, mongoDB"],
+            tech: ["sass, ejs, node.js, express.js, mongoDB"],
             website: ""
         },
     ];
@@ -34,7 +34,7 @@ function Projects() {
 
             <div className="projects-wrapper">
                 {projectList.map((item) => (
-                    <card className="card" id={item.id}>
+                    <div className="card" id={item.id} key={item.id}>
                         <div className="card-img"></div>
                         <div className="details">
                             <div className="title-container">
@@ -45,10 +45,15 @@ function Projects() {
                             <p>{item.desc}</p>
 
                             <h4>Tech used:</h4>
-                            <p>{item.tech}</p>
+                            <ul>
+                                {item.tech.map((tech) => {
+                                    <li>{tech}</li>
+                                })}
+                            </ul>
+                            
                             
                         </div>
-                    </card>
+                    </div>
                 ))}
             </div>
 

@@ -34,7 +34,7 @@ const Contact = () => {
 
         <h3 className="title">Contact me</h3>
 
-                <form className="form-wrapper" ref={form} onSubmit={sendEmail} autocomplete="off">
+                <form className="form-wrapper" ref={form} onSubmit={sendEmail} autoComplete="off">
                     <div className="form-group" id="name-form">
                         <input
                             type="text"
@@ -42,7 +42,7 @@ const Contact = () => {
                             name="user_name"
                             required
                         />
-                        <span className="highlight"></span>
+                        
                         <label htmlFor="name">Your name</label>
                     </div>
 
@@ -53,7 +53,7 @@ const Contact = () => {
                             name="user_email"
                             required
                         />
-                        <span className="highlight"></span>
+                    
                         <label htmlFor="email">Your e-mail</label>
                     </div>
 
@@ -63,7 +63,7 @@ const Contact = () => {
                             name="message"
                             required
                         ></textarea>
-                        <span className="highlight"></span>
+                        
                         <label htmlFor="message">Your message</label>
                     </div>
 

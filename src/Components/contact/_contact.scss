@@ -34,7 +34,7 @@
         position: relative; 
         width: inherit;
         margin-bottom: 2em;
-
+        background: $background;
     }
 
     & input {
@@ -87,35 +87,4 @@
             transform: scale(1.1);
         }
     }
-}
-
-.highlight {
-    position: absolute;
-    height: 60%; 
-    width: 100px; 
-    top: 25%; 
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5;
-}
-
-  /* active state */
-input:focus ~ .highlight {
-    -webkit-animation:inputHighlighter 0.3s ease;
-    -moz-animation:inputHighlighter 0.3s ease;
-    animation:inputHighlighter 0.3s ease;
-}
-
-  /* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-    from { background:$grey; }
-    to 	{ width:0; background:transparent; }
-}
-@-moz-keyframes inputHighlighter {
-    from { background:$grey; }
-    to 	{ width:0; background:transparent; }
-}
-@keyframes inputHighlighter {
-    from { background:$grey; }
-    to 	{ width:0; background:transparent; }
 }

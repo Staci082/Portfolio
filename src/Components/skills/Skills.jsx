@@ -45,6 +45,7 @@ function Skills() {
     ];
 
     return (
+        <>
         <section id="skills-container">
             
             <h3>exprience with</h3>
@@ -62,6 +63,7 @@ function Skills() {
 
             </div>
         </section>
+        </>
     );
 }
 
