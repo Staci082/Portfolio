@@ -1,38 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-h1 {
-  font-size: clamp(6rem, 10vw, 10rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
-h3 {
-  font-size: clamp(3rem, 5vw, 4rem);
-}
-
-h4 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
-}
 
 h1 {
   font-size: clamp(6rem, 10vw, 10rem);
@@ -49,43 +16,10 @@ h3 {
 h4 {
   font-size: clamp(1rem, 5vw, 1.2rem);
 }
+
 
 /*  MEDIA QUERIES */
 /* mixin for specific breakpoint (flexible) */
-h1 {
-  font-size: clamp(6rem, 10vw, 10rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
-h3 {
-  font-size: clamp(3rem, 5vw, 4rem);
-}
-
-h4 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
-}
-
-/*  MEDIA QUERIES */
-/* mixin for specific breakpoint (flexible) */
-h1 {
-  font-size: clamp(6rem, 10vw, 10rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
-h3 {
-  font-size: clamp(3rem, 5vw, 4rem);
-}
-
-h4 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
-}
-
 #contact-container {
   padding: 5em 3rem;
   text-align: center;
@@ -193,30 +127,10 @@ h4 {
 
 /* active state */
 input:focus ~ .highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  -moz-animation: inputHighlighter 0.3s ease;
   animation: inputHighlighter 0.3s ease;
 }
 
 /* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-  from {
-    background: hsl(0, 0%, 69%);
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-@-moz-keyframes inputHighlighter {
-  from {
-    background: hsl(0, 0%, 69%);
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
 @keyframes inputHighlighter {
   from {
     background: hsl(0, 0%, 69%);
@@ -226,40 +140,6 @@ input:focus ~ .highlight {
     background: transparent;
   }
 }
-h1 {
-  font-size: clamp(6rem, 10vw, 10rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
-h3 {
-  font-size: clamp(3rem, 5vw, 4rem);
-}
-
-h4 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
-}
-
-/*  MEDIA QUERIES */
-/* mixin for specific breakpoint (flexible) */
-h1 {
-  font-size: clamp(6rem, 10vw, 10rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
-h3 {
-  font-size: clamp(3rem, 5vw, 4rem);
-}
-
-h4 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -389,39 +269,6 @@ nav.open {
   color: white;
 }
 
-h1 {
-  font-size: clamp(6rem, 10vw, 10rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
-h3 {
-  font-size: clamp(3rem, 5vw, 4rem);
-}
-
-h4 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
-}
-
-/*  MEDIA QUERIES */
-/* mixin for specific breakpoint (flexible) */
-h1 {
-  font-size: clamp(6rem, 10vw, 10rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
-h3 {
-  font-size: clamp(3rem, 5vw, 4rem);
-}
-
-h4 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
-}
 
 #skills-container {
   padding: 5rem 3rem;
@@ -480,7 +327,8 @@ h4 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+          clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
   transition: 0.5s;
 }
 
@@ -494,41 +342,8 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-h1 {
-  font-size: clamp(6rem, 10vw, 10rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
-h3 {
-  font-size: clamp(3rem, 5vw, 4rem);
-}
-
-h4 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
-}
-
-/*  MEDIA QUERIES */
-/* mixin for specific breakpoint (flexible) */
-h1 {
-  font-size: clamp(6rem, 10vw, 10rem);
-}
-
-h2 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
-h3 {
-  font-size: clamp(3rem, 5vw, 4rem);
-}
-
-h4 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #projects-container {
@@ -557,7 +372,9 @@ h4 {
 }
 
 .card {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   position: relative;
   justify-self: center;
   border-radius: 20px;
@@ -575,7 +392,8 @@ h4 {
 .card .card-img {
   height: 60%;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   transform: rotateY(180deg);
   transition: all ease-in-out 0.8s;
 }
