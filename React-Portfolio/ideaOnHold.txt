@@ -1,4 +1,20 @@
 
+<!--    <div class="fun-container">
+                <div class="pole"><div></div><div></div><div></div><div></div></div>
+                <div class="pole"><div></div><div></div><div></div><div></div></div>
+                <div class="pole"><div></div><div></div><div></div><div></div></div>
+                <div class="pole"><div></div><div></div><div></div><div></div></div>
+                <div class="pole"><div></div><div></div><div></div><div></div></div>
+                <div class="pole"><div></div><div></div><div></div><div></div></div>
+                <div class="neon neon_a"><div></div><div></div><div></div><div></div></div>
+                <div class="neon neon_b"><div></div><div></div><div></div><div></div></div>
+                <div class="neon neon_c"><div></div><div></div><div></div><div></div></div>
+            </div>  --> 
+
+
+
+------------------------------CSS------------------------------
+
 $size: 50px;
 $speed: 5s;
 

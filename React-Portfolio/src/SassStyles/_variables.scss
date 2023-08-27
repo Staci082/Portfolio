@@ -1,13 +1,11 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
 
 $font: "Unica One";
 $bigFont: "Audiowide";
 $fontTextarea: "Ubuntu";
-$opacity: rgb(0,0,0,0.8);
-$background: hsl(255, 47%, 12%); 
+$opacity: rgb(0, 0, 0, 0.8);
+$background: hsl(255, 47%, 12%);
 
 $grey: hsl(0, 0%, 69%);
 $cyan: hsl(180, 100%, 50%);
@@ -15,23 +13,17 @@ $pink: hsl(300, 100%, 50%);
 $yellow: hsl(60, 100%, 50%);
 
 h1 {
-  font-size: clamp(6rem, 10vw, 10rem);
+    font-size: clamp(6rem, 10vw, 10rem);
 }
 
 h2 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 h3 {
-  font-size: clamp(3rem, 5vw, 4rem);
+    font-size: clamp(3rem, 5vw, 4rem);
 }
 
 h4 {
-  font-size: clamp(1rem, 5vw, 1.2rem);
+    font-size: clamp(1rem, 5vw, 1.2rem);
 }
-
-
-
-
-
-

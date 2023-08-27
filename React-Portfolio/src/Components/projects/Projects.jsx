@@ -1,22 +1,30 @@
-import { FaGithub } from "react-icons/fa6";
+import { FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 function Projects() {
     const projectList = [
         {
             id: "card1",
             title: "Project title",
+            image: "/images/music-app.png",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            tech: ["sass, node.js, express.js, mongoDB"]
+            tech: ["sass, node.js, express.js, mongoDB"],
+            website: ""
         },
         {
             id: "card2",
             title: "Project title",
+            image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
+            tech: ["sass, node.js, express.js, mongoDB"],
+            website: ""
         },
         {
             id: "card3",
             title: "Project title",
+            image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
+            tech: ["sass, node.js, express.js, mongoDB"],
+            website: ""
         },
     ];
 
@@ -29,11 +37,16 @@ function Projects() {
                     <card className="card" id={item.id}>
                         <div className="card-img"></div>
                         <div className="details">
+                            <div className="title-container">
                             <h4>{item.title}</h4>
+                            <a href="#" className="link-button"><FaArrowUpRightFromSquare/></a>
+                            </div>
+
                             <p>{item.desc}</p>
 
                             <h4>Tech used:</h4>
-                                <p>{item.tech}</p>
+                            <p>{item.tech}</p>
+                            
                         </div>
                     </card>
                 ))}
