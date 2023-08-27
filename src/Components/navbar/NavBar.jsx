@@ -1,17 +1,22 @@
 import { Link } from 'react-scroll'
+import { useState } from 'react'
 
 
 function NavBar() {
-    return (
-        <nav className="nav">
-            <div></div>
 
-            <div className="hamburger">
+    const [menuOpen, setMenuOpen] = useState(false)
+
+
+    return (
+        <>
+        <nav className={(menuOpen ? "open" : "" + " nav")}>
+
+            <div className={(menuOpen ? "open" : "" + " hamburger")}  onClick={() => setMenuOpen(!menuOpen)}>
                 <div className="bar"></div>
                 <div className="bar"></div>
                 <div className="bar"></div>
             </div>
-            <ul className="nav-links">
+            <ul className={(menuOpen ? "open" : "" + " nav-links")}>
                 <li>
                     <Link to="home-container" className="section-link" spy={true} smooth={true} offset={50} duration={500}>
                         _home
@@ -34,6 +39,7 @@ function NavBar() {
                 </li>
             </ul>
         </nav>
+        </>
     );
 }
 

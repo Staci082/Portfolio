@@ -1,5 +1,4 @@
 
-
 nav {
     position: fixed;
     top: 0;
@@ -19,7 +18,9 @@ nav {
         margin-left: auto;
         margin-right: 4rem;
         z-index: 3;
-        li .section-link {
+        
+
+        & li .section-link {
             cursor: pointer;
             color: $cyan;
             text-decoration: none;
@@ -43,14 +44,15 @@ nav.open {
     height: 100%;
     transition: all 1s ease-in-out;
     background: rgb(0, 0, 0, 0.95);
-}
-.nav-links.open {
-    @include lg {
-        clip-path: circle(3000px at 90% -10%);
-        -webkit-clip-path: circle(3000px at 90% -10%);
-        pointer-events: all;
+    .nav-links{
+        @include lg {
+            clip-path: circle(3000px at 90% -10%);
+            -webkit-clip-path: circle(3000px at 90% -10%);
+            pointer-events: all;
+        }
     }
 }
+
 
 .hamburger {
     display: none;

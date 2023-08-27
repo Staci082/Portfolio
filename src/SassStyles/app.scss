@@ -1,6 +1,7 @@
 // GLOBAL STYLINGS
 @import "variables";
 @import "mixins";
+@import "bg-animation";
 
 // SEPERATE COMPONENTS
 @import "../Components/contact/contact";
@@ -8,6 +9,7 @@
 @import "../Components/about/about";
 @import "../Components/skills/skills";
 @import "../Components/projects/projects";
+
 
 .app {
     background: $background;
