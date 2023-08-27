@@ -15,7 +15,7 @@ function App() {
                 <About />
                 <div id="stars"></div>
                 <div id="stars2"></div>
-                <div id="stars2"></div>
+                <div id="stars"></div>
                 <Skills />
                 <Projects />
                 <Contact />
