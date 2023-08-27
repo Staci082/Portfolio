@@ -1,4 +1,4 @@
-// hamburger menu
+// HAMBURGER MENU
 
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector(".nav");
@@ -17,3 +17,7 @@ document.querySelectorAll(".section-link").forEach((n) =>
         nav.classList.remove("open");
     })
 );
+
+
+
+
