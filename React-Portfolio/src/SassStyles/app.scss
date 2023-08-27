@@ -1,0 +1,20 @@
+
+// GLOBAL STYLINGS
+@import 'variables';
+@import 'mixins';
+
+
+// SEPERATE COMPONENTS
+@import '../Components/contact/contact';
+@import '../Components/navbar/navbar';
+@import '../Components/about/about';
+@import '../Components/skills/skills';
+@import '../Components/projects/projects';
+
+.app {
+  // scroll-snap-type: y mandatory;
+  // scroll-behavior: smooth;
+  background: $background;
+  margin: -10px;
+  padding: 0;
+}
