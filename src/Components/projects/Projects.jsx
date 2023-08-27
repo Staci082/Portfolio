@@ -38,13 +38,13 @@ function Projects() {
                         <div className="card-img"></div>
                         <div className="details">
                             <div className="title-container">
-                            <h4>{item.title}</h4>
+                            <h4 className="h4">{item.title}</h4>
                             <a href="#" className="link-button"><FaArrowUpRightFromSquare/></a>
                             </div>
 
                             <p>{item.desc}</p>
 
-                            <h4>Tech used:</h4>
+                            <h4 className="h4">Tech used:</h4>
                             <ul>
                                 {item.tech.map((tech, index) => {
                                     return <li className="li" key={index}>{tech}</li>
