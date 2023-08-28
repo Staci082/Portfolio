@@ -159,7 +159,7 @@ h4 {
   transform: scale(1.1);
 }
 
-li {
+.link {
   display: none;
 }
 
@@ -181,15 +181,15 @@ li {
   gap: 2em;
   transition: all 0.3s ease-out;
 }
-.nav li {
+.nav .link {
   display: flex;
 }
-.nav li a {
+.nav .link a {
   color: hsl(180, 100%, 50%);
   font-size: 1.3rem;
   cursor: pointer;
 }
-.nav li a:hover {
+.nav .link a:hover {
   color: hsl(60, 100%, 50%);
 }
 
@@ -197,7 +197,7 @@ li {
   display: block;
   position: fixed;
   cursor: pointer;
-  right: 6%;
+  right: 5%;
   top: 8%;
   transform: translate(-5%, -50%);
   z-index: 2;

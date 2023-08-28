@@ -1,5 +1,5 @@
 
-li {
+.link {
     display: none;
 }
 
@@ -19,11 +19,11 @@ li {
     gap: 2em;
     transition: all 0.3s ease-out;
     
-    & li {
+    & .link {
         display: flex;
     }
 
-    & li a {
+    & .link a {
         color: $cyan;
         font-size: 1.3rem;
         cursor: pointer;
@@ -37,7 +37,7 @@ li {
     display: block;
     position: fixed;
     cursor: pointer;
-    right: 6%;
+    right: 5%;
     top: 8%;
     transform: translate(-5%, -50%);
     z-index: 2;

@@ -18,7 +18,7 @@ function NavBar() {
                 </div>
 
                 <ul className={`${showNav && 'nav'}`}>
-                    <li>
+                    <li className="link">
                         <Link
                             to="home-container"
                             className="section-link"
@@ -31,7 +31,7 @@ function NavBar() {
                             home
                         </Link>
                     </li>
-                    <li>
+                    <li className="link">
                         <Link
                             to="skills-container"
                             className="section-link"
@@ -44,7 +44,7 @@ function NavBar() {
                             skills
                         </Link>
                     </li>
-                    <li>
+                    <li className="link">
                         <Link
                             to="projects-container"
                             className="section-link"
@@ -57,7 +57,7 @@ function NavBar() {
                             projects
                         </Link>
                     </li>
-                    <li>
+                    <li className="link">
                         <Link
                             to="contact-container"
                             className="section-link"
