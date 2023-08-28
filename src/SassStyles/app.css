@@ -101,7 +101,7 @@ h4 {
   position: relative;
   width: inherit;
   margin-bottom: 2em;
-  background: hsl(255, 47%, 12%);
+  background: #17102d;
 }
 .form-wrapper input {
   margin-bottom: 1em;
@@ -159,98 +159,60 @@ h4 {
   transform: scale(1.1);
 }
 
-nav {
+li {
+  display: none;
+}
+
+.nav {
+  background: rgba(23, 16, 45, 0.98);
+  border: hsl(180, 100%, 50%) solid 1px;
   position: fixed;
-  top: 0;
-  height: 5em;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  z-index: 2;
-}
-nav .nav-links {
-  background: rgba(23, 16, 45, 0.8);
-  display: flex;
-  align-items: center;
-  list-style: none;
-  width: 25%;
-  height: 60%;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  gap: 3em;
-  z-index: 3;
-}
-nav .nav-links li a {
-  color: hsl(180, 100%, 50%);
-  text-decoration: none;
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-nav .nav-links li a:hover {
-  color: hsl(60, 100%, 50%);
-}
-@media (max-width: 960px) {
-  nav .nav-links {
-    position: fixed;
-    height: 20%;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
-    pointer-events: none;
-  }
-}
-
-nav.open {
-  height: 100%;
-  transition: all 1s ease-in-out;
-  background: rgba(0, 0, 0, 0.95);
-}
-
-.nav-links.open {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: deeppink solid 2px;
+  list-style: none;
+  top: 2%;
+  right: 4%;
+  width: 10px;
+  border-radius: 15px;
+  padding: 5em 5em 2em;
+  z-index: 1;
+  gap: 2em;
+  transition: all 0.3s ease-out;
 }
-@media (max-width: 960px) {
-  .nav-links.open {
-    clip-path: circle(300px at 90% -10%);
-    -webkit-clip-path: circle(3000px at 90% -10%);
-    pointer-events: all;
-  }
+.nav li {
+  display: flex;
 }
-.nav-links.open li a {
-  font-size: 3rem;
+.nav li a {
+  color: hsl(180, 100%, 50%);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.nav li a:hover {
+  color: hsl(60, 100%, 50%);
 }
 
 .hamburger {
-  display: none;
-}
-@media (max-width: 960px) {
-  .hamburger {
-    display: block;
-    position: fixed;
-    cursor: pointer;
-    right: 5%;
-    top: 5%;
-    transform: translate(-5%, -50%);
-    z-index: 2;
-  }
+  display: block;
+  position: fixed;
+  cursor: pointer;
+  right: 6%;
+  top: 8%;
+  transform: translate(-5%, -50%);
+  z-index: 2;
 }
 
 .hamburger .bar {
   width: 40px;
   height: 5px;
   margin: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background-color: #fff;
 }
 
 .hamburger .bar:nth-child(1) {
-  background: hsl(300, 100%, 50%);
+  background: #ff00ff;
 }
 
 .hamburger .bar:nth-child(2) {
@@ -281,8 +243,9 @@ nav.open {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../../../public/images/planet-rings.png") no-repeat center center/cover;
+  background: url("/images/planet-rings.png") no-repeat center center/cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  margin-top: -30px;
 }
 #home-container:after {
   content: "";
@@ -290,7 +253,7 @@ nav.open {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, hsl(255, 47%, 12%) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #17102d 100%);
   height: 80%;
   height: 70%;
 }
@@ -463,7 +426,7 @@ h4 {
   padding: 0 1em 4em 1em;
   text-align: left;
   line-height: 25px;
-  background: hsl(255, 47%, 12%);
+  background: #17102d;
 }
 
 p {
@@ -497,14 +460,14 @@ ul { /* Chrome/Opera, Safari */
 
 .link-button {
   visibility: hidden;
-  color: hsl(300, 100%, 50%);
+  color: #ff00ff;
   cursor: pointer;
   transform: scale(1.2);
   margin: 40px 0 0 1em;
 }
 
 #card1 > .card-img:after {
-  background-image: linear-gradient(45deg, hsl(300, 100%, 50%), #d892d6);
+  background-image: linear-gradient(45deg, #ff00ff, #d892d6);
 }
 
 #card2 > .card-img:after {
@@ -516,7 +479,7 @@ ul { /* Chrome/Opera, Safari */
 }
 
 .app {
-  background: hsl(255, 47%, 12%);
+  background: #17102d;
   text-transform: uppercase;
   font-family: "Unica One";
   color: hsl(180, 100%, 50%);

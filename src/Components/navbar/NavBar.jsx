@@ -2,26 +2,22 @@ import { Link } from "react-scroll";
 import { useState } from "react";
 
 function NavBar() {
-    const [menuOpen, setMenuOpen] = useState(false);
 
-    function handleClick() {
-        setMenuOpen(menuOpen => !menuOpen)
-    }
-
-    let menuState = menuOpen ? 'open' : ''
+    const [showNav, setShowNav] = useState(false);
+    const ToggleNav = () => {
+        setShowNav(!showNav);
+    };
+    
 
     return (
         <>
-            <nav className={`nav ${menuState}`}>
-                <div
-                    className={`hamburger ${menuState}`}
-                    onClick={handleClick}
-                >
+                <div className={`hamburger ${showNav && 'open'}`} onClick={ToggleNav}>
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>
                 </div>
-                <ul className={`nav-links ${menuState}`}>
+
+                <ul className={`${showNav && 'nav'}`}>
                     <li>
                         <Link
                             to="home-container"
@@ -30,8 +26,9 @@ function NavBar() {
                             smooth={true}
                             offset={50}
                             duration={500}
+                            onClick={ToggleNav}
                         >
-                            _home
+                            home
                         </Link>
                     </li>
                     <li>
@@ -42,8 +39,9 @@ function NavBar() {
                             smooth={true}
                             offset={50}
                             duration={500}
+                            onClick={ToggleNav}
                         >
-                            _skills
+                            skills
                         </Link>
                     </li>
                     <li>
@@ -54,8 +52,9 @@ function NavBar() {
                             smooth={true}
                             offset={50}
                             duration={500}
+                            onClick={ToggleNav}
                         >
-                            _projects
+                            projects
                         </Link>
                     </li>
                     <li>
@@ -66,12 +65,12 @@ function NavBar() {
                             smooth={true}
                             offset={50}
                             duration={500}
+                            onClick={ToggleNav}
                         >
-                            _contact
+                            contact
                         </Link>
                     </li>
                 </ul>
-            </nav>
         </>
     );
 }
