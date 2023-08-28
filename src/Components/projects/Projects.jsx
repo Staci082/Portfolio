@@ -4,10 +4,10 @@ function Projects() {
     const projectList = [
         {
             id: "card1",
-            title: "Project title",
+            title: "Fiesta Flavors",
             image: "/images/music-app.png",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            tech: ["sass", "node.js", "express.js", "mongoDB", "ejs"],
+            desc: "Recipe app. Discover, save and organize your beloved recipes using an online platform. ",
+            tech: ["sass", "react.js", "node.js", "express.js", "mongoDB", "cheerio"],
             website: ""
         },
         {
@@ -15,7 +15,7 @@ function Projects() {
             title: "Project title",
             image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            tech: ["tailwind", "react", "node.js", "express.js", "fetch api"],
+            tech: ["tailwind", "react.js", "node.js", "express.js", "fetch api"],
             website: ""
         },
         {
