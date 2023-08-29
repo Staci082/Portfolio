@@ -5,7 +5,7 @@ import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
 const Contact = () => {
 
-    const key = import.meta.env.VITE_DEMO_SITE_KEY || import.meta.dev.VITE_SITE_KEY
+    const key = import.meta.dev.VITE_SITE_KEY
     const onChange = () => {
         const submitButton = document.querySelector('.submit-button')
         submitButton.removeAttribute("disabled")
