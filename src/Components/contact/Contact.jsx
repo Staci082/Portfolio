@@ -5,8 +5,7 @@ import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
 const Contact = () => {
 
-// import.meta.dev.VITE_SITE_KEY
-    const key = import.meta.dev.VITE_SITE_KEY
+    const key = import.meta.env.VITE_SITE_KEY
     const onChange = () => {
         const submitButton = document.querySelector('.submit-button')
         submitButton.removeAttribute("disabled")
@@ -44,7 +43,6 @@ const Contact = () => {
                     className="form-wrapper"
                     ref={form}
                     onSubmit={sendEmail}
-                    autoComplete="off"
                 >
                     <div className="form-group" id="name-form">
                         <input
@@ -93,5 +91,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
