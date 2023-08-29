@@ -12,7 +12,7 @@
     }
 
     .contact {
-        width: clamp(300px, 100%, 900px);
+        width: clamp(250px, 100%, 900px);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -35,6 +35,9 @@
         width: inherit;
         margin-bottom: 2em;
         background: $background;
+        @include sm {
+                font-size: 1rem;
+        }
     }
 
     & input {
@@ -59,7 +62,7 @@
 
     & textarea{
         padding-top: 3em;
-        height: 8em;
+        height: 7em;
         resize: none; 
         overflow: auto;
     }
@@ -73,12 +76,16 @@
 
     & textarea:valid {
         color: white;
-        font-size: 1.5rem;
+        font-size: inherit;
     }
 
     & button {
         cursor: pointer;
         border: none;
+        width: 30%;
+        margin-top: 2em;
+        border: 1px solid $background-light;
+        border-radius: 5px;
         & .rocket {
             margin-left: 1rem;
         }
@@ -86,5 +93,11 @@
             color: white;
             transform: scale(1.1);
         }
+    }
+}
+
+.recaptcha {
+    @include sm {
+    transform:scale(0.77)
     }
 }

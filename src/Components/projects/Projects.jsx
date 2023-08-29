@@ -7,23 +7,23 @@ function Projects() {
             title: "Fiesta Flavors",
             image: "/images/music-app.png",
             desc: "Recipe app. Discover, save and organize your beloved recipes using an online platform. ",
-            tech: ["sass", "react.js", "node.js", "express.js", "mongoDB", "cheerio"],
+            stack: ["sass", "react.js", "node.js", "express.js", "mongoDB", "cheerio"],
             website: ""
         },
         {
             id: "card2",
-            title: "Project title",
+            title: "Coming soon",
             image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            tech: ["tailwind", "react.js", "node.js", "express.js", "fetch api"],
+            stack: ["tailwind", "react.js", "node.js", "express.js", "fetch api"],
             website: ""
         },
         {
             id: "card3",
-            title: "Project title",
+            title: "Coming soon",
             image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            tech: ["sass", "ejs", "node.js", "express.js", "mongoDB", "something.js"],
+            stack: ["sass", "ejs", "node.js", "express.js", "mongoDB", "something.js"],
             website: ""
         }
     ];
@@ -39,15 +39,18 @@ function Projects() {
                         <div className="details">
                             <div className="title-container">
                             <h4 className="h4">{item.title}</h4>
+                            
                             <a href="#" className="link-button"><FaArrowUpRightFromSquare/></a>
+
+
                             </div>
 
                             <p>{item.desc}</p>
 
-                            <h4 className="h4">Tech:</h4>
+                            <h4 className="h4">Stack:</h4>
                             <ul>
-                                {item.tech.map((tech, index) => {
-                                    return <li className="li" key={index}>{tech}</li>
+                                {item.stack.map((stack, index) => {
+                                    return <li className="li" key={index}>{stack}</li>
                                 })}
                             </ul>
                             

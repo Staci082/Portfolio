@@ -23,10 +23,10 @@
 @mixin form {
     font-family: $font;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 10px 0 10px 0;
     display: block;
-    width: clamp(300px, 50vw, 400px);
+    width: clamp(250px, 50vw, 400px);
     border: none;
     outline: none;
     border-bottom: 1px solid $grey;
@@ -51,9 +51,11 @@ $breakpoints: (
     "xl": 1190px,
 );
 
+
+/* use content so we can choose properties when using the mixin instead of hardcoding */
 @mixin sm {
     @media (max-width: map-get($breakpoints, "sm")) {
-        @content; /* use content so we can choose properties when using the mixin instead of hardcoding */
+        @content; 
     }
 }
 
