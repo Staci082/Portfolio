@@ -1,15 +1,15 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
 const Contact = () => {
 
-    const key = import.meta.env.VITE_SITE_KEY
-    const onChange = () => {
-        const submitButton = document.querySelector('.submit-button')
-        submitButton.removeAttribute("disabled")
-    }
+    // const key = import.meta.env.VITE_DEMO_SITE_KEY
+    // const onChange = () => {
+    //     const submitButton = document.querySelector('.submit-button')
+    //     submitButton.removeAttribute("disabled")
+    // }
 
     const form = useRef();
     const sendEmail = (e) => {
@@ -43,6 +43,7 @@ const Contact = () => {
                     className="form-wrapper"
                     ref={form}
                     onSubmit={sendEmail}
+                    autoComplete="off"
                 >
                     <div className="form-group" id="name-form">
                         <input
@@ -74,11 +75,11 @@ const Contact = () => {
                         <label htmlFor="message">Your message</label>
                     </div>
 
-                    <ReCAPTCHA
+                    {/* <ReCAPTCHA
                         sitekey={key}
                         onChange={onChange}
                         required
-                    />
+                    /> */}
                     
                     <button type="submit" className="submit-button" disabled>
                         launch
