@@ -1,11 +1,17 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
-
 const Contact = () => {
-    const form = useRef();
 
+    const key = import.meta.env.VITE_DEMO_SITE_KEY
+    const onChange = () => {
+        const submitButton = document.querySelector('.submit-button')
+        submitButton.removeAttribute("disabled")
+    }
+
+    const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -31,10 +37,14 @@ const Contact = () => {
     return (
         <>
             <section id="contact-container">
+                <h3 className="title">Contact me</h3>
 
-        <h3 className="title">Contact me</h3>
-
-                <form className="form-wrapper" ref={form} onSubmit={sendEmail} autoComplete="off">
+                <form
+                    className="form-wrapper"
+                    ref={form}
+                    onSubmit={sendEmail}
+                    autoComplete="off"
+                >
                     <div className="form-group" id="name-form">
                         <input
                             type="text"
@@ -42,10 +52,9 @@ const Contact = () => {
                             name="user_name"
                             required
                         />
-                        
+
                         <label htmlFor="name">Your name</label>
                     </div>
-
                     <div className="form-group" id="email-form">
                         <input
                             type="text"
@@ -53,22 +62,28 @@ const Contact = () => {
                             name="user_email"
                             required
                         />
-                    
+
                         <label htmlFor="email">Your e-mail</label>
                     </div>
-
                     <div className="form-group" id="message-form">
                         <textarea
                             id="message"
                             name="message"
                             required
                         ></textarea>
-                        
+
                         <label htmlFor="message">Your message</label>
                     </div>
 
-                    <button type="submit">
-                        launch<HiOutlineRocketLaunch className="rocket"/>
+                    <ReCAPTCHA
+                        sitekey={key}
+                        onChange={onChange}
+                        required
+                    />
+                    
+                    <button type="submit" className="submit-button" disabled>
+                        launch
+                        <HiOutlineRocketLaunch className="rocket" />
                     </button>
                 </form>
             </section>
@@ -78,14 +93,4 @@ const Contact = () => {
 
 export default Contact;
 
-{
-    /* <form ref={form} onSubmit={sendEmail}>
-<label>Name</label>
-<input type="text" name="user_name" />
-<label>Email</label>
-<input type="email" name="user_email" />
-<label>Message</label>
-<textarea name="message" />
-<input type="submit" value="Send" />
-</form> */
-}
+
