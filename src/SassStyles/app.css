@@ -164,13 +164,15 @@ h4 {
 .form-wrapper button {
   cursor: pointer;
   border: none;
-  width: 30%;
+  width: 130px;
+  font-size: 1.2em;
   margin-top: 2em;
   border: 1px solid #251f38;
   border-radius: 5px;
+  text-align: center;
 }
 .form-wrapper button .rocket {
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 .form-wrapper button:hover {
   color: white;
