@@ -62,7 +62,7 @@
 
     & textarea{
         padding-top: 3em;
-        height: 7em;
+        height: 5em;
         resize: none; 
         overflow: auto;
     }
@@ -91,6 +91,7 @@
         }
         &:hover {
             color: white;
+            border: $cyan 1px solid;
             transform: scale(1.1);
         }
     }
