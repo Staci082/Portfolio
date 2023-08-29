@@ -2,9 +2,8 @@ function About() {
     return (
         <section id="home-container">
             <div id="title">
-                <h1>staci <br/> johnson</h1>
+                <h1>staci <br/> johnson<hr/><p className="under-title">Aspiring Web Developer</p></h1>
                 
-                <h2><hr/>Aspiring Web Developer</h2>
             </div>
         </section>
     );

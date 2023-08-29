@@ -23,7 +23,7 @@
 @mixin form {
     font-family: $font;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 10px 0 10px 0;
     display: block;
     width: clamp(250px, 50vw, 400px);
@@ -33,6 +33,9 @@
     color: white;
     background: rgba(0, 0, 0, 0);
     transition: 0.2s ease;
+    @include sm {
+        font-size: 1rem;
+    }
 }
 
 @mixin glass {
