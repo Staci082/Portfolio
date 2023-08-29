@@ -10,7 +10,7 @@ const Contact = () => {
     //     const submitButton = document.querySelector('.submit-button')
     //     submitButton.removeAttribute("disabled")
     // }
-
+ 
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
