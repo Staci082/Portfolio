@@ -19,12 +19,12 @@ function Skills() {
             image: "/images/skills/tailwind.png",
         },
         {
-            name: "React",
-            image: "/images/skills/react.png",
-        },
-        {
             name: "Javascript",
             image: "/images/skills/javascript.png",
+        },
+        {
+            name: "React",
+            image: "/images/skills/react.png",
         },
         {
             name: "Node.js",
