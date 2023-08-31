@@ -6,13 +6,13 @@ function Projects() {
             id: "card1",
             title: "Fiesta Flavors",
             image: "/images/music-app.png",
-            desc: "Recipe app. Discover, save and organize your beloved recipes using an online platform. ",
+            desc: "Discover, save and organize your beloved recipes using an online platform. ",
             stack: ["sass", "react.js", "node.js", "express.js", "mongoDB", "cheerio"],
             website: ""
         },
         {
             id: "card2",
-            title: "Coming soon",
+            title: "Epic Games clone",
             image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
             stack: ["tailwind", "react.js", "node.js", "express.js", "fetch api"],

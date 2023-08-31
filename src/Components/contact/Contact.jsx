@@ -17,10 +17,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                "service_n3uotfp",
-                "template_k21aqla",
+                import.meta.env.VITE_SERVICE_ID,
+                import.meta.env.VITE_TEMPLATE_ID,
                 form.current,
-                "vsDVDqRAVA7xNtI8F"
+                import.meta.env.VITE_PUBLIC_KEY
             )
             .then(
                 (result) => {
@@ -81,7 +81,7 @@ const Contact = () => {
                         required
                     /> */}
                     
-                    <button type="submit" className="submit-button" disabled>
+                    <button type="submit" className="submit-button">
                         launch
                         <HiOutlineRocketLaunch className="rocket" />
                     </button>
