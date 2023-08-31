@@ -76,7 +76,7 @@ const Contact = () => {
                     </div>
 
                     <ReCAPTCHA className="recaptcha"
-                        sitekey={key}
+                        data-sitekey={key}
                         onChange={onChange}
                         required
                     />
