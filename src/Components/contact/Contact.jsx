@@ -76,7 +76,8 @@ const Contact = () => {
                     </div>
 
                     <ReCAPTCHA className="recaptcha"
-                        data-sitekey={key}
+                        sitekey={key}
+                        theme={"dark"}
                         onChange={onChange}
                         required
                     />
