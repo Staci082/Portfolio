@@ -1,4 +1,4 @@
-import "./SassStyles/app.scss";
+import "./Assets/SassStyles/app.scss";
 
 import NavBar from "./Components/navbar/NavBar";
 import Contact from "./Components/contact/Contact";
