@@ -43,7 +43,6 @@ const Contact = () => {
                     className="form-wrapper"
                     ref={form}
                     onSubmit={sendEmail}
-                    autoComplete="off"
                 >
                     <div className="form-group" id="name-form">
                         
@@ -54,6 +53,7 @@ const Contact = () => {
                             name="user_name"
                             required
                             aria-required="true"
+                            autoComplete="off"
                         />
                     </div>
                     <div className="form-group" id="email-form">
@@ -64,6 +64,7 @@ const Contact = () => {
                             name="user_email"
                             required
                             aria-required="true"
+                            autoComplete="off"
                         />
                     </div>
                     <div className="form-group" id="message-form">
@@ -73,6 +74,7 @@ const Contact = () => {
                             name="message"
                             required
                             aria-required="true"
+                            autoComplete="off"
                         ></textarea>
                     </div>
 
