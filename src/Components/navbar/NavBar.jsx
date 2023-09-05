@@ -11,12 +11,13 @@ function NavBar() {
 
     return (
         <>
-                <div className={`hamburger ${showNav && 'open'}`} onClick={ToggleNav}  tabIndex="0">
+                <nav className={`hamburger ${showNav && 'open'}`} onClick={ToggleNav}  tabIndex="1">
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>
-                </div>
+                </nav>
 
+<nav>
                 <ul className={`${showNav && 'nav'}`}>
                     <li className="link">
                         <Link
@@ -71,6 +72,7 @@ function NavBar() {
                         </Link>
                     </li>
                 </ul>
+                </nav>
         </>
     );
 }
