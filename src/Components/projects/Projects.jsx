@@ -88,6 +88,7 @@ function Projects() {
                 rel="noreferrer"
                 href="https://github.com/Staci082"
             >
+                <span className="sr-only">Visit my GitHub profile</span>
                 <FaGithub />
             </a>
         </section>

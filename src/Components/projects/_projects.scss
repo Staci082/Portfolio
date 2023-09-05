@@ -119,3 +119,11 @@ ul {
 #card3 > .card-img:after {
     background-image: linear-gradient(45deg, $cyan, #86d9ca);
 }
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
