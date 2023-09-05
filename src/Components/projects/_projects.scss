@@ -91,11 +91,11 @@ ul {
     -webkit-column-count: 2; /* Chrome/Opera, Safari */
     -moz-column-count: 2; /* Mozilla Firefox */
     column-count: 2;
-    padding: 0 3em;
+    padding: 0 1em 0 1.5em;
     column-gap: 1em;
     -webkit-column-gap: 50px; /* Chrome/Opera, Safari */
     -moz-column-gap: 50px; /* Mozilla Firefox */
-    column-gap: 50px;
+    column-gap: 10px;
 }
 
 .li {
