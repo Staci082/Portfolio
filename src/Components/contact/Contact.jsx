@@ -47,7 +47,7 @@ const Contact = () => {
                 >
                     <div className="form-group" id="name-form">
                         
-                    <label htmlFor="user_name">Your name</label>
+                    <label htmlFor="name">Your name</label>
                         <input
                             type="text"
                             id="name"
@@ -56,7 +56,7 @@ const Contact = () => {
                         />
                     </div>
                     <div className="form-group" id="email-form">
-                    <label htmlFor="user_email">Your e-mail</label>
+                    <label htmlFor="email">Your e-mail</label>
                         <input
                             type="text"
                             id="email"
