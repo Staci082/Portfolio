@@ -85,7 +85,7 @@ const Contact = () => {
                     
                     <button type="submit" className="submit-button" disabled>
                         launch
-                        <HiOutlineRocketLaunch className="rocket" />
+                        <HiOutlineRocketLaunch className="rocket" role="none"/>
                     </button>
                 </form>
             </section>
