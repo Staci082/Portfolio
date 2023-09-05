@@ -1,12 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
-
-
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 $font: "Unica One";
 $bigFont: "Audiowide";
-$fontTextarea: "Ubuntu";
 $opacity: rgb(0, 0, 0, 0.8);
 $background: #17102d;
 $background-light: #251f38;
@@ -17,15 +13,18 @@ $pink: #ff00ff;
 $yellow: hsl(60, 100%, 50%);
 
 h1 {
-    font-family: $bigFont, "Lucida Sans Unicode", Arial, sans-serif;
+    font-family: "Wallpoet";
     font-size: clamp(3rem, 8vw, 10rem);
-    letter-spacing: 6px;
 }
 
 h2 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
 h3 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h4 {
     font-size: clamp(1rem, 5vw, 1.2rem);
 }

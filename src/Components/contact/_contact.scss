@@ -85,13 +85,15 @@
         width: 130px;
         font-size: 1.2em;
         margin-top: 2em;
+        border: 1px solid $background-light;
         border-radius: 5px;
         text-align: center;
-        border: $cyan 1px solid;
         & .rocket {
             margin-left: 1em;
         }
         &:hover {
+            color: white;
+            border: $cyan 1px solid;
             transform: scale(1.1);
         }
     }
