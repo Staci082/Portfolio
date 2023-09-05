@@ -11,7 +11,7 @@ function NavBar() {
 
     return (
         <>
-                <div className={`hamburger ${showNav && 'open'}`} onClick={ToggleNav}>
+                <div className={`hamburger ${showNav && 'open'}`} onClick={ToggleNav}  tabIndex="0">
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>

@@ -16,6 +16,7 @@ function Projects() {
                 "cheerio",
             ],
             website: "",
+            tabindex: 1,
         },
         {
             id: "card2",
@@ -30,6 +31,7 @@ function Projects() {
                 "fetch api",
             ],
             website: "",
+            tabindex: 2
         },
         {
             id: "card3",
@@ -45,6 +47,7 @@ function Projects() {
                 "something.js",
             ],
             website: "",
+            tabindex: 3
         },
     ];
 
@@ -54,7 +57,7 @@ function Projects() {
 
             <div className="projects-wrapper">
                 {projectList.map((item) => (
-                    <div className="card" id={item.id} key={item.id}>
+                    <div className="card" id={item.id} key={item.id} tabIndex={item.tabindex}>
                         <div className="card-img"></div>
                         <div className="details">
                             <div className="title-container">
