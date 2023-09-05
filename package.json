@@ -2,9 +2,9 @@
   "name": "react-portfolio",
   "private": true,
   "version": "0.0.1",
-    "engines": {
-      "npm": "18.17.1"
-    },
+  "engines": {
+    "node": "~v18"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
