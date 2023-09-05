@@ -53,6 +53,7 @@ const Contact = () => {
                             id="name"
                             name="user_name"
                             required
+                            aria-required="true"
                         />
                     </div>
                     <div className="form-group" id="email-form">
@@ -62,6 +63,7 @@ const Contact = () => {
                             id="email"
                             name="user_email"
                             required
+                            aria-required="true"
                         />
                     </div>
                     <div className="form-group" id="message-form">
@@ -70,6 +72,7 @@ const Contact = () => {
                             id="message"
                             name="message"
                             required
+                            aria-required="true"
                         ></textarea>
                     </div>
 
