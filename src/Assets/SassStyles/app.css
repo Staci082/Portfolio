@@ -2,19 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Megrim&family=Wallpoet&family=Zen+Kurenaido&display=swap");
 h1 {
-  font-family: "Wallpoet";
+  font-family: "Audiowide", "Lucida Sans Unicode", Arial, sans-serif;
   font-size: clamp(3rem, 8vw, 10rem);
+  letter-spacing: 6px;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 4vw, 3rem);
-}
-
-h3 {
   font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
-h4 {
+h3 {
   font-size: clamp(1rem, 5vw, 1.2rem);
 }
 
@@ -164,16 +161,14 @@ h4 {
   width: 130px;
   font-size: 1.2em;
   margin-top: 2em;
-  border: 1px solid #251f38;
   border-radius: 5px;
   text-align: center;
+  border: hsl(180, 100%, 50%) 1px solid;
 }
 .form-wrapper button .rocket {
   margin-left: 1em;
 }
 .form-wrapper button:hover {
-  color: white;
-  border: hsl(180, 100%, 50%) 1px solid;
   transform: scale(1.1);
 }
 
@@ -458,7 +453,7 @@ p {
   margin-top: -1.5em;
 }
 
-.h4 {
+.h3 {
   margin-bottom: -10px;
 }
 

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Unica+One&display=swap");
 
-// TEST FONTS: 
-@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Wallpoet&family=Zen+Kurenaido&display=swap');
+// TEST FONTS:
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Wallpoet&family=Zen+Kurenaido&display=swap");
 
 $font: "Unica One";
 $bigFont: "Audiowide";
@@ -17,18 +17,15 @@ $pink: #ff00ff;
 $yellow: hsl(60, 100%, 50%);
 
 h1 {
-    font-family: "Wallpoet";
+    font-family: $bigFont, "Lucida Sans Unicode", Arial, sans-serif;
     font-size: clamp(3rem, 8vw, 10rem);
+    letter-spacing: 6px;
 }
 
 h2 {
-    font-size: clamp(1.5rem, 4vw, 3rem);
-}
-
-h3 {
     font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
-h4 {
+h3 {
     font-size: clamp(1rem, 5vw, 1.2rem);
 }

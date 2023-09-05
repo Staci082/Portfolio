@@ -37,42 +37,39 @@ const Contact = () => {
     return (
         <>
             <section id="contact-container">
-                <h3 className="title">Contact me</h3>
+                <h2 className="title">Contact me</h2>
 
                 <form
                     className="form-wrapper"
                     ref={form}
                     onSubmit={sendEmail}
-                    autoComplete="off"
-                >
+                    autoComplete="off">
+
                     <div className="form-group" id="name-form">
+                    <label htmlFor="user_name">Your name</label>
                         <input
                             type="text"
                             id="name"
                             name="user_name"
                             required
                         />
-
-                        <label htmlFor="name">Your name</label>
                     </div>
+
                     <div className="form-group" id="email-form">
+                    <label htmlFor="user_email">Your e-mail</label>
                         <input
                             type="text"
                             id="email"
                             name="user_email"
-                            required
-                        />
-
-                        <label htmlFor="email">Your e-mail</label>
+                            required/>
                     </div>
                     <div className="form-group" id="message-form">
+                    <label htmlFor="message">Your message</label>
                         <textarea
                             id="message"
                             name="message"
                             required
                         ></textarea>
-
-                        <label htmlFor="message">Your message</label>
                     </div>
 
                     {/* <ReCAPTCHA className="recaptcha"
