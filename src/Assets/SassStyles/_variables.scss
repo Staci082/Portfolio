@@ -13,18 +13,15 @@ $pink: #ff00ff;
 $yellow: hsl(60, 100%, 50%);
 
 h1 {
-    font-family: "Wallpoet";
+    font-family: $bigFont;
     font-size: clamp(3rem, 8vw, 10rem);
 }
 
 h2 {
-    font-size: clamp(1.5rem, 4vw, 3rem);
-}
-
-h3 {
     font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
-h4 {
+h3 {
     font-size: clamp(1rem, 5vw, 1.2rem);
 }
+
