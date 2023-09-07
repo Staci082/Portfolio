@@ -1,15 +1,9 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-// import ReCAPTCHA from "react-google-recaptcha";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
 const Contact = () => {
 
-    // const key = import.meta.env.VITE_DEMO_KEY
-    // const onChange = () => {
-    //     const submitButton = document.querySelector('.submit-button')
-    //     submitButton.removeAttribute("disabled")
-    // }
  
     const form = useRef();
     const sendEmail = (e) => {
@@ -77,12 +71,6 @@ const Contact = () => {
                         <label htmlFor="message">Your message</label>
                     </div>
 
-                    {/* <ReCAPTCHA className="recaptcha"
-                        sitekey={key}
-                        theme={"dark"}
-                        onChange={onChange}
-                        required
-                    /> */}
                     
                     <button type="submit" className="submit-button" disabled>
                         launch

@@ -1,10 +1,7 @@
 {
-  "name": "react-portfolio",
+  "name": "staci-portfolio",
   "private": true,
   "version": "0.0.1",
-  "engines": {
-    "node": "~v18"
-  },
   "type": "module",
   "scripts": {
     "dev": "vite",

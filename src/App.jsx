@@ -1,5 +1,7 @@
 import "./Assets/SassStyles/app.scss";
 
+import ReCaptcha from "./Components/ReCaptcha/ReCaptcha";
+
 import NavBar from "./Components/navbar/NavBar";
 import Contact from "./Components/contact/Contact";
 import About from "./Components/about/About";
@@ -8,6 +10,13 @@ import Projects from "./Components/projects/Projects";
 
 
 function App() {
+
+    const siteKey = import.meta.env.VITE_SITE_KEY
+    
+    const handleVerify = (token) => {
+        console.log('ReCaptcha token:', token)
+    }
+
     return (
         <>
             <div className="app">
@@ -20,7 +29,7 @@ function App() {
                 <Skills />
                 <Projects />
                 <Contact />
-
+                <ReCaptcha siteKey={siteKey} onVerify={handleVerify}/>
             </div>
         </>
     );

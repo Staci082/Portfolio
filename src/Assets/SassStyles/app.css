@@ -292,6 +292,10 @@ h3 {
   font-size: clamp(1rem, 3vw, 2.5rem);
 }
 
+h4 {
+  margin-top: -3em;
+}
+
 #skills-container {
   padding: 6rem 3rem 0 3rem;
   text-align: center;
