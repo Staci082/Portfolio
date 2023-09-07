@@ -11,7 +11,7 @@ import Projects from "./Components/projects/Projects";
 
 function App() {
 
-    const siteKey = import.meta.env.VITE_SITE_KEY
+    const sitekey = import.meta.env.VITE_SITE_KEY
     
     const handleVerify = (token) => {
         console.log('ReCaptcha token:', token)
@@ -29,7 +29,7 @@ function App() {
                 <Skills />
                 <Projects />
                 <Contact />
-                <ReCaptcha siteKey={siteKey} onVerify={handleVerify}/>
+                <ReCaptcha sitekey={sitekey} onVerify={handleVerify}/>
             </div>
         </>
     );
