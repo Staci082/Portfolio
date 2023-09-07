@@ -11,7 +11,7 @@ import Projects from "./Components/projects/Projects";
 
 function App() {
 
-    const sitekey = import.meta.env.VITE_SITE_KEY || process.env.SITEKEY
+    const sitekey = import.meta.env.VITE_SITE_KEY || process.env.VITE_SITEKEY
     
     const handleVerify = (token) => {
         console.log('ReCaptcha token:', token)
