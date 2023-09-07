@@ -19,7 +19,7 @@ function ReCaptcha({ siteKey, onVerify }) {
   return (
     <ReCAPTCHA 
       ref={recaptchaRef}
-      sitekey={siteKey}
+      siteKey={siteKey}
       size='invisible'
       onChange={handleVerify}
     />
