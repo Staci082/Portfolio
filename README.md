@@ -9,9 +9,7 @@ Here I wish to show my skills learned in my journey to become a professional Web
 
 * HTML 
 * CSS + SASS 
-* Responsive web design
 * React.js + Vite
-* ADA compliant
 
 
 # Projects

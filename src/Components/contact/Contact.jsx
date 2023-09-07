@@ -45,8 +45,6 @@ const Contact = () => {
                     onSubmit={sendEmail}
                 >
                     <div className="form-group" id="name-form">
-                        
-                    <label htmlFor="name">Your name</label>
                         <input
                             type="text"
                             id="name"
@@ -55,9 +53,9 @@ const Contact = () => {
                             aria-required="true"
                             autoComplete="off"
                         />
+                        <label htmlFor="name">Your name</label>
                     </div>
                     <div className="form-group" id="email-form">
-                    <label htmlFor="email">Your e-mail</label>
                         <input
                             type="text"
                             id="email"
@@ -66,9 +64,9 @@ const Contact = () => {
                             aria-required="true"
                             autoComplete="off"
                         />
+                        <label htmlFor="email">Your e-mail</label>
                     </div>
                     <div className="form-group" id="message-form">
-                    <label htmlFor="message">Your message</label>
                         <textarea
                             id="message"
                             name="message"
@@ -76,6 +74,7 @@ const Contact = () => {
                             aria-required="true"
                             autoComplete="off"
                         ></textarea>
+                        <label htmlFor="message">Your message</label>
                     </div>
 
                     {/* <ReCAPTCHA className="recaptcha"
