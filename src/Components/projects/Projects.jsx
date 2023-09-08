@@ -63,7 +63,7 @@ function Projects() {
                             <div className="title-container">
                                 <h3 className="h3">{item.title}</h3>
 
-                                <a href="#" className="link-button" id={item.title}>
+                                <a href="#" className="link-button" aria-label={`View ${item.title} live`}>
                                     <FaArrowUpRightFromSquare />
                                 </a>
                             </div>
