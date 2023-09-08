@@ -63,7 +63,7 @@ function Projects() {
                             <div className="title-container">
                                 <h3 className="h3">{item.title}</h3>
 
-                                <a href="#" className="link-button">
+                                <a href="#" className="link-button" id={item.title}>
                                     <FaArrowUpRightFromSquare />
                                 </a>
                             </div>
