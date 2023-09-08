@@ -2,52 +2,52 @@ function Skills() {
     const skillsList = [
         {
             name: "HTML",
-            image: "/images/skills/html.png",
+            image: "/images/skills/html.avif",
             alt: "HTML logo"
         },
         {
             name: "CSS",
-            image: "/images/skills/CSS3.png",
+            image: "/images/skills/CSS3.avif",
             alt: "CSS logo"
         },
         {
             name: "SASS",
-            image: "/images/skills/sass.png",
+            image: "/images/skills/sass.avif",
             alt: "Sass logo"
         },
         {
             name: "Tailwind",
-            image: "/images/skills/tailwind.png",
+            image: "/images/skills/tailwind.avif",
             alt: "Tailwind logo"
         },
         {
             name: "Javascript",
-            image: "/images/skills/javascript.png",
+            image: "/images/skills/javascript.avif",
             alt: "Javascript logo"
         },
         {
             name: "React.js",
-            image: "/images/skills/react.png",
+            image: "/images/skills/react.avif",
             alt: "React.js logo"
         },
         {
             name: "Node.js",
-            image: "/images/skills/node.png",
+            image: "/images/skills/node.avif",
             alt: "Node.js logo"
         },
         {
             name: "Express.js",
-            image: "/images/skills/node.png",
+            image: "/images/skills/node.avif",
             alt: "Express.js logo"
         },
         {
             name: "Mongo DB",
-            image: "/images/skills/mongo-db.png",
+            image: "/images/skills/mongo-db.avif",
             alt: "Mongo database logo"
         },
         {
             name: "Git",
-            image: "/images/skills/git.png",
+            image: "/images/skills/git.avif",
             alt: "Git logo"
         },
     ];
