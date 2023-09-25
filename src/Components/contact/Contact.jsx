@@ -74,7 +74,7 @@ const Contact = () => {
                     </div>
                     <div className="form-group" id="email-form">
                         <input
-                            type="email"
+                            type="text"
                             id="email"
                             name="user_email"
                             required
