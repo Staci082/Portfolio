@@ -9,12 +9,8 @@ import Projects from "./Components/projects/Projects";
 
 function App() {
 
-    const sitekey = import.meta.env.VITE_SITE_KEY 
-    
-    const handleVerify = (token) => {
-        console.log('ReCaptcha token:', token)
-    }
-
+    const sitekey = import.meta.env.VITE_SITE_KEY || process.env.VITE_SITE_KEY
+  
     return (
         <>
             <div className="app">
@@ -24,13 +20,11 @@ function App() {
                 <div id="stars"></div>
                 <div id="stars2"></div>
                 <div id="stars"></div>
-                {
-                    console.log(sitekey)
-                }
                 <Skills />
                 <Projects />
                 <Contact />
-                <ReCaptcha sitekey={sitekey} onVerify={handleVerify}/>
+                <ReCaptcha sitekey={sitekey} 
+                />
             </div>
         </>
     );

@@ -2,7 +2,9 @@ import { useEffect, useRef } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 
 
-function ReCaptcha({ sitekey, onVerify }) {
+function ReCaptcha({ sitekey,
+  //  onVerify
+   }) {
 
   const recaptchaRef = useRef(null)
 
@@ -10,18 +12,19 @@ function ReCaptcha({ sitekey, onVerify }) {
     recaptchaRef.current.execute()
   }, [])
 
-  const handleVerify = (token) => {
-    if (onVerify) {
-      onVerify(token)
-    }
-  }
+  // const handleVerify = (token) => {
+  //   if (onVerify) {
+  //     onVerify(token)
+  //   }
+  // }
 
   return (
     <ReCAPTCHA 
       ref={recaptchaRef}
       sitekey={sitekey}
       size='invisible'
-      onChange={handleVerify}
+
+      // onChange={handleVerify}
     />
   )
 }
