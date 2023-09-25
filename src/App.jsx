@@ -1,5 +1,5 @@
+/* eslint-disable no-undef */
 import "./Assets/SassStyles/app.scss";
-import ReCaptcha from "./Components/ReCaptcha/ReCaptcha";
 import NavBar from "./Components/navbar/NavBar";
 import Contact from "./Components/contact/Contact";
 import About from "./Components/about/About";
@@ -9,8 +9,6 @@ import Projects from "./Components/projects/Projects";
 
 function App() {
 
-    const sitekey = import.meta.env.VITE_SITE_KEY || process.env.VITE_SITE_KEY
-  
     return (
         <>
             <div className="app">
@@ -23,8 +21,7 @@ function App() {
                 <Skills />
                 <Projects />
                 <Contact />
-                <ReCaptcha sitekey={sitekey} 
-                />
+
             </div>
         </>
     );

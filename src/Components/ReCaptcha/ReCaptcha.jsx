@@ -1,10 +1,11 @@
+/* eslint-disable no-undef */
 import { useEffect, useRef } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 
 
-function ReCaptcha({ sitekey,
-  //  onVerify
-   }) {
+function ReCaptcha() {
+
+  const sitekey = import.meta.env.VITE_SITE_KEY || process.env.VITE_SITE_KEY
 
   const recaptchaRef = useRef(null)
 
