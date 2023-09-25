@@ -1,7 +1,5 @@
 import "./Assets/SassStyles/app.scss";
-
-// import ReCaptcha from "./Components/ReCaptcha/ReCaptcha";
-
+import ReCaptcha from "./Components/ReCaptcha/ReCaptcha";
 import NavBar from "./Components/navbar/NavBar";
 import Contact from "./Components/contact/Contact";
 import About from "./Components/about/About";
@@ -11,11 +9,11 @@ import Projects from "./Components/projects/Projects";
 
 function App() {
 
-    // const sitekey = import.meta.env.VITE_SITE_KEY || process.env.VITE_SITEKEY
+    const sitekey = import.meta.env.VITE_SITE_KEY 
     
-    // const handleVerify = (token) => {
-    //     console.log('ReCaptcha token:', token)
-    // }
+    const handleVerify = (token) => {
+        console.log('ReCaptcha token:', token)
+    }
 
     return (
         <>
@@ -26,13 +24,13 @@ function App() {
                 <div id="stars"></div>
                 <div id="stars2"></div>
                 <div id="stars"></div>
-                {/* {
+                {
                     console.log(sitekey)
-                } */}
+                }
                 <Skills />
                 <Projects />
                 <Contact />
-                {/* <ReCaptcha sitekey={sitekey} onVerify={handleVerify}/> */}
+                <ReCaptcha sitekey={sitekey} onVerify={handleVerify}/>
             </div>
         </>
     );

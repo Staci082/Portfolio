@@ -13,13 +13,12 @@ function Projects() {
                 "node.js",
                 "express.js",
                 "mongoDB",
-                "cheerio",
             ],
             website: "",
         },
         {
             id: "card2",
-            title: "Epic Games clone",
+            title: "Coming soon",
             image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
             stack: [
@@ -29,7 +28,7 @@ function Projects() {
                 "express.js",
                 "fetch api",
             ],
-            website: "",
+            website: "#projects-container",
         },
         {
             id: "card3",
@@ -38,13 +37,12 @@ function Projects() {
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
             stack: [
                 "sass",
-                "ejs",
+                "react.js",
                 "node.js",
                 "express.js",
                 "mongoDB",
-                "something.js",
             ],
-            website: "",
+            website: "#projects-container",
         },
     ];
 
@@ -60,7 +58,7 @@ function Projects() {
                             <div className="title-container">
                                 <h3 className="h3">{item.title}</h3>
 
-                                <a href="#" className="link-button" aria-label={`View ${item.title} live`}>
+                                <a href={item.website} className="link-button" aria-label={`View ${item.title} live`}>
                                     <FaArrowUpRightFromSquare />
                                 </a>
                             </div>
