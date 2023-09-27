@@ -1,0 +1,104 @@
+
+
+#contact-container {
+    padding: 5em 3rem;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        margin-bottom: 1.5em;
+    }
+
+    .contact {
+        width: clamp(250px, 100%, 900px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 5em 0;
+        margin-top: 5em;
+    }
+}
+
+.form-wrapper {
+    @include flex;
+    flex-direction: column;
+
+    & .form-group {
+        @include text;
+        @include flex;
+        font-size: 1.5rem;
+        flex-direction: column;
+        position: relative; 
+        width: inherit;
+        margin-bottom: 2em;
+        background: $background;
+        @include sm {
+                font-size: 1rem;
+        }
+    }
+
+    & input {
+        margin-bottom: 1em;
+    }
+
+    & input, textarea, button{
+        @include form;	
+    }
+
+    & label{
+        color: white; 
+        position: absolute;
+        pointer-events: none;
+        text-align: left;
+        top: 0;
+        left: 0;
+        transition: 0.2s ease all; 
+        -moz-transition: 0.2s ease all; 
+        -webkit-transition: 0.2s ease all;
+    }
+
+    & textarea{
+        padding-top: 3em;
+        height: 5em;
+        resize: none; 
+        overflow: auto;
+    }
+
+    & input:focus ~ label, input:valid ~ label,  textarea:valid ~ label 		{
+        top: -25%;
+        color: $grey;
+        font-size: 1rem;
+        opacity: 1;
+    }
+
+    & textarea:valid {
+        color: white;
+        font-size: inherit;
+    }
+
+    & button {
+        cursor: pointer;
+        width: 130px;
+        font-size: 1.2em;
+        margin-top: 2em;
+        border: 1px solid $cyan;
+        border-radius: 5px;
+        text-align: center;
+        & .rocket {
+            margin-left: 1em;
+        }
+        &:hover {
+            border: 1px solid $yellow;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.recaptcha {
+    @include sm {
+    transform:scale(0.77)
+    }
+}
