@@ -140,6 +140,7 @@ const Contact = () => {
                             className="recaptcha"
                             ref={captchaRef}
                             sitekey={sitekey}
+                            theme="dark"
                             onChange={(value) => setIsRecaptchaVerified(!!value)}
                             // size="invisible"
                         />
