@@ -29,12 +29,11 @@ const Contact = () => {
             setValidToken(valid_token);
 
             if (valid_token && valid_token[0].success === true) {
-                console.log("verified");
                 sendEmail();
-                setSuccessMsg("Hurray!! you have submitted the form");
+                console.log("verified");
             } else {
                 console.log("not verified");
-                setErrorMsg(" Sorry!! Verify you are not a bot");
+
             }
         }
     };
@@ -43,8 +42,7 @@ const Contact = () => {
         let APIResponse = [];
 
         try {
-            let response = await Axios.post(
-                `http://localhost:5172/verify-token`,
+            let response = await Axios.post("/verify-token",
                 {
                     reCAPTCHA_TOKEN: token,
                     Secret_Key: privatekey,
