@@ -6,9 +6,6 @@ import emailjs from "@emailjs/browser";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 
 const Contact = () => {
-    const [SuccessMsg, setSuccessMsg] = useState("");
-    const [ErrorMsg, setErrorMsg] = useState("");
-    const [valid_token, setValidToken] = useState([]);
     const [isFormFilled, setIsFormFilled] = useState(false); 
     const [isRecaptchaVerified, setIsRecaptchaVerified] = useState(false);
 
@@ -26,7 +23,6 @@ const Contact = () => {
         if (token && isFormFilled && isRecaptchaVerified) { 
             sendEmail(e);
             let valid_token = await verifyToken(token);
-            setValidToken(valid_token);
 
             if (valid_token && valid_token[0].success === true) {
                 sendEmail();
@@ -142,12 +138,6 @@ const Contact = () => {
                             onChange={(value) => setIsRecaptchaVerified(!!value)}
                             // size="invisible"
                         />
-                    )}
-
-                    {valid_token && valid_token.length > 0 && valid_token[0].success === true ? (
-                        <h3 className="textSuccess">{SuccessMsg}</h3>
-                    ) : (
-                        <h3 className="textError">{ErrorMsg} </h3>
                     )}
                     <button
                         type="submit"
