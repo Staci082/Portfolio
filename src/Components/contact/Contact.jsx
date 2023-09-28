@@ -67,7 +67,7 @@ const Contact = () => {
     };
 
 
-    const publickey = import.meta.env.VITE_PUBLIC_KEY || process.env.VITE_PUBLIC_KEY
+    const publickey = "vsDVDqRAVA7xNtI8F"
     const serviceId = import.meta.env.VITE_SERVICE_ID || process.env.VITE_SERVICE_ID 
     const templateId = import.meta.env.VITE_TEMPLATE_ID || process.env.VITE_TEMPLATE_ID
     const sendEmail = (e) => {
