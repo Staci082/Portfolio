@@ -14,7 +14,7 @@ function Projects() {
                 "express.js",
                 "mongoDB",
             ],
-            website: "https://fiesta-flavors.netlify.app/",
+            website: "https://fiesta-flavors.netlify.app",
         },
         {
             id: "card2",
@@ -58,7 +58,7 @@ function Projects() {
                             <div className="title-container">
                                 <h3 className="h3">{item.title}</h3>
 
-                                <a href={item.website} target="_blank" rel="noopener noreferrer" className="link-button" aria-label={`View ${item.title} live`}>
+                                <a target="_blank" rel="noreferrer" href={item.website} className="link-button" aria-label={`View ${item.title} live`}>
                                     <FaArrowUpRightFromSquare />
                                 </a>
                             </div>
