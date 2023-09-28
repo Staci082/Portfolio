@@ -14,7 +14,7 @@ function Projects() {
                 "express.js",
                 "mongoDB",
             ],
-            website: "",
+            website: "fiesta-flavors.netlify.app",
         },
         {
             id: "card2",
