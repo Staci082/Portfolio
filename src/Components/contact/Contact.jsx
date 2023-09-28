@@ -82,7 +82,7 @@ const Contact = () => {
                     window.location.reload();
                 },
                 (error) => {
-                    console.log(error.text);
+                    console.error("EmailJS Error:", error);
                 }
             );
     };
