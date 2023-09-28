@@ -66,6 +66,7 @@ const Contact = () => {
         }
     };
 
+    const publickey ="vsDVDqRAVA7xNtI8F"
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs
@@ -73,7 +74,7 @@ const Contact = () => {
                 import.meta.env.VITE_SERVICE_ID,
                 import.meta.env.VITE_TEMPLATE_ID,
                 form.current,
-                import.meta.env.VITE_PUBLIC_KEY || process.env.VITE_PUBLIC_KEY
+                publickey
             )
             .then(
                 () => {
