@@ -58,7 +58,7 @@ function Projects() {
                             <div className="title-container">
                                 <h3 className="h3">{item.title}</h3>
 
-                                <a href={item.website} className="link-button" aria-label={`View ${item.title} live`}>
+                                <a href={item.website} target="_blank" rel="noopener noreferrer" className="link-button" aria-label={`View ${item.title} live`}>
                                     <FaArrowUpRightFromSquare />
                                 </a>
                             </div>
