@@ -5,7 +5,7 @@ function Projects() {
         {
             id: "card1",
             title: "Fiesta Flavors",
-            image: "/images/music-app.png",
+            image: "/images/fiestaflavors.png",
             desc: "Discover, save and organize your beloved recipes using an online platform. ",
             stack: [
                 "sass",
@@ -53,7 +53,7 @@ function Projects() {
             <div className="projects-wrapper">
                 {projectList.map((item) => (
                     <div className="card" id={item.id} key={item.id}>
-                        <div className="card-img"></div>
+                        <div className="card-img-container"><img className="card-img" src={item.image} alt={item.id}/></div>
                         <div className="details">
                             <div className="title-container">
                                 <h3 className="h3">{item.title}</h3>

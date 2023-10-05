@@ -33,26 +33,28 @@
     height: 380px;
     width: 280px;
     overflow: hidden;
+    
     &:hover {
-        .card-img {
+        .card-img-container {
             height: 25%;
         }
         .link-button {
             visibility: visible;
         }
     }
-    & .card-img {
+    & .card-img-container {
         height: 60%;
         position: relative;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         transform: rotateY(180deg);
         transition: all ease-in-out 0.8s;
-        // & img {
-        //     width: 150%;
-        //     border-radius: 20px;
-        //     transform: rotateY(180deg);
 
-        // }
+        & .card-img {
+            width: 170%;
+            position: absolute;
+            right: 0;
+        }
+
         &:after {
             content: "";
             height: 100%;
@@ -88,13 +90,13 @@ p {
 
 
 ul {
-    -webkit-column-count: 2; /* Chrome/Opera, Safari */
-    -moz-column-count: 2; /* Mozilla Firefox */
+    -webkit-column-count: 2; 
+    -moz-column-count: 2;
     column-count: 2;
     padding: 0 1em 0 1.5em;
     column-gap: 1em;
-    -webkit-column-gap: 50px; /* Chrome/Opera, Safari */
-    -moz-column-gap: 50px; /* Mozilla Firefox */
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
     column-gap: 10px;
 }
 
@@ -106,16 +108,15 @@ ul {
     color: $pink;
     cursor: pointer;
     transform: scale(1.2);
-    // margin: 40px 0 0 1em;
 }
 
-#card1 > .card-img:after {
-    background-image: linear-gradient(45deg, $pink, #d892d6);
+#card1 > .card-img-container:after {
+    background-image: linear-gradient(35deg, rgba($pink, 0.5), rgba(210, 146, 214, 0.3));
 }
-#card2 > .card-img:after {
+#card2 > .card-img-container:after {
     background-image: linear-gradient(45deg, $yellow, #d7e674);
 }
-#card3 > .card-img:after {
+#card3 > .card-img-container:after {
     background-image: linear-gradient(45deg, $cyan, #86d9ca);
 }
 
