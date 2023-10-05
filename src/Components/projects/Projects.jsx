@@ -45,7 +45,7 @@ function Projects() {
             website: "#projects-container",
         },
     ];
-
+    
     return (
         <section id="projects-container">
             <h2>projects</h2>
