@@ -18,17 +18,15 @@ function Projects() {
         },
         {
             id: "card2",
-            title: "Coming soon",
+            title: "Quizilla",
             image: "",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
+            desc: "Unleash your inner quizmaster and test your knowledge with this trivia app.",
             stack: [
                 "tailwind",
                 "react.js",
-                "node.js",
-                "express.js",
                 "fetch api",
             ],
-            website: "#projects-container",
+            website: "https://quizilla-nu.vercel.app/",
         },
         {
             id: "card3",
