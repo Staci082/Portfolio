@@ -26,7 +26,7 @@ function Projects() {
                 "react.js",
                 "fetch api",
             ],
-            website: "https://quizilla-nu.vercel.app/",
+            website: "https://quizilla-git-main-staci082s-projects.vercel.app/",
         },
         {
             id: "card3",
