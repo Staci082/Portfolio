@@ -14,7 +14,7 @@ function Projects() {
                 "express.js",
                 "mongoDB",
             ],
-            website: "https://fiesta-flavors.vercel.app/",
+            website: "https://recipe-7mjl4ieqq-staci082s-projects.vercel.app/all",
         },
         {
             id: "card2",
