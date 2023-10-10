@@ -292,7 +292,7 @@ h3 {
   font-size: clamp(1rem, 3vw, 2.5rem);
 }
 
-h4 {
+.under-title {
   margin-top: -3em;
 }
 
