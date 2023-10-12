@@ -48,14 +48,15 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         transform: rotateY(180deg);
         transition: all ease-in-out 0.8s;
+        background: $pink;
 
         & .card-img {
-            width: 170%;
-            height: auto;
+            height: 140%;
+            width: auto;
             position: absolute;
-            right: -30px;
-            bottom: -80px;
-        }
+            left: -25%;
+            top: -25%;
+                }
 
         &:after {
             content: "";

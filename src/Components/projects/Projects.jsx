@@ -18,28 +18,20 @@ function Projects() {
         },
         {
             id: "card2",
-            title: "Quizilla",
+            title: "Coming soon",
             image: "",
-            desc: "Unleash your inner quizmaster and test your knowledge with this trivia app.",
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
             stack: [
-                "tailwind",
-                "react.js",
-                "fetch api",
+                
             ],
-            website: "https://quizilla-git-main-staci082s-projects.vercel.app/",
+            website: "#projects-container",
         },
         {
             id: "card3",
             title: "Coming soon",
             image: "",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            stack: [
-                "sass",
-                "react.js",
-                "node.js",
-                "express.js",
-                "mongoDB",
-            ],
+            stack: [],
             website: "#projects-container",
         },
     ];
