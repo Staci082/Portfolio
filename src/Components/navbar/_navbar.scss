@@ -43,7 +43,7 @@
     z-index: 2;
     border-radius: 5px;
     padding: 5px;
-    @include sm {
+    @include md {
         background: $background;
     }
 }

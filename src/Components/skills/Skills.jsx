@@ -26,6 +26,11 @@ function Skills() {
             alt: "Javascript logo"
         },
         {
+            name: "Typescript",
+            image: "/images/skills/typescript.png",
+            alt: "Typescript logo"
+        },
+        {
             name: "React.js",
             image: "/images/skills/react.avif",
             alt: "React.js logo"

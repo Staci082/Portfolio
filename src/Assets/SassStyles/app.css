@@ -220,7 +220,7 @@ h3 {
   border-radius: 5px;
   padding: 5px;
 }
-@media (max-width: 480px) {
+@media (max-width: 720px) {
   .hamburger {
     background: #17102d;
   }
@@ -355,8 +355,7 @@ h3 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-          clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
   transition: 0.5s;
 }
 
@@ -370,8 +369,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #projects-container {
@@ -400,9 +398,7 @@ h3 {
 }
 
 .card {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   position: relative;
   justify-self: center;
   border-radius: 20px;
@@ -420,8 +416,7 @@ h3 {
 .card .card-img-container {
   height: 60%;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   transform: rotateY(180deg);
   transition: all ease-in-out 0.8s;
   background: rgb(255, 0, 255);
@@ -465,10 +460,12 @@ p {
 }
 
 ul {
+  -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
   padding: 0 1em 0 1.5em;
   column-gap: 1em;
+  -webkit-column-gap: 50px;
   -moz-column-gap: 50px;
   column-gap: 10px;
 }

@@ -6,7 +6,7 @@ function Projects() {
             id: "card1",
             title: "Fiesta Flavors",
             image: "/images/fiestaflavors2.avif",
-            desc: "Discover, save and organize your beloved recipes using an online platform. ",
+            desc: "Discover, save and organize your beloved recipes using this online CRUD application. ",
             stack: [
                 "sass",
                 "react.js",
@@ -20,9 +20,14 @@ function Projects() {
             id: "card2",
             title: "Coming soon",
             image: "",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
+            desc: "An online Pictionary multiplayer game where players draw and guess words in a fun virtual environment.",
             stack: [
-                
+                "tailwind",
+                "react.js",
+                "typescript",
+                "node.js",
+                "express.js",
+                "socket.io"
             ],
             website: "#projects-container",
         },
