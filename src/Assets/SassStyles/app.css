@@ -423,11 +423,11 @@ h3 {
   background: rgb(255, 0, 255);
 }
 .card .card-img-container .card-img {
-  height: 140%;
+  height: 100%;
   width: auto;
   position: absolute;
-  left: -25%;
-  top: -25%;
+  left: -50%;
+  top: 0;
 }
 .card .card-img-container:after {
   content: "";

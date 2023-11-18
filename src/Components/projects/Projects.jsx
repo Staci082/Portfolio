@@ -5,7 +5,7 @@ function Projects() {
         {
             id: "card1",
             title: "Fiesta Flavors",
-            image: "/images/fiestaflavors2.png",
+            image: "/images/fiestaflavors.avif",
             desc: "Discover, save and organize your beloved recipes using this online CRUD application. ",
             stack: [
                 "sass",
