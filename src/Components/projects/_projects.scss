@@ -33,13 +33,25 @@
     height: 380px;
     width: 280px;
     overflow: hidden;
+
+    .details {
+        z-index: 3;
+        width: 90%;
+        max-height: 40%;
+        position: absolute; 
+        bottom: -4em; 
+        padding: 0 1em 4em 1em;
+        text-align: left;
+        line-height: 25px;
+        background: $background;
+        transition: all ease-in-out 0.8s;
+    }
     
     &:hover {
-        .card-img-container {
-            height: 25%;
-        }
-        .link-button {
-            visibility: visible;
+        & .details {
+            padding-top: 1em;
+            max-height: 80%;
+            transition: all ease-in-out 0.8s;
         }
     }
     & .card-img-container {
@@ -47,7 +59,6 @@
         position: relative;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         transform: rotateY(180deg);
-        transition: all ease-in-out 0.8s;
         background: $pink;
 
         & .card-img {
@@ -57,24 +68,7 @@
             left: -50%;
             top: 0;
                 }
-
-        &:after {
-            content: "";
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: 20px 20px 0 0;
-        }
     }
-}
-
-.details {
-    padding: 0 1em 4em 1em;
-    text-align: left;
-    line-height: 25px;
-    background: $background;
 }
 
 p {
@@ -83,6 +77,7 @@ p {
     margin-bottom: 2em;
     margin-top: -5px;
 }
+
 
 .title-container {
     display: flex;

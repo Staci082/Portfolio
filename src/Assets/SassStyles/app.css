@@ -408,18 +408,28 @@ h3 {
   width: 280px;
   overflow: hidden;
 }
-.card:hover .card-img-container {
-  height: 25%;
+.card .details {
+  z-index: 3;
+  width: 90%;
+  max-height: 40%;
+  position: absolute;
+  bottom: -4em;
+  padding: 0 1em 4em 1em;
+  text-align: left;
+  line-height: 25px;
+  background: #17102d;
+  transition: all ease-in-out 0.8s;
 }
-.card:hover .link-button {
-  visibility: visible;
+.card:hover .details {
+  padding-top: 1em;
+  max-height: 80%;
+  transition: all ease-in-out 0.8s;
 }
 .card .card-img-container {
   height: 60%;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   transform: rotateY(180deg);
-  transition: all ease-in-out 0.8s;
   background: rgb(255, 0, 255);
 }
 .card .card-img-container .card-img {
@@ -428,22 +438,6 @@ h3 {
   position: absolute;
   left: -50%;
   top: 0;
-}
-.card .card-img-container:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 20px 20px 0 0;
-}
-
-.details {
-  padding: 0 1em 4em 1em;
-  text-align: left;
-  line-height: 25px;
-  background: #17102d;
 }
 
 p {
