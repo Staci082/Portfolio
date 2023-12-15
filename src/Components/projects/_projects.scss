@@ -68,6 +68,13 @@
             left: -50%;
             top: 0;
                 }
+        & #card2 {
+            width: 120%;
+            height: auto;
+            left: -10%;
+            top: 0;
+            transform: rotateY(180deg);
+        }
     }
 }
 

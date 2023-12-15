@@ -439,6 +439,13 @@ h3 {
   left: -50%;
   top: 0;
 }
+.card .card-img-container #card2 {
+  width: 120%;
+  height: auto;
+  left: -10%;
+  top: 0;
+  transform: rotateY(180deg);
+}
 
 p {
   color: white;

@@ -8,16 +8,31 @@ function Projects() {
             image: "/images/fiestaflavors.avif",
             desc: "Discover, save and organize your beloved recipes using this online CRUD application. ",
             stack: [
-                "sass",
                 "react.js",
+                "sass",
                 "node.js",
                 "express.js",
                 "mongoDB",
             ],
             website: "https://fiesta-flavors.vercel.app/",
         },
+ 
         {
             id: "card2",
+            title: "Quizilla",
+            image: "images/quizilla.avif",
+            desc: "An interactive quiz app, where you can explore a variety of genres and put your knowledge to the test!  ",
+            stack: [
+                "react.js",
+                "tailwind",
+                "node.js",
+                "express.js",
+                "mongoDB",
+            ],
+            website: "https://quizilla-nu.vercel.app/",
+        },
+        {
+            id: "card3",
             title: "Coming soon",
             image: "",
             desc: "An online Pictionary multiplayer game where players draw and guess words in a fun virtual environment.",
@@ -31,14 +46,6 @@ function Projects() {
             ],
             website: "#projects-container",
         },
-        {
-            id: "card3",
-            title: "Coming soon",
-            image: "",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus.",
-            stack: [],
-            website: "#projects-container",
-        },
     ];
     
     return (
@@ -48,7 +55,7 @@ function Projects() {
             <div className="projects-wrapper">
                 {projectList.map((item) => (
                     <div className="card" id={item.id} key={item.id}>
-                        <div className="card-img-container"><img className="card-img" src={item.image} alt={item.id}/></div>
+                        <div className="card-img-container"><img className="card-img" src={item.image} alt={item.id} id={item.id}/></div>
                         <div className="details">
                             <div className="title-container">
                                 <h3 className="h3">{item.title}</h3>
